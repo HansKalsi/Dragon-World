@@ -1,0 +1,111 @@
+dragon_maa = {
+    type = dragon
+
+	max_sub_regiments = 1
+
+	damage = 10000
+	toughness = 2500
+	pursuit = 1500
+	screen = 100
+	
+	terrain_bonus = {
+		plains = { damage = 2500 }
+		drylands = { damage = 2500 }
+        farmlands = { damage = 3500 }
+		hills = { damage = -500 }
+		mountains = { damage = -3000 pursuit = -1000 toughness = 500 screen = -100 }
+		desert_mountains = { damage = -3000 pursuit = -1000 toughness = 500 screen = -100 }
+		wetlands = { damage = 1000 pursuit = 500 }
+	}
+
+	counters = {
+        skirmishers = 1
+		archers = 1
+        pikemen = 1
+	}
+	
+	siege_tier = 10
+	siege_value = 1
+
+	winter_bonus = {
+		normal_winter = { damage = -1000 pursuit = -250 toughness = -250 }
+		harsh_winter = { damage = -3500 pursuit = -750 toughness = -1000 }
+	}
+
+	buy_cost = { gold = 1000 }
+	low_maintenance_cost = { gold = 15 }
+	high_maintenance_cost = { gold = 35 }
+	
+	stack = 1
+	ai_quality = { value = 100 }
+	icon = dragon
+
+	can_recruit = {
+		AND = {
+            OR = {
+                has_trait = novice_dragon_rider
+                has_trait = dragon_rider
+                has_trait = renowned_dragon_rider
+            }
+			any_equipped_character_artifact = {
+				artifact_type = dragon
+			}
+		}
+	}
+}
+
+dragon_riders_maa = {
+    type = dragon
+
+	max_sub_regiments = 5
+
+	damage = 2000
+	toughness = 500
+	pursuit = 375
+	screen = 250
+	
+	terrain_bonus = {
+		plains = { damage = 500 }
+		drylands = { damage = 500 }
+        farmlands = { damage = 1500 }
+		hills = { damage = -500 }
+		mountains = { damage = -1000 pursuit = -200 toughness = 250 screen = -250 }
+		desert_mountains = { damage = -1000 pursuit = -200 toughness = 250 screen = -250 }
+		wetlands = { pursuit = 1000 }
+	}
+
+	counters = {
+        skirmishers = 1
+		archers = 1
+        pikemen = 1
+	}
+	
+	siege_tier = 5
+	siege_value = 1.5
+
+	winter_bonus = {
+		normal_winter = { damage = -1000 pursuit = -175 toughness = -150 }
+		harsh_winter = { damage = -1500 pursuit = -250 toughness = -400 }
+	}
+
+	buy_cost = { gold = 250 }
+	low_maintenance_cost = { gold = 3 }
+	high_maintenance_cost = { gold = 15 }
+	
+	stack = 50
+	ai_quality = { value = 100 }
+	icon = dragon
+
+	can_recruit = {
+		AND = {
+            OR = {
+                has_trait = novice_dragon_rider
+                has_trait = dragon_rider
+                has_trait = renowned_dragon_rider
+            }
+			any_equipped_character_artifact = {
+				artifact_type = dragon
+			}
+		}
+	}
+}

@@ -1,0 +1,153 @@
+namespace = dragon_spawn
+
+dragon_spawn.0001 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		create_artifact_testing_dragon_effect = { OWNER = this }
+	}
+}
+
+dragon_spawn.0002 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		create_artifact_water_dragon_effect = { OWNER = this }
+	}
+}
+
+dragon_spawn.0003 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		create_artifact_fire_dragon_effect = { OWNER = this }
+	}
+}
+
+dragon_spawn.0004 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		create_artifact_stone_dragon_effect = { OWNER = this }
+	}
+}
+
+dragon_spawn.0005 = {
+	type = character_event
+	title = dragon_spawn.0005.t
+	desc = dragon_spawn.0005.desc
+
+	option = {
+		name = dragon_spawn.0005.a
+		add_prestige = -150
+	}
+}
+
+dragon_spawn.0006 = {
+	type = character_event
+	title = dragon_spawn.0006.t
+	desc = dragon_spawn.0006.desc
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		create_character_memory = {
+			type = dragon_tamed
+		}
+	}
+
+	option = {
+		name = dragon_spawn.0006.a
+		add_prestige = 500
+
+		random_list = {
+			30 = {
+				create_artifact_fire_dragon_effect = {
+					OWNER = root
+				}
+				save_scope_value_as = {
+					name = dragon
+					value = yes
+				}
+				if = {
+					limit = {
+						exists = scope:newly_created_artifact
+					}
+					send_interface_toast = {
+						title = dragon_spawn.0006.t.tamed_dragon
+						left_icon = scope:newly_created_artifact
+						show_as_tooltip = {
+							scope:newly_created_artifact = {
+								set_owner = root
+							}
+						}
+					}
+				}
+			}
+			30 = {
+				create_artifact_water_dragon_effect = {
+					OWNER = root
+				}
+				save_scope_value_as = {
+					name = dragon
+					value = yes
+				}
+				if = {
+					limit = {
+						exists = scope:newly_created_artifact
+					}
+					send_interface_toast = {
+						title = dragon_spawn.0006.t.tamed_dragon
+						left_icon = scope:newly_created_artifact
+						show_as_tooltip = {
+							scope:newly_created_artifact = {
+								set_owner = root
+							}
+						}
+					}
+				}
+			}
+			30 = {
+				create_artifact_stone_dragon_effect = {
+					OWNER = root
+				}
+				save_scope_value_as = {
+					name = dragon
+					value = yes
+				}
+				if = {
+					limit = {
+						exists = scope:newly_created_artifact
+					}
+					send_interface_toast = {
+						title = dragon_spawn.0006.t.tamed_dragon
+						left_icon = scope:newly_created_artifact
+						show_as_tooltip = {
+							scope:newly_created_artifact = {
+								set_owner = root
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		# Save the scoped artifact as a variable on the memory to access later
+		random_memory = {
+			limit = { has_memory_type = dragon_tamed }
+			set_variable = {
+				name = dragon_artifact_tamed
+				value = scope:newly_created_artifact
+			}
+		}
+	}
+}

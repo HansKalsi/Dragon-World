@@ -1,0 +1,44 @@
+dragon_rider_commander_character = {
+	age = { 30 50 }
+	random_traits_list = {
+		count = 1
+		education_martial_3 = {}
+		education_martial_4 = {}
+	}
+	random_traits_list = {
+		count = 3
+		diligent = {}
+		patient = {}
+		brave = {}
+		callous = {}
+		stubborn = {}
+		humble = {}
+		lustful = {}
+		chaste = {}
+		cynical = {}
+		zealous = {}
+	}
+	random_traits_list = {
+		count = { 0 1 }
+		logistician = {}
+		aggressive_attacker = {}
+		unyielding_defender = {}
+		reaver = {}
+		open_terrain_expert = {}
+		rough_terrain_expert = {}
+	}
+	
+	random_traits = no
+	martial  = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+
+	after_creation = {
+		add_trait = renowned_dragon_rider
+		random = {
+			chance = 50
+			add_trait = scarred
+		}
+	}
+}

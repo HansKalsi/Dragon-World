@@ -1,0 +1,15 @@
+@dragon = "gfx/interface/icons/culture_innovations/innovation_dragon.dds"
+
+# innovation_dragon_taming = {
+#     group = culture_group_regional
+# 	culture_era = culture_era_tribal
+# 	icon = @dragon
+
+#     potential = {
+#     }
+
+# 	unlock_maa = dragon_maa
+
+# 	flag = global_regional
+# 	flag = tribal_era_regional
+# }

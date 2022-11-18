@@ -1,0 +1,62 @@
+namespace = dragon_decision_event
+
+# Look for dragons initial event
+dragon_decision_event.0001 = {
+    type = character_event
+    title = dragon_decision_event.0001.t
+    desc = dragon_decision_event.0001.desc
+
+	left_portrait = root
+	theme = death
+
+	immediate = {
+		play_music_cue = mx_cue_stress
+	}
+
+    # Go looking
+    option = {
+        name = dragon_decision_event.0001.a
+
+        add_prestige = 250
+        add_piety = 50
+
+        trigger_event = dragon_decision_event.0002
+    }
+
+    # Return home
+    option = {
+        name = dragon_decision_event.0001.b
+
+        add_gold = 100
+    }
+}
+
+# Look for dragons success
+dragon_decision_event.0002 = {
+    type = character_event
+    title = dragon_decision_event.0002.t
+    desc = dragon_decision_event.0002.desc
+
+	left_portrait = root
+	theme = death
+
+	immediate = {
+		play_music_cue = mx_cue_stress
+	}
+
+    # Tame found dragon
+    option = {
+        name = dragon_decision_event.0002.a
+
+        add_prestige = 1000
+        # Not working:
+        # create_maa = dragon_maa
+    }
+
+    # Leave found dragon
+    option = {
+        name = dragon_decision_event.0002.b
+
+        add_prestige = -100
+    }
+}

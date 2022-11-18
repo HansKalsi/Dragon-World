@@ -1,0 +1,21 @@
+﻿riding_dragon = {
+	#KEEP UNTIL CUSTOM ICON IS MADE
+	icon = "dragon.dds"
+}
+
+riding_fire_dragon = {
+	icon = "fire_dragon.dds"
+}
+
+riding_water_dragon = {
+	icon = "water_dragon.dds"
+}
+
+riding_stone_dragon = {
+	icon = "stone_dragon.dds"
+}
+
+dragon_visual = {
+	icon = "dragon.dds"
+	asset = ep1_generic_jewelry_01_a_entity
+}

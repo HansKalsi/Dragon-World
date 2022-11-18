@@ -1,0 +1,35 @@
+﻿l_english:
+
+	# Trait descs
+	trait_dragon_rider:1 "Dragon Rider"
+	trait_dragon_rider_desc:1 "This character knows how to ride a dragon."
+
+	trait_novice_dragon_rider:1 "Novice Dragon Rider"
+	trait_novice_dragon_rider_desc:1 "This character is beginning to understand how to ride a dragon."
+
+	trait_renowned_dragon_rider:1 "Renowned Dragon Rider"
+	trait_renowned_dragon_rider_desc:1 "This character is a Dragon Rider veteran."
+
+  # Dragon Rider related events & decisions
+  dragon_rider_events.0001b.t:0 "Train with your Dragon"
+  dragon_rider_events.0001b.desc:0 "Bond and train with your Dragon to gain buffs and possibly to upgrade your Dragon Rider tier"
+  dragon_rider_events.0001b.a:0 "Ride your Dragon"
+  dragon_rider_events.0001b.b:0 "Practice Dragon commands"
+  dragon_rider_events.0001b.c:0 "Bond with your Dragon"
+
+  # Dragon Maa
+  dragon_riders_maa:0 "Dragon Riders"
+  dragon_riders_maa_flavor:0 "Dragons Riders are fearsome warriors in your realm, they have managed to tame a variety of mighty Dragons and under your leadership will form a capable fighting force, although beware that these Dragon Riders demand high amounts of pay when called upon to compensate their unique skills..."
+
+	# Recruit Dragon Rider decision
+	recruit_dragon_rider_decision:0 "Recruit Renowned Dragon Rider"
+	recruit_dragon_rider_decision_decision_desc:0 "We will search for a renowned Dragon Rider and invite them to our court"
+	recruit_dragon_rider_specialist_decision.tt:0 "Recruits a Renowned Dragon Rider to court"
+	recruit_dragon_rider_decision_confirm:0 "Recruit Specialist"
+	recruit_dragon_rider_decision_tooltip:0 "Recruit Renowned Dragon Rider to court"
+
+  # Train with Dragon decision
+  train_with_dragon_decision:0 "Train with Dragon"
+  train_with_dragon_decision_desc:0 "Train with your Dragon and have the chance to upgrade your Dragon Rider tier"
+  train_with_dragon_decision_confirm:0 "Train with your Dragon"
+  train_with_dragon_decision_tooltip:0 "Training gives various rewards and gives a chance to upgrade your Dragon Rider tier"

@@ -1,0 +1,87 @@
+﻿l_english:
+
+	dragon_world_new_game.0001.t:0 "Welcome to Dragon World"
+	dragon_world_new_game.0001.desc:0 "Currently a work in progress, I hope you become an active part of the workshop discussion with any suggestions you may have!"
+	dragon_world_new_game.0001.a:0 "Let's get started!"
+
+	dragon_spawn.0005.t:0 "No Dragon Tamed"
+	dragon_spawn.0005.desc:0 "We failed to tame a dragon this time..."
+	dragon_spawn.0005.a:0 "Shame."
+
+	artifact_test_dragon_name:1 "Testing Dragon"
+	artifact_test_dragon:1 "This dragon was born from the depths of the test realm"
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "Water Dragon"
+	artifact_water_dragon:1 "This dragon was born in the depths of the oceans, but now resides with its lord at their estate."
+
+	artifact_fire_dragon_name:1 "Fire Dragon"
+	artifact_fire_dragon:1 "This dragon was born in the centre of a volcano, after it erupted, the dragon now finds comfort with its rider."
+
+	artifact_stone_dragon_name:1 "Stone Dragon"
+	artifact_stone_dragon:1 "This dragon was born in the heart of a mountain, but since it became too big for its original home, it now lives with its lord on their estate."
+
+	# Dragon taming decision
+	attempt_to_train_dragon_decision:0 "Attempt to tame a Dragon"
+	attempt_to_train_dragon_decision_desc:0 "We know of a nearby dragon pit that will allow us to attempt to train one of its dragons..."
+	attempt_to_train_dragon_decision_confirm:0 "Prepare for the journey"
+	attempt_to_train_dragon_decision_tooltip:0 "Attempt to tame a Dragon"
+
+	dragon_world_new_game.0003.t:0 "The Dragon Pits"
+	dragon_world_new_game.0003.desc:0 "This is my chance to tame a dragon."
+	dragon_world_new_game.0003.a:0 "Today is my day!"
+	dragon_world_new_game.0003.b:0 "Perhaps another time..."
+
+	dragon_world_new_game.0006.t:0 "The Beast Approaches"
+	dragon_world_new_game.0006.desc:0 "PLACEHOLDER found dragon."
+	dragon_world_new_game.0006.a:0 "Throw yourself wildly at the Dragon!"
+	dragon_world_new_game.0006.food:0 "Looks like Dragon is back on the menu boys!"
+	dragon_world_new_game.0006.trust:0 "Reach out your hand to the mighty Dragon"
+	dragon_world_new_game.0006.confident:0 "Quickly charge and climb the Dragon's back"
+	dragon_world_new_game.0006.run:0 "I've got to get out of here!"
+
+	dragon_world_new_game.0009.t:0 "The Dragon's Trust"
+	dragon_world_new_game.0009.desc:0 "[ROOT.Char.GetFirstName|U] reaches out their hand out to the Dragon and to their surpise the Dragon responds by gently rests its head in the open palm of your hand."
+	dragon_world_new_game.0009.a:0 "Together we are unstoppable"
+
+
+	dragon_spawn.0006.t:0 "Dragon Tamed"
+	dragon_spawn.0006.desc:0 "I have managed to tame a mighty Dragon!"
+	dragon_spawn.0006.a:0 "Huzzah!"
+
+	# Dragon Rider trait decision
+	attempt_to_learn_dragon_rider_decision:0 "Learn to ride Dragons"
+	attempt_to_learn_dragon_rider_decision_desc:0 "We know somewhere nearby that will help us learn how to ride dragons, let's pay them a visit..."
+	attempt_to_learn_dragon_rider_decision_confirm:0 "Prepare for the journey"
+	attempt_to_learn_dragon_rider_decision_tooltip:0 "Learn to ride Dragons"
+
+	dragon_world_new_game.0004.t:0 "Learn the methods of riding Dragons"
+	dragon_world_new_game.0004.desc:0 "I wish to learn how to ride dragon, no matter the cost or risk!"
+	dragon_world_new_game.0004.a:0 "Lets give it a go!"
+	dragon_world_new_game.0004.b:0 "Perhaps I could ask for help..."
+	dragon_world_new_game.0004.c:0 "I have more important matters..."
+
+	generate_dragon_tooltip:0 "There is a 60% chance of success"
+	attempt_tame_dragon_tooltip:0 "This will kick off an event chain, your success depends on your personalty and skills"
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "Tamed Dragon"
+
+	# Dragon Memories
+	dragon_tamed:0 "Dragon Tamed"
+	dragon_tamed_desc:1 "I succeeded in taming a Dragon"
+	dragon_tamed_desc_second_perspective:1 "You succeeded in taming a Dragon"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] succeeded in taming a Dragon"
+
+	# Chosen Dragon Knight court position
+	chosen_dragon_knight_court_position:0 "Chosen Dragon Knight"
+	chosen_dragon_knight_court_position_desc:0 "The Chosen Dragon Knight is responsible for accompanying their liege in battle and can be their champion in any Dragon duels"
+
+	# Taming Event Tooltips
+	trusted_by_dragon.tt:0 "The Dragon trusts you"
+	not_trusted_by_dragon.tt:0 "The Dragon doesn't trust you"
+	dragon_ate_character.tt:0 "The Dragon eats you"
+	ate_dragon.tt:0 "You eat the Dragon"
+	escaped_from_dragon.tt:0 "You escape the Dragon"
+	successfully_charged_dragon.tt:0 "You successfully mount the Dragon"
+	thrown_off_dragon.tt:0 "The Dragon shakes you off"

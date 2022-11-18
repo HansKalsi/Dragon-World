@@ -1,0 +1,2 @@
+# Dragon Features
+dragon_type = {}

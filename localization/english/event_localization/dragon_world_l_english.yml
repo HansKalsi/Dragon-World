@@ -1,0 +1,18 @@
+﻿l_english:
+
+ dragon_decision_event.0001.t:0 "Looking for Dragons"
+ dragon_decision_event.0001.desc:0 "We have heard rumours of a dragon nearby, we should hunt it and bring it's head back as a trophy"
+ dragon_decision_event.0001.a:0 "Let's find ourselves a dragon!"
+ dragon_decision_event.0001.b:0 "On the other hand..."
+
+ look_for_dragons_decision:0 "Look for Dragons"
+ look_for_dragons_decision_desc:0 "We have heard rumours of a dragon nearby, we should hunt it and bring it's head back as a trophy"
+
+ dragon_decision_event.0002.t:0 "Dragon found"
+ dragon_decision_event.0002.desc:0 "We have found a dragon sleeping in a nearby cave, my men are awaiting my orders..."
+ dragon_decision_event.0002.a:0 "Time to claim my trophy!"
+ dragon_decision_event.0002.b:0 "I cannot kill such a magnificent beast"
+
+ innovation_dragon_taming:0 "Dragon Taming"
+ dragon_maa:0 "Dragon"
+ dragon_maa_flavor:0 "Dragons are mighty creatures capable of immense power and destruction"

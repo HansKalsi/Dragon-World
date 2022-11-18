@@ -1,0 +1,46 @@
+dragon_rider = {
+	martial = 2
+	prowess = 4
+	health = 0.25
+	
+	ruler_designer_cost = 100
+	
+	desc = trait_dragon_rider_desc
+	
+	fame = yes
+	
+	random_creation = 0.01
+
+	icon = dragon_rider.dds
+}
+
+novice_dragon_rider = {
+	martial = 1
+	prowess = 2
+	
+	ruler_designer_cost = 50
+	
+	desc = trait_dragon_rider_desc
+	
+	fame = yes
+	
+	random_creation = 0.05
+
+	icon = dragon_rider.dds
+}
+
+renowned_dragon_rider = {
+	martial = 4
+	prowess = 8
+	health = 0.5
+	
+	ruler_designer_cost = 200
+	
+	desc = trait_dragon_rider_desc
+	
+	fame = yes
+	
+	random_creation = 0.001
+
+	icon = dragon_rider.dds
+}

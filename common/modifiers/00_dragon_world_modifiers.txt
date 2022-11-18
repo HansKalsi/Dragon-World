@@ -1,0 +1,38 @@
+test_dragon_modifier = {
+	court_grandeur_baseline_add = 10
+	monthly_dynasty_prestige_mult = 0.1
+	monthly_prestige_gain_mult = 0.1
+	dread_gain_mult = 0.5
+	prowess = 12
+	martial = 2
+}
+
+dragon_modifier = {
+	court_grandeur_baseline_add = 10
+	monthly_dynasty_prestige_mult = 0.1
+	monthly_prestige_gain_mult = 0.1
+	dread_gain_mult = 0.5
+	prowess = 12
+	martial = 2
+}
+
+rode_dragon = {
+	icon = martial_positive
+	martial = 2
+	monthly_prestige_gain_mult = 0.05
+	prowess = 4
+	health = 0.25
+	general_opinion = -5
+}
+
+ate_dragon = {
+	icon = feast_positive
+	health = 1
+	dread_baseline_add = 50
+	general_opinion = -10
+}
+
+trusted_by_dragon = {
+	icon = fertility_positive
+	general_opinion = 25
+}

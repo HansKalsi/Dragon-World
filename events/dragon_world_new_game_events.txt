@@ -1,0 +1,431 @@
+﻿namespace = dragon_world_new_game
+
+#Dragon World introduction event at game start
+dragon_world_new_game.0001 = {
+	type = none
+	title = dragon_world_new_game.0001.t
+	desc = dragon_world_new_game.0001.desc
+
+	option = {
+		name = dragon_world_new_game.0001.a
+	}
+}
+
+# Generate dragon
+dragon_world_new_game.0002 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			60 = { trigger_event = dragon_spawn.0006 }
+			40 = { trigger_event = dragon_spawn.0005 }
+		}
+	}
+}
+
+# Dragon taming decision
+dragon_world_new_game.0003 = {
+	type = character_event
+	title = dragon_world_new_game.0003.t
+	desc = dragon_world_new_game.0003.desc
+
+	option = {
+		name = dragon_world_new_game.0003.a
+		trigger_event = dragon_world_new_game.0006
+		custom_tooltip = attempt_tame_dragon_tooltip
+	}
+	option = {
+		name = dragon_world_new_game.0003.b
+		add_gold = 250
+	}
+}
+
+dragon_world_new_game.0006 = {
+	type = character_event
+	title = dragon_world_new_game.0006.t
+	desc = dragon_world_new_game.0006.desc
+
+	# Standard attempt
+	option = {
+		name = dragon_world_new_game.0006.a
+		trigger_event = dragon_world_new_game.0002
+		custom_tooltip = generate_dragon_tooltip
+	}
+	# Eat Dragon
+	option = {
+		name = dragon_world_new_game.0006.food
+		trigger = {
+			has_trait = gluttonous
+		}
+		random_list = {
+			60 = {
+				trigger_event = dragon_world_new_game.0007
+				custom_tooltip = dragon_ate_character.tt
+			}
+			40 = {
+				trigger_event = dragon_world_new_game.0008
+				custom_tooltip = ate_dragon.tt
+			}
+		}
+	}
+	# Trust Dragon
+	option = {
+		name = dragon_world_new_game.0006.trust
+		trigger = {
+			OR = {
+				has_trait = calm
+				has_trait = compassionate
+				has_trait = patient
+				has_trait = trusting
+			}
+		}
+		random_list = {
+			60 = {
+				trigger_event = dragon_world_new_game.0009
+				custom_tooltip = trusted_by_dragon.tt
+			}
+			40 = {
+				trigger_event = dragon_world_new_game.0010
+				custom_tooltip = not_trusted_by_dragon.tt
+			}
+		}
+	}
+	# Charge Dragon
+	option = {
+		name = dragon_world_new_game.0006.confident
+		trigger = {
+			OR = {
+				has_trait = brave
+				has_trait = ambitious
+				has_trait = stubborn
+				has_trait = arrogant
+			}
+		}
+		random_list = {
+			60 = {
+				trigger_event = dragon_world_new_game.0012
+				custom_tooltip = successfully_charged_dragon.tt
+			}
+			40 = {
+				trigger_event = dragon_world_new_game.0013
+				custom_tooltip = thrown_off_dragon.tt
+			}
+		}
+	}
+	# Run from Dragon
+	option = {
+		name = dragon_world_new_game.0006.run
+		trigger = {
+			OR = {
+				has_trait = craven
+				has_trait = fickle
+			}
+		}
+		random_list = {
+			60 = {
+				trigger_event = dragon_world_new_game.0011
+				custom_tooltip = escaped_from_dragon.tt
+			}
+			40 = {
+				trigger_event = dragon_world_new_game.0007
+				custom_tooltip = dragon_ate_character.tt
+			}
+		}
+	}
+}
+
+# Dragon ate character
+dragon_world_new_game.0007 = {
+	type =  character_event
+	title = dragon_world_new_game.0007.t
+	desc = dragon_world_new_game.0007.desc
+	
+	# dies
+	option = {
+		death = {
+			death_reason = death_laughter
+		}
+	}
+}
+# Character ate Dragon
+dragon_world_new_game.0008 = {
+	type =  character_event
+	title = dragon_world_new_game.0008.t
+	desc = dragon_world_new_game.0008.desc
+	
+	# gains health boost
+	# gains dread
+	# angers everyone (Dragons are seen as magestic)
+	option = {
+		add_character_modifier = ate_dragon
+	}
+}
+
+# Dragon trusts character
+dragon_world_new_game.0009 = {
+	type =  character_event
+	title = dragon_world_new_game.0009.t
+	desc = dragon_world_new_game.0009.desc
+	
+	# gains opinion modifier
+	# gains renown
+	# gains prestige (or piety if zealous)
+	# gains Dragon artefact
+	option = {
+		name = dragon_world_new_game.0009.a
+		add_character_modifier = trusted_by_dragon
+		dynasty = { add_dynasty_prestige = 50 }
+		if = {
+			limit = {
+				not = {
+					has_trait = zealous
+				}
+			}
+			add_prestige = 250
+		}
+		if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = 250
+		}
+		trigger_event = dragon_spawn.0006
+	}
+}
+# Dragon does not trust character
+dragon_world_new_game.0010 = {
+	type = character_event
+	title = dragon_world_new_game.0010.t
+	desc = dragon_world_new_game.0010.desc
+
+	# loses prestige
+	option = {
+		name = dragon_world_new_game.0010.a
+		add_prestige = -250
+	}
+	# can do charge if available but will be eaten if fails
+	option = {
+		name = dragon_world_new_game.0006.confident
+		trigger = {
+			OR = {
+				has_trait = brave
+				has_trait = ambitious
+				has_trait = stubborn
+				has_trait = arrogant
+			}
+		}
+		show_as_unavailable = {
+			not = {
+				OR = {
+					has_trait = brave
+					has_trait = ambitious
+					has_trait = stubborn
+					has_trait = arrogant
+				}
+			}
+		}
+		random_list = {
+			60 = { trigger_event = dragon_world_new_game.0012 }
+			40 = { death = { death_reason = death_laughter }  }
+		}
+	}
+}
+
+# Escaped dragon
+dragon_world_new_game.0011 = {
+	type = character_event
+	title = dragon_world_new_game.0011.t
+	desc = dragon_world_new_game.0011.desc
+
+	# loses prestige
+	# reduces stress
+	option = {
+		name = dragon_world_new_game.0011.a
+
+		prestige = -250
+		stress = -50
+	}
+}
+
+# Dragon charged successfully
+dragon_world_new_game.0012 = {
+	type = character_event
+	title = dragon_world_new_game.0012.t
+	desc = dragon_world_new_game.0012.desc
+
+	# gains Dragon artefact
+	# gains major Prestige (or major Piety if zealous)
+	option = {
+		name = dragon_world_new_game.0012.a
+
+		trigger_event = dragon_spawn.0006
+		if = {
+			limit = {
+				not = {
+					has_trait = zealous
+				}
+			}
+			prestige = 750
+		}
+		if = {
+			limit = {
+				has_trait = zealous
+			}
+			piety = 750
+		}
+	}
+}
+# Dragon unmounted character
+dragon_world_new_game.0013 = {
+	type = character_event
+	title = dragon_world_new_game.0013.t
+	desc = dragon_world_new_game.0013.desc
+
+	# gains wounded or maimed (80/20) if not wounded else maimed
+	immediate = {
+		if = {
+			limit = { 
+				not = {
+					has_trait = wounded
+				}
+			}
+			random_list = {
+				80 = { add_trait = wounded }
+				20 = { add_trait = maimed }
+			}
+		}
+		if = {
+			limit = { 
+				has_trait = wounded
+			}
+			add_trait = maimed
+		}
+	}
+
+	# loses small amount of prestige
+	option = {
+		name = dragon_world_new_game.0013.a
+
+		prestige = -150
+	}
+
+	# If not maimed can try again but will become maimed if fails
+	option = {
+		name = dragon_world_new_game.0013.b
+		
+		show_as_unavailable = {
+			has_trait = maimed
+		}
+
+		trigger = {
+			not = {
+				has_trait = maimed
+			}
+		}
+		
+		random_list = {
+			60 = { trigger_event = dragon_world_new_game.0012 }
+			40 = { trigger_event = dragon_world_new_game.0013 }
+		}
+	}
+}
+
+
+# Attempt to earn the dragon rider trait
+dragon_world_new_game.0004 = {
+	type = character_event
+	title = dragon_world_new_game.0004.t
+	desc = dragon_world_new_game.0004.desc
+
+	option = {
+		name = dragon_world_new_game.0004.a
+		add_trait = novice_dragon_rider
+	}
+	# optional extra if character has a dragon rider in their court/realm
+	option = {
+		name = dragon_world_new_game.0004.b
+		trigger = {
+			any_courtier = {
+				OR = {
+					has_trait = novice_dragon_rider
+					has_trait = dragon_rider
+					has_trait = renowned_dragon_rider
+				}
+			}
+		}
+		show_as_unavailable = {
+			not = {
+				any_courtier = {
+					OR = {
+						has_trait = novice_dragon_rider
+						has_trait = dragon_rider
+						has_trait = renowned_dragon_rider
+					}
+				}
+			}
+		}
+		every_courtier = {
+			if = {
+				limit = {
+					OR = {
+						has_trait = novice_dragon_rider
+						has_trait = dragon_rider
+						has_trait = renowned_dragon_rider
+					}
+				}
+				add_opinion = {
+					modifier = helpful_vassal_opinion
+					target = root
+				}
+			}
+		}
+		add_trait = novice_dragon_rider
+	}
+	option = {
+		name = dragon_world_new_game.0004.c
+		add_gold = 100
+	}
+}
+
+# Train with Dragon event
+dragon_world_new_game.0005 = {
+	type = character_event
+	title = dragon_rider_events.0001b.t
+	desc = dragon_rider_events.0001b.desc
+
+	left_portrait = {
+		character = ROOT
+	}
+
+	option = {
+		name = dragon_rider_events.0001b.a
+		add_prestige = 150
+		add_character_modifier = rode_dragon
+		random_list = {
+			30 = {
+				trigger = {
+					has_trait = dragon_rider
+				}
+				remove_trait = dragon_rider
+				add_trait = renowned_dragon_rider
+			}
+			100 = {
+				trigger = {
+					has_trait = novice_dragon_rider
+				}
+				remove_trait = novice_dragon_rider
+				add_trait = dragon_rider
+			}
+			100 = {}
+		}
+	}
+	option = {
+		name = dragon_rider_events.0001b.b
+		add_prestige = 350
+	}
+	option = {
+		name = dragon_rider_events.0001b.c
+		add_piety = 100
+	}
+}

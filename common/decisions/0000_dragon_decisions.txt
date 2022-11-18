@@ -1,0 +1,234 @@
+# look_for_dragons_decision = {
+#     picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+    
+#     desc = look_for_dragons_decision_desc
+
+#     is_shown = {
+#         is_landed = yes
+#         is_adult = yes
+#     }
+
+#     cost = { gold = 100 }
+
+#     is_valid = {
+#         gold > 100
+#     }
+
+#     effect = {
+#         root = { trigger_event = dragon_decision_event.0001 }
+#     }
+# }
+
+attempt_to_train_dragon_decision = {
+    picture = "gfx/interface/illustrations/decisions/dragon_taming_image.dds"
+
+    desc = attempt_to_train_dragon_decision_desc
+
+	major = yes
+	ai_goal = yes
+
+	ai_will_do = 100
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+		OR = {
+			has_trait = novice_dragon_rider
+			has_trait = dragon_rider
+			has_trait = renowned_dragon_rider
+		}
+    }
+
+    cost = {
+        gold = 250
+    }
+
+    is_valid = {
+        gold > 250
+		OR = {
+			has_trait = novice_dragon_rider
+			has_trait = dragon_rider
+			has_trait = renowned_dragon_rider
+		}
+        NOT = {
+            any_character_artifact = {
+                artifact_type = dragon
+            }
+        }
+    }
+
+    effect = {
+        root = { trigger_event = dragon_world_new_game.0003 }
+    }
+}
+
+attempt_to_learn_dragon_rider_decision = {
+    picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+
+    desc = attempt_to_learn_dragon_rider_decision_desc
+
+	major = yes
+	ai_goal = yes
+
+	ai_will_do = 100
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+        not = {
+            OR = {
+                has_trait = novice_dragon_rider
+                has_trait = dragon_rider
+                has_trait = renowned_dragon_rider
+            }
+        }
+    }
+
+    cost = {
+        gold = 100
+    }
+
+    is_valid = {
+        gold > 100
+        not = {
+            AND = {
+                OR = {
+                    has_trait = novice_dragon_rider
+                    has_trait = dragon_rider
+                    has_trait = renowned_dragon_rider
+                }
+            }
+        }
+    }
+
+    effect = {
+        root = { trigger_event = dragon_world_new_game.0004 }
+    }
+}
+
+recruit_dragon_rider_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_invite_knights.dds"
+	sort_order = 75
+
+	ai_check_interval = 120
+
+	cooldown = { years = 3 }
+
+    desc = recruit_dragon_rider_decision_decision_desc
+
+	ai_goal = yes
+
+	ai_will_do = 100
+
+
+	ai_potential = {
+        is_landed = yes
+        is_adult = yes
+        OR = {
+            has_trait = novice_dragon_rider
+            has_trait = dragon_rider
+            has_trait = renowned_dragon_rider
+        }
+	}
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+        OR = {
+            has_trait = novice_dragon_rider
+            has_trait = dragon_rider
+            has_trait = renowned_dragon_rider
+        }
+    }
+
+	cost = {
+		gold = {
+			value = minor_gold_value
+		}
+		prestige = {
+			value = medium_prestige_value
+		}
+	}
+
+    is_valid = {
+        gold > 50
+        AND = {
+            OR = {
+                has_trait = novice_dragon_rider
+                has_trait = dragon_rider
+                has_trait = renowned_dragon_rider
+            }
+        }
+    }
+
+    effect = {
+        custom_tooltip = recruit_dragon_rider_specialist_decision.tt
+        hidden_effect = {
+            recruit_terrain_specialist_effect = {
+                SPECIALIST_TRAIT = renowned_dragon_rider
+                SPECIALIST_TEMPLATE_CHARACTER = dragon_rider_commander_character
+            }
+        }
+    }
+
+	ai_will_do = {
+		base = 100
+
+		modifier = {
+			factor = 0
+			any_courtier = {
+                OR = {
+                    has_trait = novice_dragon_rider
+                    has_trait = dragon_rider
+                    has_trait = renowned_dragon_rider
+                }
+			}
+		}
+	}
+}
+
+train_with_dragon_decision = {
+    picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+
+    desc = train_with_dragon_decision_desc
+
+	major = yes
+	ai_goal = yes
+
+	# cooldown = { years = 3 }
+    
+	ai_will_do = 100
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+		OR = {
+			has_trait = novice_dragon_rider
+			has_trait = dragon_rider
+			has_trait = renowned_dragon_rider
+		}
+        any_character_artifact = {
+            artifact_type = dragon
+        }
+    }
+
+    cost = {
+        gold = 250
+    }
+
+    is_valid = {
+        gold > 250
+		OR = {
+			has_trait = novice_dragon_rider
+			has_trait = dragon_rider
+			has_trait = renowned_dragon_rider
+		}
+        any_equipped_character_artifact = {
+            artifact_type = dragon
+        }
+    }
+
+    effect = {
+        root = { trigger_event = dragon_world_new_game.0005 }
+    }
+}

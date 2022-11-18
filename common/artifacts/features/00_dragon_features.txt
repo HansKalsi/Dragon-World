@@ -1,0 +1,43 @@
+##########################
+# Dragon Features - Type #
+##########################
+
+# dragon_type
+	dragon_type_fire = {
+		group = dragon_type
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:owner.var:dragon_artifact_type }
+				scope:owner.var:dragon_artifact_type = flag:fire_dragon
+			}
+		}
+		weight = {
+			value = 1
+		}
+	}
+
+	dragon_type_water = {
+		group = dragon_type
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:owner.var:dragon_artifact_type }
+				scope:owner.var:dragon_artifact_type = flag:water_dragon
+			}
+		}
+		weight = {
+			value = 1
+		}
+	}
+
+	dragon_type_stone = {
+		group = dragon_type
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:owner.var:dragon_artifact_type }
+				scope:owner.var:dragon_artifact_type = flag:stone_dragon
+			}
+		}
+		weight = {
+			value = 1
+		}
+	}

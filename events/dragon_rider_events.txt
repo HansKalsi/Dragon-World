@@ -1,0 +1,22 @@
+namespace = dragon_rider_events
+
+dragon_rider_events.0001a = {
+	scope = artifact
+	hidden = yes
+
+	immediate = {
+		# Artifact is a character artifact (not a court artifact)
+		limit = {
+			category = inventory
+			exists = scope:owner
+			scope:owner = {
+				is_alive = yes
+			}
+			artifact_type = dragon
+		}
+		save_scope_as = root_equipped_dragon_artifact
+		scope:owner = {
+			trigger_event = dragon_rider_events.0001b
+		}
+	}
+}

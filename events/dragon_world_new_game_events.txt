@@ -143,8 +143,9 @@ dragon_world_new_game.0007 = {
 	
 	# dies
 	option = {
+		name = dragon_world_new_game.0007.a
 		death = {
-			death_reason = death_laughter
+			death_reason = death_dragon_ate
 		}
 	}
 }
@@ -158,6 +159,7 @@ dragon_world_new_game.0008 = {
 	# gains dread
 	# angers everyone (Dragons are seen as magestic)
 	option = {
+		name = dragon_world_new_game.0008.a
 		add_character_modifier = ate_dragon
 	}
 }
@@ -191,6 +193,7 @@ dragon_world_new_game.0009 = {
 			add_piety = 250
 		}
 		trigger_event = dragon_spawn.0006
+		custom_tooltip = spawn_dragon_tooltip
 	}
 }
 # Dragon does not trust character
@@ -226,8 +229,11 @@ dragon_world_new_game.0010 = {
 			}
 		}
 		random_list = {
-			60 = { trigger_event = dragon_world_new_game.0012 }
-			40 = { death = { death_reason = death_laughter }  }
+			60 = {
+				trigger_event = dragon_world_new_game.0012
+				custom_tooltip = successfully_charged_dragon.tt
+			}
+			40 = { death = { death_reason = death_laughter } }
 		}
 	}
 }
@@ -243,8 +249,8 @@ dragon_world_new_game.0011 = {
 	option = {
 		name = dragon_world_new_game.0011.a
 
-		prestige = -250
-		stress = -50
+		add_prestige = -250
+		add_stress = -50
 	}
 }
 
@@ -260,19 +266,20 @@ dragon_world_new_game.0012 = {
 		name = dragon_world_new_game.0012.a
 
 		trigger_event = dragon_spawn.0006
+		custom_tooltip = spawn_dragon_tooltip
 		if = {
 			limit = {
 				not = {
 					has_trait = zealous
 				}
 			}
-			prestige = 750
+			add_prestige = 750
 		}
 		if = {
 			limit = {
 				has_trait = zealous
 			}
-			piety = 750
+			add_piety = 750
 		}
 	}
 }
@@ -307,7 +314,7 @@ dragon_world_new_game.0013 = {
 	option = {
 		name = dragon_world_new_game.0013.a
 
-		prestige = -150
+		add_prestige = -250
 	}
 
 	# If not maimed can try again but will become maimed if fails
@@ -325,8 +332,14 @@ dragon_world_new_game.0013 = {
 		}
 		
 		random_list = {
-			60 = { trigger_event = dragon_world_new_game.0012 }
-			40 = { trigger_event = dragon_world_new_game.0013 }
+			60 = {
+				trigger_event = dragon_world_new_game.0012
+				custom_tooltip = successfully_charged_dragon.tt
+			}
+			40 = {
+				trigger_event = dragon_world_new_game.0013
+				custom_tooltip = thrown_off_dragon.tt
+			}
 		}
 	}
 }

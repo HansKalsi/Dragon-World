@@ -1,0 +1,4 @@
+death_dragon_ate = {
+	public_knowledge = yes
+	icon = "death_natural.dds"
+}

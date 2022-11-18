@@ -5,7 +5,7 @@
 	dragon_world_new_game.0001.a:0 "Let's get started!"
 
 	dragon_spawn.0005.t:0 "No Dragon Tamed"
-	dragon_spawn.0005.desc:0 "We failed to tame a dragon this time..."
+	dragon_spawn.0005.desc:0 "We failed to tame the dragon this time..."
 	dragon_spawn.0005.a:0 "Shame."
 
 	artifact_test_dragon_name:1 "Testing Dragon"
@@ -33,7 +33,7 @@
 	dragon_world_new_game.0003.b:0 "Perhaps another time..."
 
 	dragon_world_new_game.0006.t:0 "The Beast Approaches"
-	dragon_world_new_game.0006.desc:0 "PLACEHOLDER found dragon."
+	dragon_world_new_game.0006.desc:0 "As the dragon approaches, you feel a sense of dread overwhelmed by doubt. Its eyes are fierce and skin sharp... The dragon shakes its head in your direction and breaths a small fireblast, now it is your move..."
 	dragon_world_new_game.0006.a:0 "Throw yourself wildly at the Dragon!"
 	dragon_world_new_game.0006.food:0 "Looks like Dragon is back on the menu boys!"
 	dragon_world_new_game.0006.trust:0 "Reach out your hand to the mighty Dragon"
@@ -44,6 +44,30 @@
 	dragon_world_new_game.0009.desc:0 "[ROOT.Char.GetFirstName|U] reaches out their hand out to the Dragon and to their surpise the Dragon responds by gently rests its head in the open palm of your hand."
 	dragon_world_new_game.0009.a:0 "Together we are unstoppable"
 
+	dragon_world_new_game.0011.t:0 "The Great Escape"
+	dragon_world_new_game.0011.desc:0 "[ROOT.Char.GetFirstName|U] is out of breath and wheezing, but has managed to successfully evade the Dragon"
+	dragon_world_new_game.0011.a:0 "Finally I am safe..."
+
+	dragon_world_new_game.0007.t:0 "Dragons Dinner"
+	dragon_world_new_game.0007.desc:0 "After a struggle with the Dragon, [ROOT.Char.GetFirstName|U] was eaten"
+	dragon_world_new_game.0007.a:0 "Oof"
+
+	dragon_world_new_game.0008.t:0 "[ROOT.Char.GetFirstName|U]'s Dinner"
+	dragon_world_new_game.0008.desc:0 "After a brief scuffle with the Dragon it was subdued and promptly killed then boiled, now I will finally know what Dragon flesh tastes like"
+	dragon_world_new_game.0008.a:0 "*munches*"
+
+	dragon_world_new_game.0013.t:0 "Unmounted"
+	dragon_world_new_game.0013.desc:0 "After a struggle with the Dragon, [ROOT.Char.GetFirstName|U] was shaken off and unmounted causing injury, the fight is practically over..."
+	dragon_world_new_game.0013.a:0 "Retreat"
+	dragon_world_new_game.0013.b:0 ""Never!""
+
+	dragon_world_new_game.0012.t:0 "Dragon Subdued"
+	dragon_world_new_game.0012.desc:0 "After a struggle with the Dragon, [ROOT.Char.GetFirstName|U] has managed to subdue it - they are now in total control"
+	dragon_world_new_game.0012.a:0 "Huzzah!"
+
+	dragon_world_new_game.0010.t:0 "Untrustworthy"
+	dragon_world_new_game.0010.desc:0 "[ROOT.Char.GetFirstName|U] reaches out their hand out to the Dragon but it does not respond, instead it manages to show outright disinterest..."
+	dragon_world_new_game.0010.a:0 "Have it your way then!"
 
 	dragon_spawn.0006.t:0 "Dragon Tamed"
 	dragon_spawn.0006.desc:0 "I have managed to tame a mighty Dragon!"
@@ -85,3 +109,9 @@
 	escaped_from_dragon.tt:0 "You escape the Dragon"
 	successfully_charged_dragon.tt:0 "You successfully mount the Dragon"
 	thrown_off_dragon.tt:0 "The Dragon shakes you off"
+
+	# Custom Deaths
+	death_dragon_ate:0 "was eaten by a Dragon"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "A dragon is spawned"

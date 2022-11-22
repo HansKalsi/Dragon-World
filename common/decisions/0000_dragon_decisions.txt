@@ -242,7 +242,6 @@ demand_gold_from_the_populace_decision = {
 
     desc = demand_gold_from_the_populace_decision_desc
 
-	# major = yes
 	# ai_goal = yes
 
 	cooldown = { years = 5 }

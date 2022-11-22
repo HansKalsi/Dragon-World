@@ -16,3 +16,11 @@
  innovation_dragon_taming:0 "Dragon Taming"
  dragon_maa:0 "Dragon"
  dragon_maa_flavor:0 "Dragons are mighty creatures capable of immense power and destruction"
+
+  # Dragon name
+	# custom_dragon_name:0 "[this_artifact.GetName]"
+
+  # custom_loc_cl:0 "[GetPlayer.Custom('customizable_localization_custom_loc')]" # Could also be replaced with Root.Char.Custom(x) to scope to root rather than player
+  # custom_loc:0 "[ROOT.Var('custom_loc_var')]"
+  # custom_loc:0 "[ROOT.Var('custom_loc_var').GetFlagName]"
+  # custom_loc_default:0 "Default entry"

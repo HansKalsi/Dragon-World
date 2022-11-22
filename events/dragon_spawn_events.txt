@@ -47,10 +47,22 @@ dragon_spawn.0005 = {
 	}
 }
 
+# Spawn Dragon & Allow Custom Name
 dragon_spawn.0006 = {
 	type = character_event
 	title = dragon_spawn.0006.t
 	desc = dragon_spawn.0006.desc
+
+	theme = pet
+	# theme = family
+	override_background = {
+		event_background = courtyard
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
 
 	artifact = { # To display the artifact in the event-window
 		target = scope:newly_created_artifact
@@ -58,10 +70,52 @@ dragon_spawn.0006 = {
 	}
 
 	immediate = {
+		# random_memory = {
+		# 	limit = { has_memory_type = dragon_tamed }
+		# 	save_scope_as = dragon_tamed_memory
+		# }
+		play_music_cue = "mx_cue_low_key_positive"
 		create_character_memory = {
 			type = dragon_tamed
 		}
+		# if = {
+		# 	limit = { exists = scope:bday_memory.var:bday_artifact_gift }
+		# 	scope:bday_memory.var:bday_artifact_gift = { save_scope_as = old_bday_gift }
+		# }
+        # save_scope_as = root_char
 	}
+
+	#DRAGON NAMING WIDGET
+	# widgets = {
+    #     # widget = {
+    #     #     gui = "custom_loc_widget"  
+    #     #     container = "customizable_localization_custom_loc"
+    #     #     controller = {
+    #     #         type = text
+    #     #         data = {
+    #     #             variable = custom_loc_var # This is the var that's gonna be referenced through localization
+    #     #             default = "Dragon"
+    #     #         }  
+    #     #     }
+    #     #     setup_scope = {
+    #     #         root = { save_scope_as = text_target }
+    #     #     }
+    #     # }
+    #     widget = {
+    #         gui = "event_window_widget_enter_text"  
+    #         container = "dynamic_birth_name"
+    #         controller = {
+    #             type = text
+    #             data = {
+    #                 variable = custom_loc_var # This is the var that's gonna be referenced through localization
+    #                 default = "Dragon"
+    #             }  
+    #         }
+    #         setup_scope = {
+    #             root = { save_scope_as = text_target }
+    #         }
+    #     }
+    # }
 
 	option = {
 		name = dragon_spawn.0006.a
@@ -71,6 +125,7 @@ dragon_spawn.0006 = {
 			30 = {
 				create_artifact_fire_dragon_effect = {
 					OWNER = root
+					# DRAGON_NAME = scope:name_character_target
 				}
 				save_scope_value_as = {
 					name = dragon
@@ -94,6 +149,8 @@ dragon_spawn.0006 = {
 			30 = {
 				create_artifact_water_dragon_effect = {
 					OWNER = root
+					# DRAGON_NAME = dragon_name
+					# DRAGON_NAME = scope:name_character_target
 				}
 				save_scope_value_as = {
 					name = dragon
@@ -117,6 +174,7 @@ dragon_spawn.0006 = {
 			30 = {
 				create_artifact_stone_dragon_effect = {
 					OWNER = root
+					# DRAGON_NAME = scope:name_character_target
 				}
 				save_scope_value_as = {
 					name = dragon

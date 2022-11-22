@@ -14,6 +14,10 @@ dragon_modifier = {
 	dread_gain_mult = 0.5
 	prowess = 12
 	martial = 2
+	advantage = 10
+	siege_phase_time = -0.2
+	casualty_modifier = 0.2
+	hard_casualty_modifier = -0.1
 }
 
 rode_dragon = {
@@ -35,4 +39,9 @@ ate_dragon = {
 trusted_by_dragon = {
 	icon = fertility_positive
 	general_opinion = 25
+}
+
+gold_extracted_with_dragon = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = -25
 }

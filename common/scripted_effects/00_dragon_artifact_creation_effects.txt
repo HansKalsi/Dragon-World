@@ -28,6 +28,7 @@
 create_artifact_water_dragon_effect = { #Create at start
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
 	set_artifact_rarity_illustrious = yes
 
@@ -55,6 +56,7 @@ create_artifact_water_dragon_effect = { #Create at start
 create_artifact_fire_dragon_effect = { #Create at start
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
 	set_artifact_rarity_illustrious = yes
 
@@ -82,6 +84,7 @@ create_artifact_fire_dragon_effect = { #Create at start
 create_artifact_stone_dragon_effect = { #Create at start
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
 	set_artifact_rarity_illustrious = yes
 

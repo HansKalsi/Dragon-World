@@ -33,3 +33,13 @@
   train_with_dragon_decision_desc:0 "Train with your Dragon and have the chance to upgrade your Dragon Rider tier"
   train_with_dragon_decision_confirm:0 "Train with your Dragon"
   train_with_dragon_decision_tooltip:0 "Training gives various rewards and gives a chance to upgrade your Dragon Rider tier"
+
+  # Demand Gold from Populace with Dragon decision
+  demand_gold_from_the_populace_decision:0 "Demand Gold from the Populace"
+  demand_gold_from_the_populace_decision_desc:0 "Mount your Dragon and ride out to extract gold from the populace"
+  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_tooltip:0 "Extract gold from the populace and risk angering them"
+
+  dragon_rider_events.0014.t:0 "Demand Gold from the Populace"
+  dragon_rider_events.0014.desc:0 "Come, it's time to fly..."
+  dragon_rider_events.0014.a:0 ""Volare!""

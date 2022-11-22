@@ -1,0 +1,9 @@
+# DragonName = {
+#     type = character
+#     # type = artifact
+
+#     text = {
+#         # trigger = { ROOT = { has_variable = custom_loc_var } }
+#         localization_key = custom_loc
+#     }
+# }

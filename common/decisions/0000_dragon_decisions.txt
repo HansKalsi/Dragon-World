@@ -59,6 +59,7 @@ attempt_to_train_dragon_decision = {
 
     effect = {
         root = { trigger_event = dragon_world_new_game.0003 }
+        add_stress = 40
     }
 }
 
@@ -195,7 +196,7 @@ train_with_dragon_decision = {
 	major = yes
 	ai_goal = yes
 
-	# cooldown = { years = 3 }
+	cooldown = { months = 3 }
     
 	ai_will_do = 100
 
@@ -213,11 +214,11 @@ train_with_dragon_decision = {
     }
 
     cost = {
-        gold = 250
+        gold = 100
     }
 
     is_valid = {
-        gold > 250
+        gold > 100
 		OR = {
 			has_trait = novice_dragon_rider
 			has_trait = dragon_rider
@@ -229,6 +230,59 @@ train_with_dragon_decision = {
     }
 
     effect = {
+        add_stress = 20
+		custom_tooltip = start_hunt_decision_prestige
         root = { trigger_event = dragon_world_new_game.0005 }
+    }
+}
+
+demand_gold_from_the_populace_decision = {
+    picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+	sort_order = 75
+
+    desc = demand_gold_from_the_populace_decision_desc
+
+	# major = yes
+	# ai_goal = yes
+
+	cooldown = { years = 5 }
+    
+	# ai_will_do = 100
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+		OR = {
+			has_trait = novice_dragon_rider
+			has_trait = dragon_rider
+			has_trait = renowned_dragon_rider
+		}
+        any_character_artifact = {
+            artifact_type = dragon
+        }
+    }
+
+    cost = {
+		piety = 250
+    }
+
+    is_valid = {
+        piety > 250
+		OR = {
+			has_trait = novice_dragon_rider
+			has_trait = dragon_rider
+			has_trait = renowned_dragon_rider
+		}
+        any_equipped_character_artifact = {
+            artifact_type = dragon
+        }
+    }
+
+    effect = {
+        if = {
+            limit = { has_trait = sadistic }
+            add_stress = -50
+        }
+        root = { trigger_event = dragon_world_new_game.0014 }
     }
 }

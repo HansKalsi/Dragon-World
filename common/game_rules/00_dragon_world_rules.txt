@@ -1,0 +1,18 @@
+# Dragon World Custom Rules
+
+# AI role in Dragon World
+# Non-existent
+# Normal
+# Dragon Lords
+
+ai_dragon_world_role = {
+	default = default_ai_role
+
+	non_existent_ai_role = {
+		flag = blocks_achievements
+	}
+
+	default_ai_role = {}
+
+	dragon_lords_ai_role = {}
+}

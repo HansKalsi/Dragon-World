@@ -25,8 +25,14 @@ attempt_to_train_dragon_decision = {
     desc = attempt_to_train_dragon_decision_desc
 
 	major = yes
-	ai_goal = yes
 
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
+    }
+	ai_goal = yes
 	ai_will_do = 100
 
     is_shown = {
@@ -69,9 +75,15 @@ attempt_to_learn_dragon_rider_decision = {
     desc = attempt_to_learn_dragon_rider_decision_desc
 
 	major = yes
-	ai_goal = yes
 
-	ai_will_do = 100
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
+    }
+    ai_goal = yes
+    ai_will_do = 100
 
     is_shown = {
         is_landed = yes
@@ -111,18 +123,15 @@ recruit_dragon_rider_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_invite_knights.dds"
 	sort_order = 75
 
-	ai_check_interval = 120
-
 	cooldown = { years = 3 }
 
     desc = recruit_dragon_rider_decision_decision_desc
 
-	ai_goal = yes
-
-	ai_will_do = 100
-
-
-	ai_potential = {
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
         is_landed = yes
         is_adult = yes
         OR = {
@@ -130,7 +139,23 @@ recruit_dragon_rider_decision = {
             has_trait = dragon_rider
             has_trait = renowned_dragon_rider
         }
-	}
+    }
+    ai_goal = yes
+
+    ai_will_do = {
+        base = 100
+
+        modifier = {
+            factor = 0
+            any_courtier = {
+                OR = {
+                    has_trait = novice_dragon_rider
+                    has_trait = dragon_rider
+                    has_trait = renowned_dragon_rider
+                }
+            }
+        }
+    }
 
     is_shown = {
         is_landed = yes
@@ -171,21 +196,6 @@ recruit_dragon_rider_decision = {
             }
         }
     }
-
-	ai_will_do = {
-		base = 100
-
-		modifier = {
-			factor = 0
-			any_courtier = {
-                OR = {
-                    has_trait = novice_dragon_rider
-                    has_trait = dragon_rider
-                    has_trait = renowned_dragon_rider
-                }
-			}
-		}
-	}
 }
 
 train_with_dragon_decision = {
@@ -194,10 +204,16 @@ train_with_dragon_decision = {
     desc = train_with_dragon_decision_desc
 
 	major = yes
-	ai_goal = yes
 
 	cooldown = { months = 3 }
-    
+
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
+    }
+    ai_goal = yes
 	ai_will_do = 100
 
     is_shown = {
@@ -242,11 +258,16 @@ demand_gold_from_the_populace_decision = {
 
     desc = demand_gold_from_the_populace_decision_desc
 
-	# ai_goal = yes
-
 	cooldown = { years = 5 }
     
-	# ai_will_do = 100
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
+    }
+	ai_goal = yes
+	ai_will_do = 100
 
     is_shown = {
         is_landed = yes

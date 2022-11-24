@@ -1,0 +1,9 @@
+﻿l_english:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! AI Role"
+  setting_non_existent_ai_role:0 "Non-existent"
+  setting_non_existent_ai_role_desc:0 "AI will not be allowed to use Dragon World features"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "AI will use Dragon World features"
+  setting_dragon_lords_ai_role:0 "Dragon Lords"
+  setting_dragon_lords_ai_role_desc:0 "AI will increase their usage of Dragon World features, increasing the odds of other Dragon Lords to rise (#R This currently has the same effect as normal role #!, it will be expanded upon in the future)"

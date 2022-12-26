@@ -13,6 +13,19 @@
  dragon_decision_event.0002.a:0 "Time to claim my trophy!"
  dragon_decision_event.0002.b:0 "I cannot kill such a magnificent beast"
 
+ dragon_decision_event.0003.t:0 "Dragon Egg found"
+ dragon_decision_event.0003.desc:0 "We have found a Dragon Egg in a nearby cave, what a wonderous day!"
+ dragon_decision_event.0003.a:0 "You shall grow into a mighty beast!"
+
+ dragon_egg_events.0002.t:0 "Dragon Egg hatched"
+ dragon_egg_events.0002.desc:0 "My Dragon Egg has finally hatched!"
+ dragon_egg_events.0002.a:0 "You shall grow into a mighty beast!"
+
+ dragon_artefact_events.0002.t:0 "Dragon Bond"
+ dragon_artefact_events.0002.desc:0 "My Dragon is ageing, and our bond has become stronger from our time together!"
+ dragon_artefact_events.0002.a:0 ""Nos aetate...""
+ dragon_artefact_events.0002.b:0 ""Volare!""
+
  innovation_dragon_taming:0 "Dragon Taming"
  dragon_maa:0 "Dragon"
  dragon_maa_flavor:0 "Dragons are mighty creatures capable of immense power and destruction"

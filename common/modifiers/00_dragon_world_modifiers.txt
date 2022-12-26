@@ -53,7 +53,7 @@ dragon_egg_modifier = {
 }
 
 dragon_bond_income_modifier = {
-	monthly_income_mult = 0.02
+	monthly_income_mult = 0.05
 }
 
 dragon_bond_prestige_modifier = {

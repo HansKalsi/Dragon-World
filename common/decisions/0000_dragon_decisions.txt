@@ -251,7 +251,7 @@ demand_gold_from_the_populace_decision = {
 
 recruit_dragon_hatcher_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
-	sort_order = 100
+	sort_order = 74
 
 	cooldown = { years = 10 }
 
@@ -306,7 +306,7 @@ recruit_dragon_hatcher_decision = {
         hidden_effect = {
             recruit_terrain_specialist_effect = {
                 SPECIALIST_TRAIT = dragon_hatcher
-                SPECIALIST_TEMPLATE_CHARACTER = dragon_rider_commander_character
+                SPECIALIST_TEMPLATE_CHARACTER = dragon_hatcher_character
             }
         }
     }
@@ -314,6 +314,7 @@ recruit_dragon_hatcher_decision = {
 
 look_for_dragon_eggs_decision = {
     picture = "gfx/interface/illustrations/decisions/dragon_taming_image.dds"
+	sort_order = 73
 
     desc = look_for_dragon_eggs_decision_desc
 
@@ -329,6 +330,11 @@ look_for_dragon_eggs_decision = {
         is_landed = yes
         is_adult = yes
         has_dragon_rider_trigger = yes
+        NOT = {
+            any_character_artifact = {
+                artifact_type = dragon_egg
+            }
+        }
     }
 
     cost = {
@@ -338,9 +344,6 @@ look_for_dragon_eggs_decision = {
     is_valid = {
         gold > 100
         has_dragon_rider_trigger = yes
-        NOT = {
-            has_dragon_trigger = yes
-        }
     }
 
     effect = {

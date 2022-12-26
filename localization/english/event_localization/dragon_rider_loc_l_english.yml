@@ -31,6 +31,20 @@
 	recruit_dragon_rider_decision_confirm:0 "Recruit Specialist"
 	recruit_dragon_rider_decision_tooltip:0 "Recruit Renowned Dragon Rider to court"
 
+	# Recruit Dragon Hatcher decision
+	recruit_dragon_hatcher_decision:0 "Recruit Dragon Hatcher"
+	recruit_dragon_hatcher_decision_desc:0 "We will search for a Dragon Hatcher and invite them to our court"
+	recruit_dragon_hatcher_decision.tt:0 "Recruits a Dragon Hatcher to court"
+	recruit_dragon_hatcher_decision_confirm:0 "Recruit Specialist"
+	recruit_dragon_hatcher_decision_tooltip:0 "Recruit Dragon Hatcher to court"
+
+	# Look for Dragon Egg decision
+	look_for_dragon_eggs_decision:0 "Look for Dragon Egg"
+	look_for_dragon_eggs_decision_desc:0 "Search for a Dragon Egg"
+	look_for_dragon_eggs_decision.tt:0 "Recruits a Dragon Hatcher to court"
+	look_for_dragon_eggs_decision_confirm:0 "Find Dragon Egg"
+	look_for_dragon_eggs_decision_tooltip:0 "Recruit Dragon Hatcher to court"
+
   # Train with Dragon decision
   train_with_dragon_decision:0 "Train with Dragon"
   train_with_dragon_decision_desc:0 "Train with your Dragon and have the chance to upgrade your Dragon Rider tier"

@@ -1,9 +1,10 @@
-﻿on_game_start = {
-	events = {
-		dragon_world_new_game.0001
-	}
-}
+﻿# on_game_start = {
+# 	events = {
+# 		dragon_world_new_game.0001
+# 	}
+# }
 
+# For some reason this isn't triggering whilst the five year one is
 yearly_global_pulse = {
 	on_actions = {
 		on_dragon_egg_pulse
@@ -11,29 +12,20 @@ yearly_global_pulse = {
 }
 
 on_dragon_egg_pulse = {
-	trigger = {
-		any_character_artifact = {
-			artifact_type = dragon_egg
-		}
-	}
-	events = {
-		dragon_egg_events.0001
+	effect = {
+		trigger_event = dragon_egg_events.0001
 	}
 }
 
 five_year_everyone_pulse = {
 	on_actions = {
 		on_dragon_age_pulse
+		on_dragon_egg_pulse
 	}
 }
 
 on_dragon_age_pulse = {
-	trigger = {
-		any_character_artifact = {
-			artifact_type = dragon
-		}
-	}
-	events = {
-		dragon_artefact_events.0001
+	effect = {
+		trigger_event = dragon_artefact_events.0001
 	}
 }

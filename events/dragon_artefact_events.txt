@@ -1,0 +1,106 @@
+namespace = dragon_artefact_events
+
+dragon_artefact_events.0001 = {
+	scope = artifact
+	hidden = yes
+
+	immediate = {
+		# Artifact is a character artifact (not a court artifact)
+		limit = {
+			category = inventory
+			exists = scope:owner
+			scope:owner = {
+				is_alive = yes
+			}
+			artifact_type = dragon
+		}
+		save_scope_as = root_dragon_artifact
+		scope:owner = {
+			trigger_event = dragon_artefact_events.0002
+		}
+	}
+}
+
+dragon_artefact_events.0002 = {
+	type = character_event
+	title = dragon_artefact_events.0002.t
+	desc = dragon_artefact_events.0002.desc
+
+	if = {
+		limit = {
+			has_trait = education_martial
+		}
+		option = {
+			name = dragon_artefact_events.0002.a
+			add_martial_skill = 2
+		}
+		option = {
+			name = dragon_artefact_events.0002.b
+			add_prowess_skill = 5
+		}
+	}
+
+	if = {
+		limit = {
+			has_trait = education_stewardship
+		}
+		option = {
+			name = dragon_artefact_events.0002.c
+			add_stewardship_skill = 2
+		}
+		option = {
+			name = dragon_artefact_events.0002.d
+			add_character_modifier = {
+				modifier = dragon_bond_income_modifier
+			}	
+		}
+	}
+
+	if = {
+		limit = {
+			has_trait = education_learning
+		}
+		option = {
+			name = dragon_artefact_events.0002.e
+			add_learning_skill = 2
+		}
+		option = {
+			name = dragon_artefact_events.0002.f
+			add_character_modifier = {
+				modifier = dragon_bond_piety_modifier
+			}	
+		}
+	}
+
+	if = {
+		limit = {
+			has_trait = education_intrigue
+		}
+		option = {
+			name = dragon_artefact_events.0002.g
+			add_intrigue_skill = 2
+		}
+		option = {
+			name = dragon_artefact_events.0002.h
+			add_character_modifier = {
+				modifier = dragon_bond_dread_modifier
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			has_trait = education_diplomacy
+		}
+		option = {
+			name = dragon_artefact_events.0002.i
+			add_diplomacy_skill = 2
+		}
+		option = {
+			name = dragon_artefact_events.0002.j
+			add_character_modifier = {
+				modifier = dragon_bond_prestige_modifier
+			}
+		}
+	}
+}

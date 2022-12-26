@@ -20,3 +20,20 @@ on_dragon_egg_pulse = {
 		dragon_egg_events.0001
 	}
 }
+
+five_year_everyone_pulse = {
+	on_actions = {
+		on_dragon_age_pulse
+	}
+}
+
+on_dragon_age_pulse = {
+	trigger = {
+		any_character_artifact = {
+			artifact_type = dragon
+		}
+	}
+	events = {
+		dragon_artefact_events.0001
+	}
+}

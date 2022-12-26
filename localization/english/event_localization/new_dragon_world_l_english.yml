@@ -21,6 +21,9 @@
 	artifact_stone_dragon_name:1 "Stone Dragon"
 	artifact_stone_dragon:1 "This dragon was born in the heart of a mountain, but since it became too big for its original home, it now lives with its lord on their estate."
 
+	artifact_dragon_egg_name:1 "Dragon Egg"
+	artifact_dragon_egg:1 "A dragon egg."
+
 	# Dragon taming decision
 	attempt_to_train_dragon_decision:0 "Attempt to tame a Dragon"
 	attempt_to_train_dragon_decision_desc:0 "We know of a nearby dragon pit that will allow us to attempt to train one of its dragons..."
@@ -97,9 +100,13 @@
 	dragon_tamed_desc_second_perspective:1 "You succeeded in taming a Dragon"
 	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] succeeded in taming a Dragon"
 
-	# Chosen Dragon Knight court position
+	# Dragon World court positions
+	# Chosen Dragon Knight
 	chosen_dragon_knight_court_position:0 "Chosen Dragon Knight"
 	chosen_dragon_knight_court_position_desc:0 "The Chosen Dragon Knight is responsible for accompanying their liege in battle and can be their champion in any Dragon duels"
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "Dragon Hatcher"
+	dragon_hatcher_court_position_desc:0 "The Dragon Hatcher is responsible for taking care of their lieges dragon eggs and ensuring they are in suitable conditiions for hatching into great beasts!"
 
 	# Taming Event Tooltips
 	trusted_by_dragon.tt:0 "The Dragon trusts you"

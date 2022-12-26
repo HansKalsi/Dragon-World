@@ -38,6 +38,7 @@ dragon_world_new_game.0003 = {
 	option = {
 		name = dragon_world_new_game.0003.b
 		add_gold = 250
+		add_stress = -40
 	}
 }
 
@@ -360,32 +361,20 @@ dragon_world_new_game.0004 = {
 		name = dragon_world_new_game.0004.b
 		trigger = {
 			any_courtier = {
-				OR = {
-					has_trait = novice_dragon_rider
-					has_trait = dragon_rider
-					has_trait = renowned_dragon_rider
-				}
+				has_dragon_rider_trigger = yes
 			}
 		}
 		show_as_unavailable = {
 			not = {
 				any_courtier = {
-					OR = {
-						has_trait = novice_dragon_rider
-						has_trait = dragon_rider
-						has_trait = renowned_dragon_rider
-					}
+					has_dragon_rider_trigger = yes
 				}
 			}
 		}
 		every_courtier = {
 			if = {
 				limit = {
-					OR = {
-						has_trait = novice_dragon_rider
-						has_trait = dragon_rider
-						has_trait = renowned_dragon_rider
-					}
+					has_dragon_rider_trigger = yes
 				}
 				add_opinion = {
 					modifier = helpful_vassal_opinion

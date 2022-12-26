@@ -19,3 +19,7 @@ dragon_visual = {
 	icon = "dragon.dds"
 	asset = ep1_generic_jewelry_01_a_entity
 }
+
+dragon_egg_visual = {
+	icon = "dragon.dds"
+}

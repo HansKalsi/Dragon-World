@@ -42,14 +42,8 @@ dragon_maa = {
 
 	can_recruit = {
 		AND = {
-            OR = {
-                has_trait = novice_dragon_rider
-                has_trait = dragon_rider
-                has_trait = renowned_dragon_rider
-            }
-			any_equipped_character_artifact = {
-				artifact_type = dragon
-			}
+			has_dragon_rider_trigger = yes
+			has_dragon_equipped_trigger = yes
 		}
 	}
 }
@@ -98,14 +92,8 @@ dragon_riders_maa = {
 
 	can_recruit = {
 		AND = {
-            OR = {
-                has_trait = novice_dragon_rider
-                has_trait = dragon_rider
-                has_trait = renowned_dragon_rider
-            }
-			any_equipped_character_artifact = {
-				artifact_type = dragon
-			}
+			has_dragon_rider_trigger = yes
+			has_dragon_equipped_trigger = yes
 		}
 	}
 }

@@ -60,3 +60,25 @@ dragon_decision_event.0002 = {
         add_prestige = -100
     }
 }
+
+# Look for dragon eggs event
+dragon_decision_event.0003 = {
+    type = character_event
+    title = dragon_decision_event.0003.t
+    desc = dragon_decision_event.0003.desc
+
+	left_portrait = root
+	theme = death
+
+	immediate = {
+		play_music_cue = mx_cue_stress
+	}
+
+    # Accept Egg
+    option = {
+        name = dragon_decision_event.0003.a
+
+        add_piety = 100
+        trigger_event = dragon_spawn.0007
+    }
+}

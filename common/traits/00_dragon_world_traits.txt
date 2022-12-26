@@ -44,3 +44,18 @@ renowned_dragon_rider = {
 
 	icon = dragon_rider.dds
 }
+
+dragon_hatcher = {
+	learning = 4
+	health = -0.25
+	
+	ruler_designer_cost = 40
+	
+	desc = trait_dragon_hatcher_desc
+	
+	fame = yes
+	
+	random_creation = 0.01
+
+	icon = dragon_rider.dds
+}

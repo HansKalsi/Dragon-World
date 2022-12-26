@@ -10,6 +10,9 @@
 	trait_renowned_dragon_rider:1 "Renowned Dragon Rider"
 	trait_renowned_dragon_rider_desc:1 "This character is a Dragon Rider veteran."
 
+	trait_dragon_hatcher:1 "Dragon Hatcher"
+	trait_dragon_hatcher_desc:1 "This character knows the ancient craft of how to hatch dragons from eggs."
+
   # Dragon Rider related events & decisions
   dragon_rider_events.0001b.t:0 "Train with your Dragon"
   dragon_rider_events.0001b.desc:0 "Bond and train with your Dragon to gain buffs and possibly to upgrade your Dragon Rider tier"

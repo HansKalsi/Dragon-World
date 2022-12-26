@@ -38,11 +38,7 @@ attempt_to_train_dragon_decision = {
     is_shown = {
         is_landed = yes
         is_adult = yes
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
+        has_dragon_rider_trigger = yes
     }
 
     cost = {
@@ -51,15 +47,9 @@ attempt_to_train_dragon_decision = {
 
     is_valid = {
         gold > 250
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
+        has_dragon_rider_trigger = yes
         NOT = {
-            any_character_artifact = {
-                artifact_type = dragon
-            }
+            has_dragon_trigger = yes
         }
     }
 
@@ -89,11 +79,7 @@ attempt_to_learn_dragon_rider_decision = {
         is_landed = yes
         is_adult = yes
         not = {
-            OR = {
-                has_trait = novice_dragon_rider
-                has_trait = dragon_rider
-                has_trait = renowned_dragon_rider
-            }
+            has_dragon_rider_trigger = yes
         }
     }
 
@@ -105,11 +91,7 @@ attempt_to_learn_dragon_rider_decision = {
         gold > 100
         not = {
             AND = {
-                OR = {
-                    has_trait = novice_dragon_rider
-                    has_trait = dragon_rider
-                    has_trait = renowned_dragon_rider
-                }
+                has_dragon_rider_trigger = yes
             }
         }
     }
@@ -134,11 +116,7 @@ recruit_dragon_rider_decision = {
         }
         is_landed = yes
         is_adult = yes
-        OR = {
-            has_trait = novice_dragon_rider
-            has_trait = dragon_rider
-            has_trait = renowned_dragon_rider
-        }
+        has_dragon_rider_trigger = yes
     }
     ai_goal = yes
 
@@ -148,11 +126,7 @@ recruit_dragon_rider_decision = {
         modifier = {
             factor = 0
             any_courtier = {
-                OR = {
-                    has_trait = novice_dragon_rider
-                    has_trait = dragon_rider
-                    has_trait = renowned_dragon_rider
-                }
+                has_dragon_rider_trigger = yes
             }
         }
     }
@@ -160,11 +134,7 @@ recruit_dragon_rider_decision = {
     is_shown = {
         is_landed = yes
         is_adult = yes
-        OR = {
-            has_trait = novice_dragon_rider
-            has_trait = dragon_rider
-            has_trait = renowned_dragon_rider
-        }
+        has_dragon_rider_trigger = yes
     }
 
 	cost = {
@@ -179,11 +149,7 @@ recruit_dragon_rider_decision = {
     is_valid = {
         gold > 50
         AND = {
-            OR = {
-                has_trait = novice_dragon_rider
-                has_trait = dragon_rider
-                has_trait = renowned_dragon_rider
-            }
+            has_dragon_rider_trigger = yes
         }
     }
 
@@ -219,14 +185,8 @@ train_with_dragon_decision = {
     is_shown = {
         is_landed = yes
         is_adult = yes
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
-        any_character_artifact = {
-            artifact_type = dragon
-        }
+        has_dragon_rider_trigger = yes
+        has_dragon_trigger = yes
     }
 
     cost = {
@@ -235,14 +195,8 @@ train_with_dragon_decision = {
 
     is_valid = {
         gold > 100
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
-        any_equipped_character_artifact = {
-            artifact_type = dragon
-        }
+        has_dragon_rider_trigger = yes
+        has_dragon_equipped_trigger = yes
     }
 
     effect = {
@@ -272,14 +226,8 @@ demand_gold_from_the_populace_decision = {
     is_shown = {
         is_landed = yes
         is_adult = yes
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
-        any_character_artifact = {
-            artifact_type = dragon
-        }
+		has_dragon_rider_trigger = yes
+        has_dragon_trigger = yes
     }
 
     cost = {
@@ -288,14 +236,8 @@ demand_gold_from_the_populace_decision = {
 
     is_valid = {
         piety > 250
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
-        any_equipped_character_artifact = {
-            artifact_type = dragon
-        }
+		has_dragon_rider_trigger = yes
+        has_dragon_equipped_trigger = yes
     }
 
     effect = {
@@ -304,5 +246,104 @@ demand_gold_from_the_populace_decision = {
             add_stress = -50
         }
         root = { trigger_event = dragon_world_new_game.0014 }
+    }
+}
+
+recruit_dragon_hatcher_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+	sort_order = 100
+
+	cooldown = { years = 10 }
+
+    desc = recruit_dragon_hatcher_decision_desc
+
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
+        is_landed = yes
+        is_adult = yes
+        has_dragon_rider_trigger = yes
+    }
+    ai_goal = yes
+
+    ai_will_do = {
+        base = 100
+
+        modifier = {
+            factor = 0
+            any_courtier = {
+                has_trait = dragon_hatcher
+            }
+        }
+    }
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+        has_dragon_rider_trigger = yes
+    }
+
+	cost = {
+		gold = {
+			value = minor_gold_value
+		}
+		prestige = {
+			value = medium_prestige_value
+		}
+	}
+
+    is_valid = {
+        gold > 50
+        AND = {
+            has_dragon_rider_trigger = yes
+        }
+    }
+
+    effect = {
+        custom_tooltip = recruit_dragon_hatcher_decision.tt
+        hidden_effect = {
+            recruit_terrain_specialist_effect = {
+                SPECIALIST_TRAIT = dragon_hatcher
+                SPECIALIST_TEMPLATE_CHARACTER = dragon_rider_commander_character
+            }
+        }
+    }
+}
+
+look_for_dragon_eggs_decision = {
+    picture = "gfx/interface/illustrations/decisions/dragon_taming_image.dds"
+
+    desc = look_for_dragon_eggs_decision_desc
+
+    # AI rule check
+    ai_potential = {
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
+    }
+	ai_will_do = 50
+
+    is_shown = {
+        is_landed = yes
+        is_adult = yes
+        has_dragon_rider_trigger = yes
+    }
+
+    cost = {
+        gold = 100
+    }
+
+    is_valid = {
+        gold > 100
+        has_dragon_rider_trigger = yes
+        NOT = {
+            has_dragon_trigger = yes
+        }
+    }
+
+    effect = {
+        root = { trigger_event = dragon_decision_event.0003 }
     }
 }

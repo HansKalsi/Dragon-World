@@ -1,0 +1,19 @@
+has_dragon_rider_trigger = {
+	OR = {
+		has_trait = novice_dragon_rider
+		has_trait = dragon_rider
+		has_trait = renowned_dragon_rider
+	}
+}
+
+has_dragon_trigger = {
+	any_character_artifact = {
+		artifact_type = dragon
+	}
+}
+
+has_dragon_equipped_trigger = {
+	any_equipped_character_artifact = {
+		artifact_type = dragon
+	}
+}

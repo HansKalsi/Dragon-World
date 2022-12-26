@@ -1,0 +1,38 @@
+namespace = dragon_egg_events
+
+dragon_egg_events.0001 = {
+	scope = artifact
+	hidden = yes
+
+	immediate = {
+		# Artifact is a character artifact (not a court artifact)
+		limit = {
+			category = inventory
+			exists = scope:owner
+			scope:owner = {
+				is_alive = yes
+			}
+			artifact_type = dragon_egg
+		}
+		save_scope_as = root_dragon_egg_artifact
+		random_list = {
+			50 = {
+				scope:owner = {
+					trigger_event = dragon_egg_events.0002
+				}
+			}
+			100 = {}
+		}
+	}
+}
+
+dragon_egg_events.0002 = {
+	type = character_event
+	title = dragon_egg_events.0002.t
+	desc = dragon_egg_events.0002.desc
+
+	option = {
+		name = dragon_egg_events.0002.a
+		trigger_event = dragon_spawn.0006
+	}
+}

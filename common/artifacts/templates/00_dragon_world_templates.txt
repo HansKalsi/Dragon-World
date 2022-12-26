@@ -7,11 +7,7 @@ dragon_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		OR = {
-			has_trait = novice_dragon_rider
-			has_trait = dragon_rider
-			has_trait = renowned_dragon_rider
-		}
+		has_dragon_rider_trigger = yes
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.

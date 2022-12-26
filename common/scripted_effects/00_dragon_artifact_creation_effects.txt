@@ -1,4 +1,4 @@
-﻿create_artifact_testing_dragon_effect = { #Create at start
+﻿create_artifact_testing_dragon_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
@@ -25,7 +25,7 @@
 	}
 }
 
-create_artifact_water_dragon_effect = { #Create at start
+create_artifact_water_dragon_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
@@ -53,7 +53,7 @@ create_artifact_water_dragon_effect = { #Create at start
 	}
 }
 
-create_artifact_fire_dragon_effect = { #Create at start
+create_artifact_fire_dragon_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
@@ -81,7 +81,7 @@ create_artifact_fire_dragon_effect = { #Create at start
 	}
 }
 
-create_artifact_stone_dragon_effect = { #Create at start
+create_artifact_stone_dragon_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
@@ -178,3 +178,31 @@ create_artifact_stone_dragon_effect = { #Create at start
 # 		}
 # 	}
 # }
+
+create_artifact_dragon_egg_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_dragon_egg_name
+		description = artifact_dragon_egg
+		type = dragon_egg
+		template = dragon_template
+		visuals = dragon_egg_visual
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = dragon_egg_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		# set_variable = { name = historical_unique_artifact value = yes }
+		# set_variable = riding_dragon
+		save_scope_as = epic
+	}
+}

@@ -209,3 +209,13 @@ dragon_spawn.0006 = {
 		}
 	}
 }
+
+# Spawn Dragon Egg
+dragon_spawn.0007 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		create_artifact_dragon_egg_effect = { OWNER = this }
+	}
+}

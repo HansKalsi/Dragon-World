@@ -1,0 +1,415 @@
+﻿l_french:
+  # LAST UPDATED: 15 Apr 2024
+  dragon_world_new_game.0001.t:0 "Bienvenue dans Dragon World"
+	dragon_world_new_game.0001.desc:0 "Actuellement en développement, j'espère que vous participerez activement à la discussion sur le workshop avec toutes vos suggestions !"
+	dragon_world_new_game.0001.a:0 "Commençons!"
+
+	dragon_spawn.0005.t:0 "Aucun dragon apprivoisé"
+	dragon_spawn.0005.desc:0 "Nous n'avons pas réussi à apprivoiser le dragon cette fois..."
+	dragon_spawn.0005.a:0 "Dommage."
+
+	artifact_test_dragon_name:1 "Test du dragon"
+	artifact_test_dragon:1 "Ce dragon est né des profondeurs du royaume des test"
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "Dragon de l'eau"
+	artifact_water_dragon:1 "Ce dragon est né dans les profondeurs des océans, mais réside désormais avec son seigneur dans leur domaine."
+
+	artifact_fire_dragon_name:1 "Dragon de feu"
+	artifact_fire_dragon:1 "Ce dragon est né au centre d'un volcan, après son éruption, le dragon trouve désormais du réconfort auprès de son chevaucheur."
+
+	artifact_stone_dragon_name:1 "Dragon de pierre"
+	artifact_stone_dragon:1 "Ce dragon est né au cœur d'une montagne, mais depuis qu'il est devenu trop grand pour sa demeure d'origine, il vit désormais avec son seigneur sur leur domaine."
+
+	artifact_dragon_egg_name:1 "Œuf de dragon"
+	artifact_dragon_egg:1 "Un œuf de dragon."
+
+	# Dragon taming decision
+	attempt_to_train_dragon_decision:0 "Tenter d'apprivoiser un dragon"
+	attempt_to_train_dragon_decision_desc:0 "Nous connaissons une fosse aux dragons à proximité qui nous permettra de tenter d'entraîner l'un de ses dragons..."
+	attempt_to_train_dragon_decision_confirm:0 "Préparez le voyage"
+	attempt_to_train_dragon_decision_tooltip:0 "Tentative d'apprivoiser un dragon"
+
+	dragon_world_new_game.0003.t:0 "La fosse aux Dragons"
+	dragon_world_new_game.0003.desc:0 "C'est ma chance d'apprivoiser un dragon."
+	dragon_world_new_game.0003.a:0 "Aujourd'hui c'est mon jour de chance !"
+	dragon_world_new_game.0003.b:0 "Peut-être une autre fois..."
+
+	dragon_world_new_game.0006.t:0 "La Bête approche"
+	dragon_world_new_game.0006.desc:0 "À mesure que le dragon s’approche, vous ressentez un sentiment d’effroi submergé par le doute. Ses yeux sont féroces et sa peau est acérée... Le dragon secoue la tête dans votre direction et crache une petite explosion de feu, c'est maintenant à vous de bouger..."
+	dragon_world_new_game.0006.a:0 "Jetez-vous sauvagement sur le Dragon !"
+	dragon_world_new_game.0006.food:0 "On dirait que Dragon est de retour au menu les garçons !"
+	dragon_world_new_game.0006.trust:0 "Tendre la main au puissant dragon"
+	dragon_world_new_game.0006.confident:0 "Chargez rapidement et grimpez sur le dos du Dragon"
+	dragon_world_new_game.0006.run:0 "Je dois partir d'ici !"
+
+	dragon_world_new_game.0009.t:0 "La confiance du Dragon"
+	dragon_world_new_game.0009.desc:0 "[ROOT.Char.GetFirstName|U] tend la main vers le dragon et, à sa grande surprise, le dragon répond en posant doucement sa tête dans la paume ouverte de sa main."
+	dragon_world_new_game.0009.a:0 "Ensemble, nous sommes inarrêtable"
+
+	dragon_world_new_game.0011.t:0 "La Grande Évasion"
+	dragon_world_new_game.0011.desc:0 "[ROOT.Char.GetFirstName|U] est à bout de souffle et a une respiration sifflante, mais a réussi à échapper au Dragon"
+	dragon_world_new_game.0011.a:0 "Enfin je suis en sécurité..."
+
+	dragon_world_new_game.0007.t:0 "Le Repas du Dragon"
+	dragon_world_new_game.0007.desc:0 "Après une lutte avec le Dragon, [ROOT.Char.GetFirstName|U] a été mangé"
+	dragon_world_new_game.0007.a:0 "Oof"
+
+	dragon_world_new_game.0008.t:0 "Le Repas de [ROOT.Char.GetFirstName|U]"
+	dragon_world_new_game.0008.desc:0 "Après une brève bagarre avec le Dragon, il a été maîtrisé et rapidement tué puis bouilli, maintenant je vais enfin savoir quel goût a la chair du Dragon."
+	dragon_world_new_game.0008.a:0 "*grignote*"
+
+	dragon_world_new_game.0013.t:0 "Désarçonné"
+	dragon_world_new_game.0013.desc:0 "Après une lutte avec le Dragon, [ROOT.Char.GetFirstName|U] a été secoué et désarçonné causant des blessures, le combat est pratiquement terminé..."
+	dragon_world_new_game.0013.a:0 "Retraite"
+	dragon_world_new_game.0013.b:0 ""Jamais!""
+
+	dragon_world_new_game.0012.t:0 "Dragon maîtrisé"
+	dragon_world_new_game.0012.desc:0 "Après une lutte avec le Dragon, [ROOT.Char.GetFirstName|U] a réussi à le maîtriser - ils ont désormais le contrôle total"
+	dragon_world_new_game.0012.a:0 "Huzzah!"
+
+	dragon_world_new_game.0010.t:0 "Indigne de confiance"
+	dragon_world_new_game.0010.desc:0 "[ROOT.Char.GetFirstName|U] tend la main au Dragon mais celui-ci ne répond pas, mais parvient à faire preuve d'un pur désintérêt..."
+	dragon_world_new_game.0010.a:0 "Faits comme tu le sens alors !"
+
+	dragon_spawn.0006.t:0 "Dragon apprivoisé"
+	dragon_spawn.0006.desc:0 "J'ai réussi à apprivoiser un puissant dragon !"
+	dragon_spawn.0006.a:0 "Huzzah!"
+
+	# Dragon Rider trait decision
+	attempt_to_learn_dragon_rider_decision:0 "Apprenez à chevaucher des dragons"
+	attempt_to_learn_dragon_rider_decision_desc:0 "Nous connaissons un endroit à proximité qui nous aidera à apprendre à monter des dragons, rendons-leur visite..."
+	attempt_to_learn_dragon_rider_decision_confirm:0 "Préparez le voyage"
+	attempt_to_learn_dragon_rider_decision_tooltip:0 "Apprenez à chevaucher des dragons"
+
+	dragon_world_new_game.0004.t:0 "Apprenez les méthodes pour chevaucher les Dragons"
+	dragon_world_new_game.0004.desc:0 "Je souhaite apprendre à monter un dragon, quel que soit le prix ou le risque !"
+	dragon_world_new_game.0004.a:0 "Essayons !"
+	dragon_world_new_game.0004.b:0 "Je pourrais peut-être demander de l'aide..."
+	dragon_world_new_game.0004.c:0 "J'ai des choses plus importantes à faire..."
+
+	generate_dragon_tooltip:0 "Il y a 60 % de chances de succès"
+	attempt_tame_dragon_tooltip:0 "Cela lancera une chaîne d'événements, votre succès dépend de votre personnalité et de vos compétences."
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "Dragon apprivoisé"
+	dragon_spawn.0007.t.found_dragon_egg:0 "Œuf de dragon trouvé"
+
+	# Dragon Memories
+	dragon_tamed:0 "Dragon apprivoisé"
+	dragon_tamed_desc:1 "J'ai réussi à apprivoiser un Dragon"
+	dragon_tamed_desc_second_perspective:1 "Vous avez réussi à apprivoiser un Dragon"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] a réussi à apprivoiser un Dragon"
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "Chevalier Dragon Élu"
+	chosen_dragon_knight_court_position_desc:0 "Le Chevalier Dragon Élu est chargé d'accompagner son seigneur lige au combat et peut être son champion dans tous les duels de Dragons."
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "Éleveur de Dragon"
+	dragon_hatcher_court_position_desc:0 "L'éleveur de dragon est chargé de prendre soin des œufs de dragons du seigneur liges et de s'assurer qu'ils sont dans des conditions appropriées pour éclore en de grandes bêtes !"
+
+	# Taming Event Tooltips
+	trusted_by_dragon.tt:0 "Le Dragon te fait confiance"
+	not_trusted_by_dragon.tt:0 "Le Dragon ne te fait pas confiance"
+	dragon_ate_character.tt:0 "Le Dragon vous dévore"
+	ate_dragon.tt:0 "Vous dévorez le Dragon"
+	escaped_from_dragon.tt:0 "Vous échappez au Dragon"
+	successfully_charged_dragon.tt:0 "Vous avez réussi à chevaucher le Dragon"
+	thrown_off_dragon.tt:0 "Le Dragon vous désarçonne"
+
+	# Custom Deaths
+	death_dragon_ate:0 "a été dévoré par un dragon"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "Un dragon est engendré"
+
+  # Trait descs
+	trait_dragon_rider:1 "Chevaucheur de Dragon"
+	trait_dragon_rider_desc:1 "Ce personnage sait comment chevaucher un dragon."
+
+	trait_novice_dragon_rider:1 "Chevaucheur de Dragon Novice"
+	trait_novice_dragon_rider_desc:1 "Ce personnage commence à comprendre comment chevaucher un dragon."
+
+	trait_renowned_dragon_rider:1 "Chevaucheur de Dragon renommé"
+	trait_renowned_dragon_rider_desc:1 "Ce personnage est un Chevaucheur de Dragon vétéran"
+
+	trait_dragon_hatcher:1 "Éleveur de dragon"
+	trait_dragon_hatcher_desc:1 "Ce personnage connaît l'art ancien de faire éclore des dragons à partir d'œufs."
+
+  # Dragon Rider related events & decisions
+  dragon_rider_events.0001b.t:0 "Entraînez-vous avec votre dragon"
+  dragon_rider_events.0001b.desc:0 "Créez des liens et entraînez-vous avec votre Dragon pour obtenir des améliorations et éventuellement améliorer votre niveau de Chevaucheur de Dragon."
+  dragon_rider_events.0001b.a:0 "Chevauchez votre dragon"
+  dragon_rider_events.0001b.b:0 "Entraînez votre dragon à obéir à vos directives"
+  dragon_rider_events.0001b.c:0 "Créez des liens avec votre dragon"
+
+  # Dragon Maa
+  dragon_riders_maa:0 "Chevaucheurs de Dragon"
+  dragon_riders_maa_flavor:0 "Les Chevaucheurs de Dragon sont de redoutables guerriers dans votre royaume, ils ont réussi à apprivoiser une variété de puissants Dragons et, sous votre direction, formeront une force de combat compétente, mais attention, ces Chevaucheurs de Dragon exigent un salaire élevés lorsqu'ils sont appelés afin de compenser leurs compétences uniques..."
+
+	# Recruit Dragon Rider decision
+	recruit_dragon_rider_decision:0 "Recrutez un Chevaucheur de Dragon renommé"
+	recruit_dragon_rider_decision_decision_desc:0 "Nous rechercherons un Chevaucheur de Dragon renommé et l'inviterons à notre cour"
+	recruit_dragon_rider_specialist_decision.tt:0 "Recruter un célèbre Chevaucheur de Dragon à la cour"
+	recruit_dragon_rider_decision_confirm:0 "Recruter un Spécialiste"
+	recruit_dragon_rider_decision_tooltip:0 "Recrute un célèbre Chevaucheur de Dragon à la cour"
+
+	# Recruit Dragon Hatcher decision
+	recruit_dragon_hatcher_decision:0 "Recruter un Éleveur de Dragon"
+	recruit_dragon_hatcher_decision_desc:0 "Nous rechercherons un Éleveur de Dragon et l'inviterons dans notre cour."
+	recruit_dragon_hatcher_decision.tt:0 "Recrute un Éleveur de Dragon à la cour"
+	recruit_dragon_hatcher_decision_confirm:0 "Recruter un Spécialiste"
+	recruit_dragon_hatcher_decision_tooltip:0 "Recrutez un Éleveur de Dragon à la cour"
+
+	# Look for Dragon Egg decision
+	look_for_dragon_eggs_decision:0 "Rechercher un œuf de Dragon"
+	look_for_dragon_eggs_decision_desc:0 "Recherche un œuf de dragon"
+	look_for_dragon_eggs_decision.tt:0 "Recruter un Éleveur de Dragon à la cour"
+	look_for_dragon_eggs_decision_confirm:0 "Trouver un œuf de dragon"
+	look_for_dragon_eggs_decision_tooltip:0 "Recrutez un Éleveur de Dragon à la cour"
+
+  # Train with Dragon decision
+  train_with_dragon_decision:0 "Entraînez-vous avec Dragon"
+  train_with_dragon_decision_desc:0 "Entraînez-vous avec votre Dragon et ayez la chance d'améliorer votre niveau de Chevaucheur de Dragon"
+  train_with_dragon_decision_confirm:0 "Entraînez-vous avec Dragon"
+  train_with_dragon_decision_tooltip:0 "L'entraînement donne diverses récompenses et donne une chance d'améliorer votre niveau de Chevaucheur de Dragon"
+
+  # Demand Gold from Populace with Dragon decision
+  demand_gold_from_the_populace_decision:0 "Extraire l'or à la population"
+  demand_gold_from_the_populace_decision_desc:0 "Chevauchez votre dragon et partez pour extraire l'or à la population"
+  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_tooltip:0 "Extrayez l’or de la population et risquez de la mettre en colère"
+
+  dragon_rider_events.0014.t:0 "Extraire l'or à la population"
+  dragon_rider_events.0014.desc:0 "Viens, il est temps de s'envoler..."
+  dragon_rider_events.0014.a:0 ""Volare!""
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! AI Role"
+  setting_non_existent_ai_role:0 "Inexistant"
+  setting_non_existent_ai_role_desc:0 "L'IA ne sera pas autorisée à utiliser les fonctionnalités de Dragon World"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "L'IA utilisera les fonctionnalités de Dragon World"
+  setting_dragon_lords_ai_role:0 "Seigneurs Dragons"
+  setting_dragon_lords_ai_role_desc:0 "L'IA augmentera son utilisation des fonctionnalités de Dragon World, augmentant ainsi les chances d'autres Seigneurs Dragons de s'élever (#R Cela a actuellement le même effet que le rôle normal #!, il sera étendu à l'avenir)"
+
+dragon_decision_event.0001.t:0 "Recherchez des dragons"
+ dragon_decision_event.0001.desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+ dragon_decision_event.0001.a:0 "Trouvons nous-même un dragon !"
+ dragon_decision_event.0001.b:0 "D'un autre côte..."
+
+ look_for_dragons_decision:0 "Cherchez des dragons"
+ look_for_dragons_decision_desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+
+ dragon_decision_event.0002.t:0 "Dragon trouvé"
+ dragon_decision_event.0002.desc:0 "Nous avons trouvé un dragon dormant dans une grotte voisine, mes hommes attendent mes ordres..."
+ dragon_decision_event.0002.a:0 "Il est temps de réclamer mon trophée !"
+ dragon_decision_event.0002.b:0 "Je ne peux pas tuer une bête aussi magnifique"
+
+ dragon_decision_event.0003.t:0 "Œuf de dragon trouvé"
+ dragon_decision_event.0003.desc:0 "Nous avons trouvé un œuf de dragon dans une grotte voisine, quelle merveilleuse journée !"
+ dragon_decision_event.0003.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_egg_events.0002.t:0 "Œuf de dragon éclos"
+ dragon_egg_events.0002.desc:0 "Mon œuf de dragon a enfin éclos !"
+ dragon_egg_events.0002.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_artefact_events.0002.t:0 "Lien draconique"
+ dragon_artefact_events.0002.desc:0 "Mon dragon vieillit et notre lien est devenu plus fort grâce à notre temps passé ensemble !"
+ dragon_artefact_events.0002.a:0 ""Nos aetate...""
+ dragon_artefact_events.0002.b:0 ""Volare!""
+
+ innovation_dragon_taming:0 "Apprivoiser un dragon"
+ dragon_maa:0 "Dragon"
+ dragon_maa_flavor:0 "Les dragons sont de puissantes créatures capables d'un pouvoir et d'une destruction immenses."
+
+  # Dragon name
+	# custom_dragon_name:0 "[Cet_artéfact.GetName]"
+
+  # custom_loc_cl:0 "[GetPlayer.Custom('customizable_localization_custom_loc')]" # Could also be replaced with Root.Char.Custom(x) to scope to root rather than player
+  # custom_loc:0 "[ROOT.Var('custom_loc_var')]"
+  # custom_loc:0 "[ROOT.Var('custom_loc_var').GetFlagName]"
+  # custom_loc_default:0 "Entrée par défaut"
+
+rode_dragon:0 "Dragon chevauché"
+  ate_dragon:0 "A mangé du dragon"
+  trusted_by_dragon:0 "Approuvé par un Dragon"
+  gold_extracted_with_dragon:0 "Or extrait avec un Dragon"
+
+  dragon_bond_income_modifier:0 "Revenu lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_prestige_modifier:0 "Prestige lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_piety_modifier:0 "Piété lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_dread_modifier:0 "Redoutabilité lié au lien avec un dragon (Caché dans l'écran du personnage)"
+
+rule_ai_dragon_world_role:0 "#G Dragon World: #! AI Role"
+  setting_non_existent_ai_role:0 "Inexistant"
+  setting_non_existent_ai_role_desc:0 "L'IA ne sera pas autorisée à utiliser les fonctionnalités de Dragon World"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "L'IA utilisera les fonctionnalités de Dragon World"
+  setting_dragon_lords_ai_role:0 "Seigneurs Dragons"
+  setting_dragon_lords_ai_role_desc:0 "L'IA augmentera son utilisation des fonctionnalités de Dragon World, augmentant ainsi les chances d'autres Seigneurs Dragons de s'élever (#R Cela a actuellement le même effet que le rôle normal #!, il sera étendu à l'avenir)"
+
+dragon_decision_event.0001.t:0 "Recherchez des dragons"
+ dragon_decision_event.0001.desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+ dragon_decision_event.0001.a:0 "Trouvons nous-même un dragon !"
+ dragon_decision_event.0001.b:0 "D'un autre côte..."
+
+ look_for_dragons_decision:0 "Cherchez des dragons"
+ look_for_dragons_decision_desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+
+ dragon_decision_event.0002.t:0 "Dragon trouvé"
+ dragon_decision_event.0002.desc:0 "Nous avons trouvé un dragon dormant dans une grotte voisine, mes hommes attendent mes ordres..."
+ dragon_decision_event.0002.a:0 "Il est temps de réclamer mon trophée !"
+ dragon_decision_event.0002.b:0 "Je ne peux pas tuer une bête aussi magnifique"
+
+ dragon_decision_event.0003.t:0 "Œuf de dragon trouvé"
+ dragon_decision_event.0003.desc:0 "Nous avons trouvé un œuf de dragon dans une grotte voisine, quelle merveilleuse journée !"
+ dragon_decision_event.0003.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_egg_events.0002.t:0 "Œuf de dragon éclos"
+ dragon_egg_events.0002.desc:0 "Mon œuf de dragon a enfin éclos !"
+ dragon_egg_events.0002.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_artefact_events.0002.t:0 "Lien draconique"
+ dragon_artefact_events.0002.desc:0 "Mon dragon vieillit et notre lien est devenu plus fort grâce à notre temps passé ensemble !"
+ dragon_artefact_events.0002.a:0 ""Nos aetate...""
+ dragon_artefact_events.0002.b:0 ""Volare!""
+
+ innovation_dragon_taming:0 "Apprivoiser un dragon"
+ dragon_maa:0 "Dragon"
+ dragon_maa_flavor:0 "Les dragons sont de puissantes créatures capables d'un pouvoir et d'une destruction immenses."
+
+  # Dragon name
+	# custom_dragon_name:0 "[Cet_artéfact.GetName]"
+
+  # custom_loc_cl:0 "[GetPlayer.Custom('customizable_localization_custom_loc')]" # Could also be replaced with Root.Char.Custom(x) to scope to root rather than player
+  # custom_loc:0 "[ROOT.Var('custom_loc_var')]"
+  # custom_loc:0 "[ROOT.Var('custom_loc_var').GetFlagName]"
+  # custom_loc_default:0 "Entrée par défaut"
+
+rode_dragon:0 "Dragon chevauché"
+  ate_dragon:0 "A mangé du dragon"
+  trusted_by_dragon:0 "Approuvé par un Dragon"
+  gold_extracted_with_dragon:0 "Or extrait avec un Dragon"
+
+  dragon_bond_income_modifier:0 "Revenu lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_prestige_modifier:0 "Prestige lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_piety_modifier:0 "Piété lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_dread_modifier:0 "Redoutabilité lié au lien avec un dragon (Caché dans l'écran du personnage)"
+
+rule_ai_dragon_world_role:0 "#G Dragon World: #! AI Role"
+  setting_non_existent_ai_role:0 "Inexistant"
+  setting_non_existent_ai_role_desc:0 "L'IA ne sera pas autorisée à utiliser les fonctionnalités de Dragon World"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "L'IA utilisera les fonctionnalités de Dragon World"
+  setting_dragon_lords_ai_role:0 "Seigneurs Dragons"
+  setting_dragon_lords_ai_role_desc:0 "L'IA augmentera son utilisation des fonctionnalités de Dragon World, augmentant ainsi les chances d'autres Seigneurs Dragons de s'élever (#R Cela a actuellement le même effet que le rôle normal #!, il sera étendu à l'avenir)"
+
+dragon_decision_event.0001.t:0 "Recherchez des dragons"
+ dragon_decision_event.0001.desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+ dragon_decision_event.0001.a:0 "Trouvons nous-même un dragon !"
+ dragon_decision_event.0001.b:0 "D'un autre côte..."
+
+ look_for_dragons_decision:0 "Cherchez des dragons"
+ look_for_dragons_decision_desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+
+ dragon_decision_event.0002.t:0 "Dragon trouvé"
+ dragon_decision_event.0002.desc:0 "Nous avons trouvé un dragon dormant dans une grotte voisine, mes hommes attendent mes ordres..."
+ dragon_decision_event.0002.a:0 "Il est temps de réclamer mon trophée !"
+ dragon_decision_event.0002.b:0 "Je ne peux pas tuer une bête aussi magnifique"
+
+ dragon_decision_event.0003.t:0 "Œuf de dragon trouvé"
+ dragon_decision_event.0003.desc:0 "Nous avons trouvé un œuf de dragon dans une grotte voisine, quelle merveilleuse journée !"
+ dragon_decision_event.0003.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_egg_events.0002.t:0 "Œuf de dragon éclos"
+ dragon_egg_events.0002.desc:0 "Mon œuf de dragon a enfin éclos !"
+ dragon_egg_events.0002.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_artefact_events.0002.t:0 "Lien draconique"
+ dragon_artefact_events.0002.desc:0 "Mon dragon vieillit et notre lien est devenu plus fort grâce à notre temps passé ensemble !"
+ dragon_artefact_events.0002.a:0 ""Nos aetate...""
+ dragon_artefact_events.0002.b:0 ""Volare!""
+
+ innovation_dragon_taming:0 "Apprivoiser un dragon"
+ dragon_maa:0 "Dragon"
+ dragon_maa_flavor:0 "Les dragons sont de puissantes créatures capables d'un pouvoir et d'une destruction immenses."
+
+  # Dragon name
+	# custom_dragon_name:0 "[Cet_artéfact.GetName]"
+
+  # custom_loc_cl:0 "[GetPlayer.Custom('customizable_localization_custom_loc')]" # Could also be replaced with Root.Char.Custom(x) to scope to root rather than player
+  # custom_loc:0 "[ROOT.Var('custom_loc_var')]"
+  # custom_loc:0 "[ROOT.Var('custom_loc_var').GetFlagName]"
+  # custom_loc_default:0 "Entrée par défaut"
+
+rode_dragon:0 "Dragon chevauché"
+  ate_dragon:0 "A mangé du dragon"
+  trusted_by_dragon:0 "Approuvé par un Dragon"
+  gold_extracted_with_dragon:0 "Or extrait avec un Dragon"
+
+  dragon_bond_income_modifier:0 "Revenu lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_prestige_modifier:0 "Prestige lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_piety_modifier:0 "Piété lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_dread_modifier:0 "Redoutabilité lié au lien avec un dragon (Caché dans l'écran du personnage)"
+
+
+
+
+
+
+rule_ai_dragon_world_role:0 "#G Dragon World: #! AI Role"
+  setting_non_existent_ai_role:0 "Inexistant"
+  setting_non_existent_ai_role_desc:0 "L'IA ne sera pas autorisée à utiliser les fonctionnalités de Dragon World"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "L'IA utilisera les fonctionnalités de Dragon World"
+  setting_dragon_lords_ai_role:0 "Seigneurs Dragons"
+  setting_dragon_lords_ai_role_desc:0 "L'IA augmentera son utilisation des fonctionnalités de Dragon World, augmentant ainsi les chances d'autres Seigneurs Dragons de s'élever (#R Cela a actuellement le même effet que le rôle normal #!, il sera étendu à l'avenir)"
+
+dragon_decision_event.0001.t:0 "Recherchez des dragons"
+ dragon_decision_event.0001.desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+ dragon_decision_event.0001.a:0 "Trouvons nous-même un dragon !"
+ dragon_decision_event.0001.b:0 "D'un autre côte..."
+
+ look_for_dragons_decision:0 "Cherchez des dragons"
+ look_for_dragons_decision_desc:0 "Nous avons entendu des rumeurs concernant un dragon à proximité, nous devrions le chasser et rapporter sa tête comme trophée."
+
+ dragon_decision_event.0002.t:0 "Dragon trouvé"
+ dragon_decision_event.0002.desc:0 "Nous avons trouvé un dragon dormant dans une grotte voisine, mes hommes attendent mes ordres..."
+ dragon_decision_event.0002.a:0 "Il est temps de réclamer mon trophée !"
+ dragon_decision_event.0002.b:0 "Je ne peux pas tuer une bête aussi magnifique"
+
+ dragon_decision_event.0003.t:0 "Œuf de dragon trouvé"
+ dragon_decision_event.0003.desc:0 "Nous avons trouvé un œuf de dragon dans une grotte voisine, quelle merveilleuse journée !"
+ dragon_decision_event.0003.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_egg_events.0002.t:0 "Œuf de dragon éclos"
+ dragon_egg_events.0002.desc:0 "Mon œuf de dragon a enfin éclos !"
+ dragon_egg_events.0002.a:0 "Tu deviendra une puissante bête !"
+
+ dragon_artefact_events.0002.t:0 "Lien draconique"
+ dragon_artefact_events.0002.desc:0 "Mon dragon vieillit et notre lien est devenu plus fort grâce à notre temps passé ensemble !"
+ dragon_artefact_events.0002.a:0 ""Nos aetate...""
+ dragon_artefact_events.0002.b:0 ""Volare!""
+
+ innovation_dragon_taming:0 "Apprivoiser un dragon"
+ dragon_maa:0 "Dragon"
+ dragon_maa_flavor:0 "Les dragons sont de puissantes créatures capables d'un pouvoir et d'une destruction immenses."
+
+  # Dragon name
+	# custom_dragon_name:0 "[Cet_artéfact.GetName]"
+
+  # custom_loc_cl:0 "[GetPlayer.Custom('customizable_localization_custom_loc')]" # Could also be replaced with Root.Char.Custom(x) to scope to root rather than player
+  # custom_loc:0 "[ROOT.Var('custom_loc_var')]"
+  # custom_loc:0 "[ROOT.Var('custom_loc_var').GetFlagName]"
+  # custom_loc_default:0 "Entrée par défaut"
+
+rode_dragon:0 "Dragon chevauché"
+  ate_dragon:0 "A mangé du dragon"
+  trusted_by_dragon:0 "Approuvé par un Dragon"
+  gold_extracted_with_dragon:0 "Or extrait avec un Dragon"
+
+  dragon_bond_income_modifier:0 "Revenu lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_prestige_modifier:0 "Prestige lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_piety_modifier:0 "Piété lié au lien avec un dragon (Caché dans l'écran du personnage)"
+  dragon_bond_dread_modifier:0 "Redoutabilité lié au lien avec un dragon (Caché dans l'écran du personnage)"

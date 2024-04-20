@@ -354,7 +354,13 @@ dragon_world_new_game.0004 = {
 
 	option = {
 		name = dragon_world_new_game.0004.a
-		add_trait = novice_dragon_rider
+		add_trait = lifestyle_dragonmaster
+		# Give first track of dragon rider so they are deemed a novice dragon rider
+		add_trait_xp = {
+			trait = lifestyle_dragonmaster
+			track = dragon_rider
+			value = 25
+		}
 	}
 	# optional extra if character has a dragon rider in their court/realm
 	option = {
@@ -382,7 +388,13 @@ dragon_world_new_game.0004 = {
 				}
 			}
 		}
-		add_trait = novice_dragon_rider
+		add_trait = lifestyle_dragonmaster
+		# Give first track of dragon rider so they are deemed a novice dragon rider
+		add_trait_xp = {
+			trait = lifestyle_dragonmaster
+			track = dragon_rider
+			value = 25
+		}
 	}
 	option = {
 		name = dragon_world_new_game.0004.c
@@ -402,36 +414,24 @@ dragon_world_new_game.0005 = {
 
 	option = {
 		name = dragon_rider_events.0001b.a
-		add_prestige = 150
 		add_character_modifier = {
 			modifier = rode_dragon
 			days = 1825
 		}
-		random_list = {
-			30 = {
-				trigger = {
-					has_trait = dragon_rider
-				}
-				remove_trait = dragon_rider
-				add_trait = renowned_dragon_rider
-			}
-			100 = {
-				trigger = {
-					has_trait = novice_dragon_rider
-				}
-				remove_trait = novice_dragon_rider
-				add_trait = dragon_rider
-			}
-			100 = {}
-		}
+		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
 	}
 	option = {
 		name = dragon_rider_events.0001b.b
 		add_prestige = 350
+		dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
+		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
 	}
 	option = {
 		name = dragon_rider_events.0001b.c
 		add_piety = 100
+		dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
+		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
 	}
 }
 
@@ -446,8 +446,17 @@ dragon_world_new_game.0014 = {
 	}
 
 	option = {
-		name = dragon_rider_events.0014.a
+		# if = {
+		# 	limit = {
+		# 		has_game_rule = high_valyrian_commands
+		# 	}
+		# 	name = dragon_rider_events.0014.a_high_valyrian
+		# }
+		# else = {
+			name = dragon_rider_events.0014.a_latin
+		# }
 		add_gold = 100
+		dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
 		
 		random_sub_realm_county = {
 			add_county_modifier = {

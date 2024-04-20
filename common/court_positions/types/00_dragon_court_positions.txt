@@ -1,6 +1,6 @@
 chosen_dragon_knight_court_position = {
 	skill = martial
-	max_available_positions = 2
+	max_available_positions = 1
 	category = court_position_category_special
 	minimum_rank = kingdom
 
@@ -210,14 +210,14 @@ dragon_hatcher_court_position = {
 
 	is_shown_character = {
 		scope:employee = {
-			has_trait = dragon_hatcher
+			has_dragon_hatcher_trigger = yes
 		}
 	}
 
 	valid_character = {
 		scope:employee = {
 			is_imprisoned = no
-			has_trait = dragon_hatcher
+			has_dragon_hatcher_trigger = yes
 			trigger_if = {
 				limit = { NOT = { has_court_position = dragon_hatcher_court_position } }
 				court_position_does_not_already_have_a_job_trigger = yes # This positions is considered a job, and cannot be held at the same tims as another similar position

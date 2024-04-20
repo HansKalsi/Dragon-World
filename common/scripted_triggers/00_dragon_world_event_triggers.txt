@@ -1,8 +1,18 @@
 has_dragon_rider_trigger = {
-	OR = {
-		has_trait = novice_dragon_rider
-		has_trait = dragon_rider
-		has_trait = renowned_dragon_rider
+	has_trait = lifestyle_dragonmaster
+	has_trait_xp = {
+		trait = lifestyle_dragonmaster
+		track = dragon_rider
+		value >= 25
+	}
+}
+
+has_dragon_hatcher_trigger = {
+	has_trait = lifestyle_dragonmaster
+	has_trait_xp = {
+		trait = lifestyle_dragonmaster
+		track = dragon_hatcher
+		value >= 100
 	}
 }
 

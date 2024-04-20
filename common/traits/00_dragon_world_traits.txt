@@ -1,61 +1,65 @@
-dragon_rider = {
-	martial = 2
-	prowess = 4
-	health = 0.25
-	
-	ruler_designer_cost = 100
-	
-	desc = trait_dragon_rider_desc
-	
-	fame = yes
-	
-	random_creation = 0.01
-
+lifestyle_dragonmaster = {
 	icon = dragon_rider.dds
+	category = lifestyle
+	ruler_designer_cost = 50
+
+	desc = trait_dragon_rider_desc
+
+	tracks = {
+		dragon_rider = {
+			25 = {
+				martial = 1
+				prowess = 2
+			}
+			50 = {	
+				martial = 1
+				prowess = 2
+				health = 0.25
+			}
+			100 = {
+				martial = 2
+				prowess = 4
+				health = 0.25
+			}
+		}
+		dragon_hatcher = {
+			100 = {
+				learning = 4
+				health = -0.25
+			}
+		}
+	}
+
+	compatibility = {
+		brave = @pos_compat_low
+		diligent = @pos_compat_low
+		ambitious = @pos_compat_low
+	}
+
+	ai_energy = 25
 }
 
-novice_dragon_rider = {
-	martial = 1
-	prowess = 2
+dragon_blood = {
+	physical = yes
+	health = 0.25
+	martial = 3
+	learning = 3
+	inbreeding_chance = 0.5
+	
+	inherit_chance = 100
+	inherit_from_real_father = yes
 	
 	ruler_designer_cost = 50
-	
-	desc = trait_dragon_rider_desc
-	
-	fame = yes
-	
-	random_creation = 0.05
 
-	icon = dragon_rider.dds
-}
-
-renowned_dragon_rider = {
-	martial = 4
-	prowess = 8
-	health = 0.5
-	
-	ruler_designer_cost = 200
-	
-	desc = trait_dragon_rider_desc
-	
-	fame = yes
-	
-	random_creation = 0.001
-
-	icon = dragon_rider.dds
-}
-
-dragon_hatcher = {
-	learning = 4
-	health = -0.25
-	
-	ruler_designer_cost = 40
-	
-	desc = trait_dragon_hatcher_desc
-	
-	fame = yes
-	
-	random_creation = 0.01
-
-	icon = dragon_rider.dds
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dragon_blood_desc
+			}
+			desc = trait_dragon_blood_character_desc
+		}
+	}
 }

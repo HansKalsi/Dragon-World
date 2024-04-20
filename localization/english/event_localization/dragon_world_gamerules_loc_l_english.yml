@@ -7,3 +7,9 @@
   setting_default_ai_role_desc:0 "AI will use Dragon World features"
   setting_dragon_lords_ai_role:0 "Dragon Lords"
   setting_dragon_lords_ai_role_desc:0 "AI will increase their usage of Dragon World features, increasing the odds of other Dragon Lords to rise (#R This currently has the same effect as normal role #!, it will be expanded upon in the future)"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! Dragon Command Language"
+  setting_latin_commands:0 "Latin"
+  setting_latin_commands_desc:0 "Commands will be in Latin"
+  setting_high_valyrian_commands:0 "High Valyrian"
+  setting_high_valyrian_commands_desc:0 "Commands will be in High Valyrian (from Game of Thrones)"

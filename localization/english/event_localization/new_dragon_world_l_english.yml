@@ -103,8 +103,8 @@
 
 	# Dragon World court positions
 	# Chosen Dragon Knight
-	chosen_dragon_knight_court_position:0 "Chosen Dragon Knight"
-	chosen_dragon_knight_court_position_desc:0 "The Chosen Dragon Knight is responsible for accompanying their liege in battle and can be their champion in any Dragon duels"
+	chosen_dragon_knight_court_position:0 "Personal Dragon Champion"
+	chosen_dragon_knight_court_position_desc:0 "The Personal Dragon Champion is responsible for accompanying their liege in battle and can be their champion in any Dragon duels"
 	# Dragon Hatcher
 	dragon_hatcher_court_position:0 "Dragon Hatcher"
 	dragon_hatcher_court_position_desc:0 "The Dragon Hatcher is responsible for taking care of their lieges dragon eggs and ensuring they are in suitable conditiions for hatching into great beasts!"
@@ -123,3 +123,52 @@
 
 	# Custom Tooltips
 	spawn_dragon_tooltip:0 "A dragon is spawned"
+	no_dragonrider_courtiers_tooltip:0 "There aren't any dragonriders in your court"
+	EXECUTION_DRAGON_LATIN:0 ""Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "There aren't any courtiers meeting the requirements in your court"
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "Dragon Blood"
+	dragon_legacy_track_desc:0 "The power of the sun ... in the palm of my hand"
+	dragon_legacy_1_name:0 "Dragon Kin"
+	dragon_legacy_1_effect:0 "Unlocks access to the [GetBuilding('dragon_hatchery_01').GetName] [building|E]"
+	dragon_legacy_2_name:0 "Those Who Serve, Serve Us"
+	dragon_legacy_3_name:0 "Unlimited Power"
+	dragon_legacy_4_name:0 "Dragon Born"
+	dragon_legacy_4_effect:0 "The [GetTrait('dragon_blood').GetName( GetNullCharacter )] [trait|E] has a 20% chance to spawn for children of this dynasty, and then it will be forevermore passed down through the ages."
+	dragon_legacy_5_name:0 "Dragon Lords"
+	dragon_legacy_5_effect:0 "Unlocks Lord's Chosen Men-at-arms"
+	
+	# Dragon Blood Trait
+	trait_dragon_blood:0 "Dragon Blood"
+	trait_dragon_blood_desc:0 "This character is of a dragon bloodline."
+	trait_dragon_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is of a dragon bloodline."
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "Dragon Hatchery"
+	building_type_dragon_hatchery_01:0 "Dragon Nest"
+	building_dragon_hatchery_01_desc:0 "A nest for dragon eggs, where they can be hatched and raised."
+	building_dragon_hatchery_02:0 "Dragon Hatchery II"
+	building_dragon_hatchery_02_desc:0 "A larger nest for dragon eggs, where they can be hatched and raised."
+	building_dragon_hatchery_03:0 "Dragon Hatchery III"
+	building_dragon_hatchery_03_desc:0 "A grand nest for dragon eggs, where they can be hatched and raised."
+	clear_ground_for_dragon_hatchery:0 "Prepare Grounds for a Dragon Hatchery"
+	clear_ground_for_dragon_hatchery_tooltip:0 "Unlock a [special_building|E] slot in one of your provinces"
+	clear_ground_for_dragon_hatchery_desc:0 "We need to prepare the grounds for a Dragon Hatchery, this will allow us to hatch and raise dragons in our realm."
+	clear_ground_for_dragon_hatchery_confirm:0 "Begin the preparations"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "Grounds prepared for a Dragon Hatchery"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "Train in the ways of Dragon Riding"
+	train_child_in_dragon_riding_ways_desc:0 "Teach child the ways of Dragon Riding"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "Dragon Rider Training"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "The time has come for you to learn the ways of the Dragon"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "I will teach you the ways of the Dragon"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Failed Dragon Rider Training"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "I am not angry, but I am disappointed in you"
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "What a waste of time"

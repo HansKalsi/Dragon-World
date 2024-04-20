@@ -1,10 +1,20 @@
 dragon_rider_commander_character = {
 	age = { 30 50 }
+	dynasty = none
+	random_traits = yes
+	faith = this.faith
+	culture = this.culture
+
+	prowess = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
 	random_traits_list = {
 		count = 1
 		education_martial_3 = {}
 		education_martial_4 = {}
 	}
+	trait = lifestyle_dragonmaster
 	random_traits_list = {
 		count = 3
 		diligent = {}
@@ -28,14 +38,17 @@ dragon_rider_commander_character = {
 		rough_terrain_expert = {}
 	}
 	
-	random_traits = no
 	martial  = {
 		min_template_decent_skill
 		max_template_decent_skill
 	}
 
 	after_creation = {
-		add_trait = renowned_dragon_rider
+		add_trait_xp = {
+			trait = lifestyle_dragonmaster
+			track = dragon_rider
+			value = 100
+		}
 		random = {
 			chance = 50
 			add_trait = scarred
@@ -45,11 +58,17 @@ dragon_rider_commander_character = {
 
 dragon_hatcher_character = {
 	age = { 40 60 }
+	dynasty = none
+	random_traits = yes
+	faith = this.faith
+	culture = this.culture
+
 	random_traits_list = {
 		count = 1
 		education_learning_3 = {}
 		education_learning_4 = {}
 	}
+	trait = lifestyle_dragonmaster
 	random_traits_list = {
 		count = 3
 		diligent = {}
@@ -64,13 +83,16 @@ dragon_hatcher_character = {
 		zealous = {}
 	}
 	
-	random_traits = no
 	learning  = {
 		min_template_decent_skill
 		max_template_decent_skill
 	}
 
 	after_creation = {
-		add_trait = dragon_hatcher
+		add_trait_xp = {
+			trait = lifestyle_dragonmaster
+			track = dragon_hatcher
+			value = 100
+		}
 	}
 }

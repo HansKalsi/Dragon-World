@@ -1,0 +1,17 @@
+dragon_legacy_1_effect = {
+	global = dragon_legacy_1_effect
+	first = dragon_legacy_1_effect
+	third = dragon_legacy_1_effect
+}
+
+dragon_legacy_4_effect = {
+	global = dragon_legacy_4_effect
+	first = dragon_legacy_4_effect
+	third = dragon_legacy_4_effect
+}
+
+dragon_legacy_5_effect = {
+	global = dragon_legacy_5_effect
+	first = dragon_legacy_5_effect
+	third = dragon_legacy_5_effect
+}

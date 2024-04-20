@@ -1,17 +1,12 @@
 ﻿l_english:
 
 	# Trait descs
-	trait_dragon_rider:1 "Dragon Rider"
-	trait_dragon_rider_desc:1 "This character knows how to ride a dragon."
-
-	trait_novice_dragon_rider:1 "Novice Dragon Rider"
-	trait_novice_dragon_rider_desc:1 "This character is beginning to understand how to ride a dragon."
-
-	trait_renowned_dragon_rider:1 "Renowned Dragon Rider"
-	trait_renowned_dragon_rider_desc:1 "This character is a Dragon Rider veteran."
-
-	trait_dragon_hatcher:1 "Dragon Hatcher"
-	trait_dragon_hatcher_desc:1 "This character knows the ancient craft of how to hatch dragons from eggs."
+	trait_lifestyle_dragonmaster:0 "Dragon Master"
+	trait_track_dragon_rider:0 "Dragon Rider"
+	trait_track_dragon_rider_desc:0 "This character knows how to ride a dragon."
+	trait_track_dragon_hatcher:0 "Dragon Hatcher"
+	trait_track_dragon_hatcher_desc:0 "This character has studied countless books and manuscripts regarding the art of Dragon Hatching, this is no easy feet and from their increased  exposure to Dragon Eggs they are likely to not live as long as most…"
+	trait_dragon_rider_desc:0 "This character knows the way of the dragon"
 
   # Dragon Rider related events & decisions
   dragon_rider_events.0001b.t:0 "Train with your Dragon"
@@ -55,8 +50,11 @@
   demand_gold_from_the_populace_decision:0 "Extract Gold from the Populace"
   demand_gold_from_the_populace_decision_desc:0 "Mount your Dragon and ride out to extract gold from the populace"
   demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_latin:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_high_valyrian:0 ""Ynot!""
   demand_gold_from_the_populace_decision_tooltip:0 "Extract gold from the populace and risk angering them"
 
   dragon_rider_events.0014.t:0 "Extract Gold from the Populace"
   dragon_rider_events.0014.desc:0 "Come, it's time to fly..."
-  dragon_rider_events.0014.a:0 ""Volare!""
+  dragon_rider_events.0014.a_latin:0 ""Volare!""
+  dragon_rider_events.0014.a_high_valyrian:0 ""Sōvēs!""

@@ -23,12 +23,20 @@
 
  dragon_artefact_events.0002.t:0 "Dragon Bond"
  dragon_artefact_events.0002.desc:0 "My Dragon is ageing, and our bond has become stronger from our time together!"
- dragon_artefact_events.0002.a:0 ""Nos aetate...""
- dragon_artefact_events.0002.b:0 ""Volare!""
+ dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
+ dragon_artefact_events.0002.a_high_valyrian:0 ""Nos Aetate...""
+ dragon_artefact_events.0002.b_latin:0 ""Volare!""
+ dragon_artefact_events.0002.b_high_valyrian:0 ""Volare!""
 
  innovation_dragon_taming:0 "Dragon Taming"
+
+ # Custom Maa's
  dragon_maa:0 "Dragon"
  dragon_maa_flavor:0 "Dragons are mighty creatures capable of immense power and destruction"
+ dragon_bannermen_maa:0 "Dragon Bannermen"
+ dragon_bannermen_maa_flavor:0 "The Dragon Bannermen are a group of warriors who have sworn to protect the Dragon and it's rider"
+ lords_chosen_maa:0 "Lord's Chosen"
+ lords_chosen_maa_flavor:0 "The Lord's Chosen are a group of dragon riders who serve and ride alongside their Dragon Lord as their personal guard"
 
   # Dragon name
 	# custom_dragon_name:0 "[this_artifact.GetName]"

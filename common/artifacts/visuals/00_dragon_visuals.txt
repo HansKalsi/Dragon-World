@@ -21,5 +21,5 @@ dragon_visual = {
 }
 
 dragon_egg_visual = {
-	icon = "dragon.dds"
+	icon = "dragon_egg_image.dds"
 }

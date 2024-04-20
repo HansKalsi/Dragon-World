@@ -46,7 +46,6 @@ attempt_to_train_dragon_decision = {
     }
 
     is_valid = {
-        gold > 250
         has_dragon_rider_trigger = yes
         NOT = {
             has_dragon_trigger = yes
@@ -88,7 +87,6 @@ attempt_to_learn_dragon_rider_decision = {
     }
 
     is_valid = {
-        gold > 100
         not = {
             AND = {
                 has_dragon_rider_trigger = yes
@@ -147,7 +145,6 @@ recruit_dragon_rider_decision = {
 	}
 
     is_valid = {
-        gold > 50
         AND = {
             has_dragon_rider_trigger = yes
         }
@@ -156,8 +153,7 @@ recruit_dragon_rider_decision = {
     effect = {
         custom_tooltip = recruit_dragon_rider_specialist_decision.tt
         hidden_effect = {
-            recruit_terrain_specialist_effect = {
-                SPECIALIST_TRAIT = renowned_dragon_rider
+            generate_specialist_character_effect = {
                 SPECIALIST_TEMPLATE_CHARACTER = dragon_rider_commander_character
             }
         }
@@ -171,7 +167,7 @@ train_with_dragon_decision = {
 
 	major = yes
 
-	cooldown = { months = 3 }
+	cooldown = { months = 12 }
 
     # AI rule check
     ai_potential = {
@@ -194,7 +190,6 @@ train_with_dragon_decision = {
     }
 
     is_valid = {
-        gold > 100
         has_dragon_rider_trigger = yes
         has_dragon_equipped_trigger = yes
     }
@@ -211,6 +206,18 @@ demand_gold_from_the_populace_decision = {
 	sort_order = 75
 
     desc = demand_gold_from_the_populace_decision_desc
+
+    # confirm_text = {
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		has_game_rule = high_valyrian_commands
+	# 	# 	}
+	# 	# 	localization = "demand_gold_from_the_populace_decision_confirm_high_valyrian"
+	# 	# }
+	# 	# else = {
+	# 		localization = "demand_gold_from_the_populace_decision_confirm_latin"
+	# 	# }
+    # }
 
 	cooldown = { years = 5 }
     
@@ -235,7 +242,6 @@ demand_gold_from_the_populace_decision = {
     }
 
     is_valid = {
-        piety > 250
 		has_dragon_rider_trigger = yes
         has_dragon_equipped_trigger = yes
     }
@@ -274,7 +280,7 @@ recruit_dragon_hatcher_decision = {
         modifier = {
             factor = 0
             any_courtier = {
-                has_trait = dragon_hatcher
+                has_dragon_hatcher_trigger = yes
             }
         }
     }
@@ -295,7 +301,6 @@ recruit_dragon_hatcher_decision = {
 	}
 
     is_valid = {
-        gold > 50
         AND = {
             has_dragon_rider_trigger = yes
         }
@@ -304,8 +309,7 @@ recruit_dragon_hatcher_decision = {
     effect = {
         custom_tooltip = recruit_dragon_hatcher_decision.tt
         hidden_effect = {
-            recruit_terrain_specialist_effect = {
-                SPECIALIST_TRAIT = dragon_hatcher
+            generate_specialist_character_effect = {
                 SPECIALIST_TEMPLATE_CHARACTER = dragon_hatcher_character
             }
         }
@@ -342,11 +346,50 @@ look_for_dragon_eggs_decision = {
     }
 
     is_valid = {
-        gold > 100
         has_dragon_rider_trigger = yes
     }
 
     effect = {
         root = { trigger_event = dragon_decision_event.0003 }
     }
+}
+
+
+clear_ground_for_dragon_hatchery = {
+	picture = "gfx/interface/illustrations/decisions/decision_legend.dds"
+	major = yes
+	sort_order = 100
+
+	is_shown = {
+        has_dynasty_perk = dragon_legacy_1
+        capital_province = {
+            has_special_building_slot = no
+        }
+	}
+
+	effect = {
+		send_interface_toast = {
+            title = clear_ground_for_dragon_hatchery.toast
+            if = {
+                limit = {
+					exists = capital_province
+                }
+                capital_province = {
+                    add_special_building_slot = dragon_hatchery_01
+                }
+            }
+		}
+	}
+
+	ai_check_interval = 36
+
+	ai_potential = {
+		is_at_war = no
+		short_term_gold > ai_war_chest_desired_gold_value
+		war_chest_gold >= halved_ai_war_chest_gold_maximum
+	}
+
+	ai_will_do = {
+		base = 100 #AI should always reap rewards
+	}
 }

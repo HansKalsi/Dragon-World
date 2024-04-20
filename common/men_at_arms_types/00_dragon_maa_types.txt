@@ -1,21 +1,71 @@
-dragon_maa = {
-    type = dragon
+# dragon_maa = {
+#     type = dragon
 
-	max_sub_regiments = 1
+# 	max_sub_regiments = 1
 
-	damage = 10000
-	toughness = 2500
-	pursuit = 1500
-	screen = 100
+# 	damage = 10000
+# 	toughness = 2500
+# 	pursuit = 1500
+# 	screen = 100
+	
+# 	terrain_bonus = {
+# 		plains = { damage = 2500 }
+# 		drylands = { damage = 2500 }
+#         farmlands = { damage = 3500 }
+# 		hills = { damage = -500 }
+# 		mountains = { damage = -3000 pursuit = -1000 toughness = 500 screen = -100 }
+# 		desert_mountains = { damage = -3000 pursuit = -1000 toughness = 500 screen = -100 }
+# 		wetlands = { damage = 1000 pursuit = 500 }
+# 	}
+
+# 	counters = {
+#         skirmishers = 1
+# 		archers = 1
+#         pikemen = 1
+# 	}
+	
+# 	siege_tier = 10
+# 	siege_value = 1
+
+# 	winter_bonus = {
+# 		normal_winter = { damage = -1000 pursuit = -250 toughness = -250 }
+# 		harsh_winter = { damage = -3500 pursuit = -750 toughness = -1000 }
+# 	}
+
+# 	buy_cost = { gold = 1000 }
+# 	low_maintenance_cost = { gold = 15 }
+# 	high_maintenance_cost = { gold = 35 }
+	
+# 	stack = 1
+# 	ai_quality = { value = 100 }
+# 	icon = dragon
+
+# 	can_recruit = {
+# 		AND = {
+# 			has_dragon_rider_trigger = yes
+# 			has_dragon_equipped_trigger = yes
+# 		}
+# 	}
+# }
+
+dragon_bannermen_maa = {
+    type = heavy_infantry
+
+	max_sub_regiments = 3
+
+	damage = 200
+	toughness = 50
+	pursuit = 40
+	screen = 25
 	
 	terrain_bonus = {
-		plains = { damage = 2500 }
-		drylands = { damage = 2500 }
-        farmlands = { damage = 3500 }
-		hills = { damage = -500 }
-		mountains = { damage = -3000 pursuit = -1000 toughness = 500 screen = -100 }
-		desert_mountains = { damage = -3000 pursuit = -1000 toughness = 500 screen = -100 }
-		wetlands = { damage = 1000 pursuit = 500 }
+		plains = { damage = 50 }
+		drylands = { damage = 50 }
+        farmlands = { damage = 100 }
+		hills = { damage = -50 }
+		mountains = { damage = -100 pursuit = -20 toughness = 25 screen = -25 }
+		desert_mountains = { damage = -100 pursuit = -20 toughness = 25 screen = -25 }
+		wetlands = { pursuit = 100 }
 	}
 
 	counters = {
@@ -24,21 +74,18 @@ dragon_maa = {
         pikemen = 1
 	}
 	
-	siege_tier = 10
-	siege_value = 1
-
 	winter_bonus = {
-		normal_winter = { damage = -1000 pursuit = -250 toughness = -250 }
-		harsh_winter = { damage = -3500 pursuit = -750 toughness = -1000 }
+		normal_winter = { damage = -100 pursuit = -20 toughness = -15 }
+		harsh_winter = { damage = -150 pursuit = -25 toughness = -40 }
 	}
 
-	buy_cost = { gold = 1000 }
-	low_maintenance_cost = { gold = 15 }
-	high_maintenance_cost = { gold = 35 }
+	buy_cost = { gold = 150 }
+	low_maintenance_cost = { gold = 0.5 }
+	high_maintenance_cost = { gold = 3 }
 	
-	stack = 1
+	stack = 50
 	ai_quality = { value = 100 }
-	icon = dragon
+	icon = dragon_bannermen
 
 	can_recruit = {
 		AND = {
@@ -48,20 +95,20 @@ dragon_maa = {
 	}
 }
 
-dragon_riders_maa = {
+lords_chosen_maa = {
     type = dragon
 
-	max_sub_regiments = 5
+	max_sub_regiments = 1
 
 	damage = 2000
 	toughness = 500
-	pursuit = 375
+	pursuit = 400
 	screen = 250
 	
 	terrain_bonus = {
 		plains = { damage = 500 }
 		drylands = { damage = 500 }
-        farmlands = { damage = 1500 }
+        farmlands = { damage = 1000 }
 		hills = { damage = -500 }
 		mountains = { damage = -1000 pursuit = -200 toughness = 250 screen = -250 }
 		desert_mountains = { damage = -1000 pursuit = -200 toughness = 250 screen = -250 }
@@ -70,23 +117,22 @@ dragon_riders_maa = {
 
 	counters = {
         skirmishers = 1
-		archers = 1
-        pikemen = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+		elephant_cavalry = 1
 	}
 	
-	siege_tier = 5
-	siege_value = 1.5
-
 	winter_bonus = {
-		normal_winter = { damage = -1000 pursuit = -175 toughness = -150 }
+		normal_winter = { damage = -1000 pursuit = -200 toughness = -150 }
 		harsh_winter = { damage = -1500 pursuit = -250 toughness = -400 }
 	}
 
-	buy_cost = { gold = 250 }
+	buy_cost = { gold = 1000 }
 	low_maintenance_cost = { gold = 3 }
 	high_maintenance_cost = { gold = 15 }
 	
-	stack = 50
+	stack = 10
 	ai_quality = { value = 100 }
 	icon = dragon
 
@@ -94,6 +140,8 @@ dragon_riders_maa = {
 		AND = {
 			has_dragon_rider_trigger = yes
 			has_dragon_equipped_trigger = yes
+			exists = dynasty
+			dynasty = { has_dynasty_perk = dragon_legacy_5 }
 		}
 	}
 }

@@ -1,0 +1,80 @@
+##########
+# Dragon Hatchery
+##########
+
+dragon_hatchery_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_dragon_hatchery.dds"
+
+	can_construct = {
+		scope:holder = {
+			highest_held_title_tier >= tier_duchy
+			dynasty = {
+				has_dynasty_perk = dragon_legacy_1
+			}
+		}
+	}
+
+	cost_gold = 250
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.05
+		monthly_piety_gain_per_knight_add = 0.1
+		learning_per_prestige_level = 1
+	}
+
+	next_building = dragon_hatchery_02
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+dragon_hatchery_02 = {
+	construction_time = slow_construction_time
+	type_icon = "icon_building_dragon_hatchery.dds"
+	
+	cost_gold = 500
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.1
+		monthly_piety_gain_per_knight_add = 0.15
+		learning_per_prestige_level = 2
+	}
+	
+	next_building = dragon_hatchery_03
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+dragon_hatchery_03 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_dragon_hatchery.dds"
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.2
+		monthly_piety_gain_per_knight_add = 0.25
+		learning_per_prestige_level = 4
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}

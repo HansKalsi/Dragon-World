@@ -1,0 +1,83 @@
+# DRAGON BLOOD LEGACIES
+dragon_legacy_1 = { # Dragon Kin
+	legacy = dragon_legacy_track
+
+	can_be_picked = {
+		has_dragon_rider_trigger = yes
+		has_dragon_equipped_trigger = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = dragon_legacy_1_effect
+		}
+	}
+
+	character_modifier = {
+		name = dragon_legacy_1_name
+		# FIXME: Can build Dragon Hatchery in capital
+	}
+	
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+dragon_legacy_2 = { # Those who serve, serve us
+	legacy = dragon_legacy_track
+
+	character_modifier = {
+		build_gold_cost = -0.10
+		holding_build_gold_cost = -0.10
+	}
+}
+
+dragon_legacy_3 = { # Unlimited Power
+	legacy = dragon_legacy_track
+
+	character_modifier = {
+		dread_baseline_add = 15
+		monthly_county_control_growth_add = 0.4
+	}
+}
+
+dragon_legacy_4 = { # Dragon Born
+	legacy = dragon_legacy_track
+
+	effect = {
+		custom_description_no_bullet = {
+			text = dragon_legacy_4_effect
+		}
+	}
+
+	character_modifier = {
+		prowess = 5
+		# FIXME: Adds chance of Dragon Blood for children of dynasty (needs to be added to on_birth_child on action)
+	}
+
+	traits = {
+		dragon_blood = 20
+	}
+}
+
+dragon_legacy_5 = { # Dragon Lords
+	legacy = dragon_legacy_track
+	
+	effect = {
+		# Allows Maa recruitment of Lord's Chosen
+		custom_description_no_bullet = {
+			text = dragon_legacy_5_effect
+		}
+	}
+
+	character_modifier = {
+		# Increases Maa limit for all heavy infantry, so it increases for Dragon Bannermen
+		heavy_infantry_max_size_add = 2
+	}
+}

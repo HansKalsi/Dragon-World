@@ -1,0 +1,15 @@
+﻿l_german:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! AI-Rolle"
+  setting_non_existent_ai_role:0 "Nicht-existent"
+  setting_non_existent_ai_role_desc:0 "Die KI darf die Funktionen der Drachenwelt nicht nutzen"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "Die KI wird die Funktionen der Drachenwelt nutzen"
+  setting_dragon_lords_ai_role:0 "Drachenlords"
+  setting_dragon_lords_ai_role_desc:0 "Die KI wird vermehrt Funktionen der Drachenwelt nutzen, wodurch sich die Chancen anderer Drachenlords auf einen Aufstieg erhöhen (#R Dies hat derzeit den gleichen Effekt wie die normale Rolle #!, wird aber in Zukunft noch erweitert)"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! Dragon-Befehlssprache"
+  setting_latin_commands:0 "Lateinisch"
+  setting_latin_commands_desc:0 "Befehle werden auf Lateinisch gegeben"
+  setting_high_valyrian_commands:0 "Hochvalyrisch"
+  setting_high_valyrian_commands_desc:0 "Befehle werden in Hochvalyrisch (aus Game of Thrones) sein"

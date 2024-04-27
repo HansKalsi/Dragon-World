@@ -1,0 +1,157 @@
+﻿l_german:
+
+	# Dragon taming decision
+	attempt_to_train_dragon_decision:0 "Versuch, einen Drachen zu zähmen"
+	attempt_to_train_dragon_decision_desc:0 "Wir kennen eine Drachengrube in der Nähe, in der wir versuchen können, einen ihrer Drachen zu trainieren..."
+	attempt_to_train_dragon_decision_confirm:0 "Bereitet euch auf die Reise vor"
+	attempt_to_train_dragon_decision_tooltip:0 "Versuch, einen Drachen zu zähmen"
+
+	dragon_world_new_game.0003.t:0 "Die Drachengruben"
+	dragon_world_new_game.0003.desc:0 "Das ist meine Chance, einen Drachen zu zähmen".
+	dragon_world_new_game.0003.a:0 "Heute ist mein Tag!"
+	dragon_world_new_game.0003.b:0 "Vielleicht ein anderes Mal..."
+
+	dragon_world_new_game.0006.t:0 "Die Bestie nähert sich"
+	dragon_world_new_game.0006.desc:0 "Als sich der Drache nähert, fühlst du ein Gefühl der Angst, das von Zweifeln überwältigt wird. Seine Augen sind grimmig und seine Haut scharf... Der Drache schüttelt den Kopf in deine Richtung und spuckt einen kleinen Feuerstoß aus, jetzt bist du am Zug..."
+	dragon_world_new_game.0006.a:0 "Wirf dich wild auf den Drachen!"
+	dragon_world_new_game.0006.food:0 "Sieht so aus, als stünde der Drache wieder auf der Speisekarte, Jungs!"
+	dragon_world_new_game.0006.trust:0 "Streckt eure Hand nach dem mächtigen Drachen aus"
+	dragon_world_new_game.0006.confident:0 "Greif schnell an und klettere auf den Rücken des Drachens"
+	dragon_world_new_game.0006.run:0 "Ich muss von hier verschwinden!"
+
+	dragon_world_new_game.0009.t:0 "Das Vertrauen des Drachen"
+	dragon_world_new_game.0009.desc:0 "[ROOT.Char.GetFirstName|U] streckt seine Hand nach dem Drachen aus und zu seiner Überraschung antwortet der Drache, indem er seinen Kopf sanft in die offene Handfläche legt."
+	dragon_world_new_game.0009.a:0 "Zusammen sind wir unaufhaltsam"
+
+	dragon_world_new_game.0011.t:0 "Die große Flucht"
+	dragon_world_new_game.0011.desc:0 "[ROOT.Char.GetFirstName|U] ist außer Atem und keucht, hat es aber geschafft, dem Drachen zu entkommen"
+	dragon_world_new_game.0011.a:0 "Endlich bin ich in Sicherheit..."
+
+	dragon_world_new_game.0007.t:0 "Abendessen mit dem Drachen"
+	dragon_world_new_game.0007.desc:0 "Nach einem Kampf mit dem Drachen wurde [ROOT.Char.GetFirstName|U] gefressen"
+	dragon_world_new_game.0007.a:0 "Oof"
+
+	dragon_world_new_game.0008.t:0 "[ROOT.Char.GetFirstName|U]'s Dinner"
+	dragon_world_new_game.0008.desc:0 "Nach einem kurzen Handgemenge mit dem Drachen wurde er unterworfen und prompt getötet und dann gekocht, jetzt werde ich endlich wissen, wie Drachenfleisch schmeckt"
+	dragon_world_new_game.0008.a:0 "*mümmelt*"
+
+	dragon_world_new_game.0013.t:0 "Abgesessen"
+	dragon_world_new_game.0013.desc:0 "Nach einem Kampf mit dem Drachen wurde [ROOT.Char.GetFirstName|U] abgeschüttelt und abmontiert, was zu Verletzungen führte, der Kampf ist praktisch vorbei..."
+	dragon_world_new_game.0013.a:0 "Rückzug"
+	dragon_world_new_game.0013.b:0 ""Niemals!""
+
+	dragon_world_new_game.0012.t:0 "Drache unterworfen"
+	dragon_world_new_game.0012.desc:0 "Nach einem Kampf mit dem Drachen ist es [ROOT.Char.GetFirstName|U] gelungen, ihn zu bezwingen - sie haben jetzt die totale Kontrolle"
+	dragon_world_new_game.0012.a:0 "Huzzah!"
+
+	dragon_world_new_game.0010.t:0 "Unzuverlässig"
+	dragon_world_new_game.0010.desc:0 "[ROOT.Char.GetFirstName|U] streckt seine Hand nach dem Drachen aus, aber der Drache reagiert nicht, stattdessen zeigt er völliges Desinteresse..."
+	dragon_world_new_game.0010.a:0 "Dann mach doch, was du willst!"
+
+	dragon_spawn.0005.t:0 "Kein Drache gezähmt"
+	dragon_spawn.0005.desc:0 "Diesmal ist es uns nicht gelungen, den Drachen zu zähmen..."
+	dragon_spawn.0005.a:0 "Schade."
+
+	dragon_spawn.0006.t:0 "Drache gezähmt"
+	dragon_spawn.0006.desc:0 "Ich habe es geschafft, einen mächtigen Drachen zu zähmen!"
+	dragon_spawn.0006.a:0 "Huzzah!"
+
+	# Get Dragon Master decision
+	attempt_to_learn_dragon_rider_decision:0 "Drachen reiten lernen"
+	attempt_to_learn_dragon_rider_decision_desc:0 "Wir kennen einen Ort in der Nähe, an dem wir lernen können, wie man auf Drachen reitet, lasst uns ihm einen Besuch abstatten..."
+	attempt_to_learn_dragon_rider_decision_confirm:0 "Bereite dich auf die Reise vor"
+	attempt_to_learn_dragon_rider_decision_tooltip:0 "Lerne, auf Drachen zu reiten"
+
+	dragon_world_new_game.0004.t:0 "Erlerne die Methoden des Drachenreitens"
+	dragon_world_new_game.0004.desc:0 "Ich möchte lernen, wie man Drachen reitet, egal was es kostet oder riskiert!"
+	dragon_world_new_game.0004.a:0 "Lasst es uns versuchen!"
+	dragon_world_new_game.0004.b:0 "Vielleicht könnte ich um Hilfe bitten..."
+	dragon_world_new_game.0004.c:0 "Ich habe Wichtigeres zu tun..."
+
+	generate_dragon_tooltip:0 "Es besteht eine 60%ige Chance auf Erfolg"
+	attempt_tame_dragon_tooltip:0 "Dies wird eine Ereigniskette in Gang setzen, dein Erfolg hängt von deiner Persönlichkeit und deinen Fähigkeiten ab"
+
+	# Taming Event Tooltips
+	trusted_by_dragon.tt:0 "Der Drache vertraut dir"
+	not_trusted_by_dragon.tt:0 "Der Drache traut dir nicht"
+	dragon_ate_character.tt:0 "Der Drache frisst dich"
+	ate_dragon.tt:0 "Du frisst den Drachen"
+	escaped_from_dragon.tt:0 "Du entkommst dem Drachen"
+	successfully_charged_dragon.tt:0 "Du hast den Drachen erfolgreich bestiegen"
+	thrown_off_dragon.tt:0 "Der Drache schüttelt dich ab"
+
+  # Dragon Rider related events & decisions
+  dragon_rider_events.0001b.t:0 "Trainiere mit deinem Drachen"
+  dragon_rider_events.0001b.desc:0 "Verbinde dich mit deinem Drachen und trainiere mit ihm, um Stärkungszauber zu erhalten und möglicherweise deine Drachenreiterstufe zu erhöhen"
+  dragon_rider_events.0001b.a:0 "Reite deinen Drachen"
+  dragon_rider_events.0001b.b:0 "Übe Drachenbefehle"
+  dragon_rider_events.0001b.c:0 "Verbinden Sie sich mit Ihrem Drachen"
+
+	# Recruit Dragon Rider decision
+	recruit_dragon_rider_decision:0 "Renommierten Drachenreiter rekrutieren"
+	recruit_dragon_rider_decision_decision_desc:0 "Wir werden nach einem berühmten Drachenreiter suchen und ihn an unseren Hof einladen"
+	recruit_dragon_rider_specialist_decision.tt:0 "Rekrutiert einen renommierten Drachenreiter an unseren Hof"
+	recruit_dragon_rider_decision_confirm:0 "Rekrutiert Spezialist"
+	recruit_dragon_rider_decision_tooltip:0 "Rekrutiert einen berühmten Drachenreiter für den Hof"
+
+	# Recruit Dragon Hatcher decision
+	recruit_dragon_hatcher_decision:0 "Rekrutiere Drachenbezwinger"
+	recruit_dragon_hatcher_decision_desc:0 "Wir werden nach einem Drachenfänger suchen und ihn an unseren Hof einladen"
+	recruit_dragon_hatcher_decision.tt:0 "Rekrutiert einen Drachenbezwinger an unseren Hof"
+	recruit_dragon_hatcher_decision_confirm:0 "Rekrutiert einen Spezialisten"
+	recruit_dragon_hatcher_decision_tooltip:0 "Rekrutiert einen Drachenbezwinger für den Hof"
+
+	# Look for Dragon Egg decision
+	look_for_dragon_eggs_decision:0 "Suche nach einem Drachenei"
+	look_for_dragon_eggs_decision_desc:0 "Suche nach einem Drachenei"
+	look_for_dragon_eggs_decision.tt:0 "Rekrutiert einen Drachenschlüpfer für den Hof"
+	look_for_dragon_eggs_decision_confirm:0 "Drachenei finden"
+	look_for_dragon_eggs_decision_tooltip:0 "Rekrutiert einen Drachenbeißer für den Hof"
+
+  # Train with Dragon decision
+  train_with_dragon_decision:0 "Trainiere mit dem Drachen"
+  train_with_dragon_decision_desc:0 "Trainiere mit deinem Drachen und erhalte die Chance, deinen Drachenreiterrang zu verbessern"
+  train_with_dragon_decision_confirm:0 "Trainiere mit deinem Drachen"
+  train_with_dragon_decision_tooltip:0 "Trainiere mit deinem Drachen und erhalte die Chance, deinen Drachenreiter-Rang zu verbessern"
+
+  # Demand Gold from Populace with Dragon decision
+  demand_gold_from_the_populace_decision:0 "Extrahiere Gold aus der Bevölkerung"
+  demand_gold_from_the_populace_decision_desc:0 "Steig auf deinen Drachen und reite los, um Gold aus der Bevölkerung zu gewinnen"
+  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_latin:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_high_valyrian:0 ""Ynot!""
+  demand_gold_from_the_populace_decision_tooltip:0 "Gold aus der Bevölkerung herausholen und riskieren, sie zu verärgern"
+
+  dragon_rider_events.0014.t:0 "Gold aus der Bevölkerung herausholen"
+  dragon_rider_events.0014.desc:0 "Komm, es ist Zeit zu fliegen..."
+  dragon_rider_events.0014.a_latin:0 ""Volare!""
+  dragon_rider_events.0014.a_high_valyrian:0 ""Sōvēs!""
+
+	# Look for Dragon decision and events
+	dragon_decision_event.0001.t:0 "Auf der Suche nach Drachen"
+	dragon_decision_event.0001.desc:0 "Wir haben Gerüchte über einen Drachen in der Nähe gehört, wir sollten ihn jagen und seinen Kopf als Trophäe mitbringen"
+	dragon_decision_event.0001.a:0 "Lasst uns einen Drachen finden!"
+	dragon_decision_event.0001.b:0 "Andererseits..."
+
+	look_for_dragons_decision:0 "Suche nach Drachen"
+	look_for_dragons_decision_desc:0 "Wir haben Gerüchte über einen Drachen in der Nähe gehört, wir sollten ihn jagen und seinen Kopf als Trophäe mitbringen"
+
+	dragon_decision_event.0002.t:0 "Drache gefunden"
+	dragon_decision_event.0002.desc:0 "Wir haben einen schlafenden Drachen in einer nahegelegenen Höhle gefunden, meine Männer warten auf meine Befehle..."
+	dragon_decision_event.0002.a:0 "Zeit, meine Trophäe einzufordern!"
+	dragon_decision_event.0002.b:0 "Ich kann ein so prächtiges Biest nicht töten"
+
+	dragon_decision_event.0003.t:0 "Drachenei gefunden"
+	dragon_decision_event.0003.desc:0 "Wir haben ein Drachenei in einer nahe gelegenen Höhle gefunden, was für ein wunderbarer Tag!"
+	dragon_decision_event.0003.a:0 "Du wirst zu einer mächtigen Bestie heranwachsen!"
+
+	dragon_egg_events.0002.t:0 "Drachenei ausgebrütet"
+	dragon_egg_events.0002.desc:0 "Mein Drachenei ist endlich geschlüpft!"
+	dragon_egg_events.0002.a:0 "Du wirst zu einer mächtigen Bestie heranwachsen!"
+
+	dragon_artefact_events.0002.t:0 "Drachenband"
+	dragon_artefact_events.0002.desc:0 "Mein Drache altert, und unser Band ist durch unsere gemeinsame Zeit stärker geworden!"
+	dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
+	dragon_artefact_events.0002.a_high_valyrian:0 ""Umbātās...""
+	dragon_artefact_events.0002.b_latin:0 ""Volare!""
+	dragon_artefact_events.0002.b_high_valyrian:0 ""Volare!""

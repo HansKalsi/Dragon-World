@@ -1,10 +1,4 @@
-﻿# on_game_start = {
-# 	events = {
-# 		dragon_world_new_game.0001
-# 	}
-# }
-
-# For some reason this isn't triggering whilst the five year one is
+﻿# For some reason this isn't triggering whilst the five year one is
 yearly_global_pulse = {
 	on_actions = {
 		on_dragon_egg_pulse

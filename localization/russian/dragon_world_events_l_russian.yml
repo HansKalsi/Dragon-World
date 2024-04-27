@@ -1,0 +1,157 @@
+﻿l_russian:
+
+	# Dragon taming decision
+	attempt_to_train_dragon_decision:0 "Попытка приручить дракона"
+	attempt_to_train_dragon_decision_desc:0 "Мы знаем о близлежащей драконьей яме, которая позволит нам попытаться приручить одного из ее драконов..."
+	attempt_to_train_dragon_decision_confirm:0 "Приготовиться к путешествию".
+	attempt_to_train_dragon_decision_tooltip:0 "Попытка приручить дракона".
+
+	dragon_world_new_game.0003.t:0 "Драконьи ямы"
+	dragon_world_new_game.0003.desc:0 "Это мой шанс приручить дракона".
+	dragon_world_new_game.0003.a:0 "Сегодня мой день!"
+	dragon_world_new_game.0003.b:0 "Возможно, в другой раз..."
+
+	dragon_world_new_game.0006.t:0 "Зверь приближается"
+	dragon_world_new_game.0006.desc:0 "Когда дракон приближается, вы испытываете чувство ужаса, переполненное сомнениями. Его глаза свирепы, а кожа остра... Дракон качает головой в вашу сторону и выдыхает небольшой огненный взрыв, теперь ваш ход..."
+	dragon_world_new_game.0006.a:0 "Дико броситься на дракона!"
+	dragon_world_new_game.0006.food:0 "Похоже, Дракон снова в меню, ребята!"
+	dragon_world_new_game.0006.trust:0 "Протяните руку могучему Дракону".
+	dragon_world_new_game.0006.confident:0 "Быстро заряжайте и взбирайтесь на спину Дракона"
+	dragon_world_new_game.0006.run:0 "Я должен выбраться отсюда!"
+
+	dragon_world_new_game.0009.t:0 "Доверие дракона"
+	dragon_world_new_game.0009.desc:0 "[ROOT.Char.GetFirstName|U] протягивает руку к дракону, и, к своему удивлению, дракон в ответ нежно кладет свою голову на раскрытую ладонь."
+	dragon_world_new_game.0009.a:0 "Вместе нас не остановить"
+
+	dragon_world_new_game.0011.t:0 "Великий побег"
+	dragon_world_new_game.0011.desc:0 "[ROOT.Char.GetFirstName|U] запыхался и хрипит, но сумел успешно уклониться от дракона"
+	dragon_world_new_game.0011.a:0 "Наконец-то я в безопасности..."
+
+	dragon_world_new_game.0007.t:0 "Ужин драконов"
+	dragon_world_new_game.0007.desc:0 "После борьбы с драконом [ROOT.Char.GetFirstName|U] был съеден"
+	dragon_world_new_game.0007.a:0 "Уф"
+
+	dragon_world_new_game.0008.t:0 "[ROOT.Char.GetFirstName|U]'s Dinner"
+	dragon_world_new_game.0008.desc:0 "После короткой потасовки с драконом он был покорен и быстро убит, а затем сварен, теперь я наконец-то узнаю, какова на вкус плоть дракона"
+	dragon_world_new_game.0008.a:0 "*кушать*"
+
+	dragon_world_new_game.0013.t:0 "Несмонтированный"
+	dragon_world_new_game.0013.desc:0 "После схватки с драконом [ROOT.Char.GetFirstName|U] был стряхнут и размонтирован, получив травму, бой практически закончен..."
+	dragon_world_new_game.0013.a:0 "Отступление"
+	dragon_world_new_game.0013.b:0 ""Никогда!""
+
+	dragon_world_new_game.0012.t:0 "Покоренный дракон"
+	dragon_world_new_game.0012.desc:0 "После борьбы с драконом [ROOT.Char.GetFirstName|U] удалось подчинить его себе - теперь они полностью контролируют ситуацию."
+	dragon_world_new_game.0012.a:0 "Ура!"
+
+	dragon_world_new_game.0010.t:0 "Неблагонадежный"
+	dragon_world_new_game.0010.desc:0 "[ROOT.Char.GetFirstName|U] протягивает руку к дракону, но тот не отвечает, вместо этого он умудряется демонстрировать откровенную незаинтересованность..."
+	dragon_world_new_game.0010.a:0 "Тогда пусть будет по-вашему!"
+
+	dragon_spawn.0005.t:0 "Дракон не приручен"
+	dragon_spawn.0005.desc:0 "На этот раз нам не удалось приручить дракона..."
+	dragon_spawn.0005.a:0 "Позор".
+
+	dragon_spawn.0006.t:0 "Дракон приручен"
+	dragon_spawn.0006.desc:0 "Мне удалось приручить могучего дракона!"
+	dragon_spawn.0006.a:0 "Ура!"
+
+	# Get Dragon Master decision
+	attempt_to_learn_dragon_rider_decision:0 "Научиться ездить на драконах"
+	attempt_to_learn_dragon_rider_decision_desc:0 "Мы знаем одно место поблизости, которое поможет нам научиться ездить на драконах, давайте навестим их..."
+	attempt_to_learn_dragon_rider_decision_confirm:0 "Приготовиться к путешествию".
+	attempt_to_learn_dragon_rider_decision_tooltip:0 "Научиться ездить на драконах"
+
+	dragon_world_new_game.0004.t:0 "Изучить методы езды на Драконах"
+	dragon_world_new_game.0004.desc:0 "Я хочу научиться ездить на драконах, независимо от затрат и риска!"
+	dragon_world_new_game.0004.a:0 "Давайте попробуем!"
+	dragon_world_new_game.0004.b:0 "Возможно, я мог бы попросить помощи..."
+	dragon_world_new_game.0004.c:0 "У меня есть более важные дела..."
+
+	generate_dragon_tooltip:0 "Вероятность успеха составляет 60 %"
+	attempt_tame_dragon_tooltip:0 "Это запустит цепочку событий, ваш успех зависит от ваших личных качеств и навыков"
+
+	# Taming Event Tooltips
+	trusted_by_dragon.tt:0 "Дракон доверяет вам"
+	not_trusted_by_dragon.tt:0 "Дракон не доверяет вам"
+	dragon_ate_character.tt:0 "Дракон ест вас"
+	ate_dragon.tt:0 "Вы съели дракона"
+	escaped_from_dragon.tt:0 "Вы сбежали от дракона"
+	successfully_charged_dragon.tt:0 "Вы успешно взобрались на дракона"
+	thrown_off_dragon.tt:0 "Дракон стряхнул вас с себя"
+
+  # Dragon Rider related events & decisions
+  dragon_rider_events.0001b.t:0 "Тренируйтесь со своим драконом"
+  dragon_rider_events.0001b.desc:0 "Сближайтесь и тренируйтесь с драконом, чтобы получить баффы и, возможно, повысить свой уровень наездника дракона"
+  dragon_rider_events.0001b.a:0 "Оседлать своего дракона"
+  dragon_rider_events.0001b.b:0 "Отработка команд дракона"
+  dragon_rider_events.0001b.c:0 "Сблизиться с драконом"
+
+	# Recruit Dragon Rider decision
+	recruit_dragon_rider_decision:0 "Нанять знаменитого всадника дракона"
+	recruit_dragon_rider_decision_decision_desc:0 "Мы разыщем знаменитого всадника дракона и пригласим его к нашему двору"
+	recruit_dragon_rider_specialist_decision.tt:0 "Вербует знаменитого всадника дракона ко двору"
+	recruit_dragon_rider_decision_confirm:0 "Завербовать специалиста"
+	recruit_dragon_rider_decision_tooltip:0 "Привлечь к суду известного всадника дракона"
+
+	# Recruit Dragon Hatcher decision
+	recruit_dragon_hatcher_decision:0 "Нанять драконьего шляпника"
+	recruit_dragon_hatcher_decision_desc:0 "Мы найдем Драконьего Шляпника и пригласим его к нам на суд"
+	recruit_dragon_hatcher_decision.tt:0 "Вербуем Драконьего Охотника в суд"
+	recruit_dragon_hatcher_decision_confirm:0 "Вербуем специалиста"
+	recruit_dragon_hatcher_decision_tooltip:0 "Привлечь к суду Драконьего Шляпника"
+
+	# Look for Dragon Egg decision
+	look_for_dragon_eggs_decision:0 "Искать яйцо дракона"
+	look_for_dragon_eggs_decision_desc:0 "Искать яйцо дракона"
+	look_for_dragon_eggs_decision.tt:0 "Вербует драконьего инкубатора в суд"
+	look_for_dragon_eggs_decision_confirm:0 "Найти яйцо дракона"
+	look_for_dragon_eggs_decision_tooltip:0 "Привлечь к суду дракона"
+
+  # Train with Dragon decision
+  train_with_dragon_decision:0 "Тренируйтесь с драконом"
+  train_with_dragon_decision_desc:0 "Тренируйтесь с драконом и получите шанс повысить уровень всадника дракона".
+  train_with_dragon_decision_confirm:0 "Тренироваться с драконом"
+  train_with_dragon_decision_tooltip:0 "Тренировки дают различные награды и возможность повысить уровень всадника дракона"
+
+  # Demand Gold from Populace with Dragon decision
+  demand_gold_from_the_populace_decision:0 "Добыть золото у населения"
+  demand_gold_from_the_populace_decision_desc:0 "Запрягите своего дракона и отправляйтесь добывать золото у населения".
+  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_latin:0 ""Venire!""
+  спрос_золото_из_популяции_решение_подтвердить_высокий_валирийский:0 ""Ynot!""
+  demand_gold_from_the_populace_decision_tooltip:0 "Добывать золото у населения и рисковать разозлить его".
+
+  dragon_rider_events.0014.t:0 "Добыть золото у населения"
+  dragon_rider_events.0014.desc:0 "Идем, пора лететь..."
+  dragon_rider_events.0014.a_latin:0 ""Volare!""
+  dragon_rider_events.0014.a_high_valyrian:0 ""Sōvēs!""
+
+	# Look for Dragon decision and events
+	dragon_decision_event.0001.t:0 "В поисках драконов"
+	dragon_decision_event.0001.desc:0 "До нас дошли слухи о драконе поблизости, мы должны на него поохотиться и принести его голову в качестве трофея".
+	dragon_decision_event.0001.a:0 "Давайте найдем себе дракона!"
+	dragon_decision_event.0001.b:0 "С другой стороны..."
+
+	look_for_dragons_decision:0 "Искать драконов"
+	look_for_dragons_decision_desc:0 "До нас дошли слухи о драконе поблизости, мы должны на него поохотиться и принести его голову в качестве трофея".
+
+	dragon_decision_event.0002.t:0 "Дракон найден"
+	dragon_decision_event.0002.desc:0 "Мы нашли дракона, спящего в соседней пещере, мои люди ждут моих приказов..."
+	dragon_decision_event.0002.a:0 "Пора забрать свой трофей!"
+	dragon_decision_event.0002.b:0 "Я не могу убить такого великолепного зверя".
+
+	dragon_decision_event.0003.t:0 "Найдено яйцо дракона"
+	dragon_decision_event.0003.desc:0 "Мы нашли яйцо дракона в соседней пещере, какой чудесный день!"
+	dragon_decision_event.0003.a:0 "Ты вырастешь в могучего зверя!"
+
+	dragon_egg_events.0002.t:0 "Яйцо дракона вылупилось"
+	dragon_egg_events.0002.desc:0 "Мое яйцо дракона наконец-то вылупилось!"
+	dragon_egg_events.0002.a:0 "Ты вырастешь в могучего зверя!"
+
+	dragon_artefact_events.0002.t:0 "Узы дракона"
+	dragon_artefact_events.0002.desc:0 "Мой дракон стареет, а наша связь стала сильнее от того, что мы провели вместе!"
+	dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
+	dragon_artefact_events.0002.a_high_valyrian:0 ""Umbātās...""
+	dragon_artefact_events.0002.b_latin:0 ""Volare!""
+	dragon_artefact_events.0002.b_high_valyrian:0 ""Volare!""

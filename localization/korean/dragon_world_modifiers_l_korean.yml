@@ -1,0 +1,11 @@
+﻿l_korean:
+
+  rode_dragon:0 "드래곤을 탔다"
+  ate_dragon:0 "먹은 드래곤"
+  trusted_by_dragon:0 "드래곤이 신뢰함"
+  gold_extracted_with_dragon:0 "드래곤과 함께 추출한 골드"
+
+  dragon_bond_income_modifier:0 "드래곤 수입 채권 (캐릭터 화면에 숨겨져 있음)"
+  dragon_bond_prestige_modifier:0 "드래곤 명성 채권 (캐릭터 화면에 숨겨져 있음)"
+  dragon_bond_piety_modifier:0 "드래곤 경건 채권 (캐릭터 화면 내 숨김)"
+  dragon_bond_dread_modifier:0 "드래곤 공포 본드 (캐릭터 화면 내 숨김)"

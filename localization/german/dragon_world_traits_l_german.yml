@@ -1,0 +1,14 @@
+﻿l_german:
+
+	# Dragon Master
+	trait_lifestyle_dragonmaster:0 "Drachenmeister"
+	trait_track_dragon_rider:0 "Drachenreiter"
+	trait_track_dragon_rider_desc:0 "Dieser Charakter weiß, wie man einen Drachen reitet."
+	trait_track_dragon_hatcher:0 "Drachenbezwinger"
+	trait_track_dragon_hatcher_desc:0 "Dieser Charakter hat zahllose Bücher und Manuskripte über die Kunst des Drachenschlüpfens studiert, das ist keine leichte Aufgabe, und durch den erhöhten Kontakt mit Dracheneiern wird er wahrscheinlich nicht so lange leben wie die meisten anderen..."
+	trait_dragon_rider_desc:0 "Dieser Charakter kennt den Weg des Drachens"
+
+	# Dragon Blood
+	trait_dragon_blood:0 "Drachenblut"
+	trait_dragon_blood_desc:0 "Dieser Charakter ist von einer Drachenblutlinie."
+	trait_dragon_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] ist von einer Drachenblutlinie."

@@ -1,0 +1,11 @@
+﻿l_spanish:
+
+  rode_dragon:0 "Dragón montado"
+  ate_dragon:0 "Ate Dragon"
+  trusted_by_dragon:0 "Confiado por Dragón"
+  gold_extracted_with_dragon:0 "Oro extraído con Dragón"
+
+  dragon_bond_income_modifier:0 "Bono de ingresos del dragón (Oculto en la pantalla de personaje)"
+  dragon_bond_prestige_modifier:0 "Bono de prestigio del dragón (Oculto en la pantalla de personaje)"
+  dragon_bond_piety_modifier:0 "Bono de Piedad del Dragón (Oculto en la pantalla de Personaje)"
+  dragon_bond_dread_modifier:0 "Vínculo de espanto del dragón (oculto en la pantalla de personaje)"

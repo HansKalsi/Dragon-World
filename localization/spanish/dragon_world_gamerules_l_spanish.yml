@@ -1,0 +1,15 @@
+﻿l_spanish:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! Papel de la IA"
+  setting_non_existent_ai_role:0 "Inexistente"
+  setting_non_existent_ai_role_desc:0 "La IA no podrá utilizar las funciones de Dragon World"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "La IA utilizará las características de Dragon World"
+  setting_dragon_lords_ai_role:0 "Señores Dragón"
+  setting_dragon_lords_ai_role_desc:0 "La IA aumentará su uso de las características del Mundo Dragón, incrementando las probabilidades de que otros Señores Dragón suban (#R Esto actualmente tiene el mismo efecto que el rol normal #!, se ampliará en el futuro)"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! Idioma de comandos de dragón"
+  setting_latin_commands:0 "Latín"
+  setting_latin_commands_desc:0 "Los comandos estarán en latín"
+  setting_high_valyrian_commands:0 "Alto Valirio"
+  setting_high_valyrian_commands_desc:0 "Los comandos estarán en Alto Valirio (de Juego de tronos)"

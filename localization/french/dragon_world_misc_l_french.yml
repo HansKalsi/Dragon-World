@@ -1,0 +1,82 @@
+﻿l_french:
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "Dragon de l'eau"
+	artifact_water_dragon:1 "Ce dragon est né dans les profondeurs des océans, mais réside désormais avec son seigneur dans leur domaine."
+
+	artifact_fire_dragon_name:1 "Dragon de feu"
+	artifact_fire_dragon:1 "Ce dragon est né au centre d'un volcan, après son éruption, le dragon trouve désormais du réconfort auprès de son chevaucheur."
+
+	artifact_stone_dragon_name:1 "Dragon de pierre"
+	artifact_stone_dragon:1 "Ce dragon est né au cœur d'une montagne, mais depuis qu'il est devenu trop grand pour sa demeure d'origine, il vit désormais avec son seigneur sur leur domaine."
+
+	artifact_dragon_egg_name:1 "Œuf de dragon"
+	artifact_dragon_egg:1 "Un œuf de dragon."
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "Dragon apprivoisé"
+	dragon_spawn.0007.t.found_dragon_egg:0 "Œuf de dragon trouvé"
+
+	# Dragon Memories
+	dragon_tamed:0 "Dragon apprivoisé"
+	dragon_tamed_desc:1 "J'ai réussi à apprivoiser un Dragon"
+	dragon_tamed_desc_second_perspective:1 "Vous avez réussi à apprivoiser un Dragon"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] a réussi à apprivoiser un Dragon"
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "Chevalier Dragon Élu"
+	chosen_dragon_knight_court_position_desc:0 "Le Chevalier Dragon Élu est chargé d'accompagner son seigneur lige au combat et peut être son champion dans tous les duels de Dragons."
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "Éleveur de Dragon"
+	dragon_hatcher_court_position_desc:0 "L'éleveur de dragon est chargé de prendre soin des œufs de dragons du seigneur liges et de s'assurer qu'ils sont dans des conditions appropriées pour éclore en de grandes bêtes !"
+
+	# Custom Deaths
+	death_dragon_ate:0 "a été dévoré par un dragon"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "Un dragon est engendré"
+	no_dragonrider_courtiers_tooltip:0 "Il n'y a pas de dragonniers dans votre cour."
+	EXECUTION_DRAGON_LATIN:0 ""Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "Il n'y a pas de courtisans répondant aux critères dans votre cour"
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "Sang de Dragon"
+	dragon_legacy_track_desc:0 "Le pouvoir du soleil ... dans la paume de ma main"
+	dragon_legacy_1_name:0 "Dragon Kin"
+	dragon_legacy_1_effect:0 "Déverrouille l'accès à la [GetBuilding('dragon_hatchery_01').GetName] [building|E]"
+	dragon_legacy_2_name:0 "Ceux qui servent, nous servent"
+	dragon_legacy_3_name:0 "Un pouvoir illimité"
+	dragon_legacy_4_name:0 "Naissance d'un dragon"
+	dragon_legacy_4_effect:0 "Le [GetTrait('dragon_blood').GetName( GetNullCharacter )] [trait|E] a 20% de chances d'apparaître chez les enfants de cette dynastie, puis il sera transmis à jamais à travers les âges."
+	dragon_legacy_5_name:0 "Les seigneurs du dragon"
+	dragon_legacy_5_effect:0 "Déverrouille les hommes d'armes élus par le seigneur"
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "Écloserie du dragon"
+	building_type_dragon_hatchery_01:0 "Nid de dragon"
+	building_dragon_hatchery_01_desc:0 "Un nid pour les œufs de dragon, où ils peuvent éclore et être élevés."
+	building_dragon_hatchery_02:0 "Écloserie du dragon II"
+	building_dragon_hatchery_02_desc:0 "Un nid plus grand pour les œufs de dragon, où ils peuvent éclore et être élevés."
+	building_dragon_hatchery_03:0 "Écloserie du dragon III"
+	building_dragon_hatchery_03_desc:0 "Un grand nid pour les œufs de dragon, où ils peuvent éclore et être élevés."
+	clear_ground_for_dragon_hatchery:0 "Préparer le terrain pour une écloserie de dragons"
+	clear_ground_for_dragon_hatchery_tooltip:0 "Débloquez un emplacement [special_building|E] dans l'une de vos provinces"
+	clear_ground_for_dragon_hatchery_desc:0 "Nous devons préparer le terrain pour une écloserie de dragons, ce qui nous permettra de faire éclore et d'élever des dragons dans notre royaume."
+	clear_ground_for_dragon_hatchery_confirm:0 "Commencer les préparatifs"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "Terrain préparé pour une écloserie de dragons"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "S'entraîner à l'équitation des dragons"
+	train_child_in_dragon_riding_ways_desc:0 "Enseigner à l'enfant les voies de l'équitation du dragon"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "Formation de cavalier dragon"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "Le temps est venu pour vous d'apprendre les voies du dragon"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "Je t'enseignerai les voies du dragon"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Échec de la formation de dragonnier"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "Je ne suis pas en colère, mais je suis déçue par vous."
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Quelle perte de temps!"

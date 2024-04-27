@@ -1,0 +1,15 @@
+﻿l_french:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! Rôle de l'IA"
+  setting_non_existent_ai_role:0 "Inexistant"
+  setting_non_existent_ai_role_desc:0 "L'IA ne sera pas autorisée à utiliser les fonctionnalités de Dragon World"
+  setting_default_ai_role:0 "Normal"
+  setting_default_ai_role_desc:0 "L'IA utilisera les fonctionnalités de Dragon World"
+  setting_dragon_lords_ai_role:0 "Seigneurs Dragons"
+  setting_dragon_lords_ai_role_desc:0 "L'IA augmentera son utilisation des fonctionnalités de Dragon World, augmentant ainsi les chances d'autres Seigneurs Dragons de s'élever (#R Cela a actuellement le même effet que le rôle normal #!, il sera étendu à l'avenir)"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! Langage de commande Dragon"
+  setting_latin_commands:0 "Latin"
+  setting_latin_commands_desc:0 "Les commandes seront en Latin"
+  setting_high_valyrian_commands:0 "Haut Valyrien"
+  setting_high_valyrian_commands_desc:0 "Les ordres seront donnés en Haut Valyrien (Game of Thrones)."

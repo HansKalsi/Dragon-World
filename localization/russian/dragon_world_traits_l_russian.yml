@@ -1,0 +1,14 @@
+﻿l_russian:
+
+	# Dragon Master
+	trait_lifestyle_dragonmaster:0 "Повелитель драконов"
+	trait_track_dragon_rider:0 "Наездник дракона"
+	trait_track_dragon_rider_desc:0 "Этот персонаж умеет ездить на драконе".
+	trait_track_dragon_hatcher:0 "Охотник на драконов"
+	trait_track_dragon_hatcher_desc:0 "Этот персонаж изучил бесчисленное количество книг и манускриптов, посвященных искусству высиживания драконов, это нелегкое дело, и из-за повышенного контакта с яйцами дракона он, скорее всего, не проживет так долго, как большинство..."
+	trait_dragon_rider_desc:0 "Этот персонаж знает путь дракона".
+
+	# Dragon Blood
+	trait_dragon_blood:0 "Кровь дракона"
+	trait_dragon_blood_desc:0 "Этот персонаж принадлежит к роду драконов".
+	trait_dragon_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] принадлежит к роду драконов."

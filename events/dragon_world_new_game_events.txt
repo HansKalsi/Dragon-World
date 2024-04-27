@@ -1,16 +1,5 @@
 ﻿namespace = dragon_world_new_game
 
-#Dragon World introduction event at game start
-dragon_world_new_game.0001 = {
-	type = none
-	title = dragon_world_new_game.0001.t
-	desc = dragon_world_new_game.0001.desc
-
-	option = {
-		name = dragon_world_new_game.0001.a
-	}
-}
-
 # Generate dragon
 dragon_world_new_game.0002 = {
 	type = empty

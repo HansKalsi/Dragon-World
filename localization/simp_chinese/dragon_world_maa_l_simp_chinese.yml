@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+
+	# Dragon Maa
+	dragon_maa:0 “龙”
+	dragon_maa_flavor:0 “龙是强大的生物，拥有无穷的力量和破坏力”
+
+	# Dragon Bannermen Maa
+	dragon_bannermen_maa:0 “龙之封臣”
+	Dragon_bannermen_maa_flavor:0 “龙之封臣是一群誓死保护神龙及其骑手的勇士”
+
+	# Lord's Chosen Maa
+	lords_chosen_maa:0 “神选者”
+	lords_chosen_maa_flavor:0 “领主的天选之人是一群龙骑士，他们作为龙骑士的贴身护卫，与领主并肩作战”

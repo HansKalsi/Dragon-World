@@ -1,41 +1,5 @@
 namespace = dragon_spawn
 
-dragon_spawn.0001 = {
-	type = empty
-	hidden = yes
-
-	immediate = {
-		create_artifact_testing_dragon_effect = { OWNER = this }
-	}
-}
-
-dragon_spawn.0002 = {
-	type = empty
-	hidden = yes
-
-	immediate = {
-		create_artifact_water_dragon_effect = { OWNER = this }
-	}
-}
-
-dragon_spawn.0003 = {
-	type = empty
-	hidden = yes
-
-	immediate = {
-		create_artifact_fire_dragon_effect = { OWNER = this }
-	}
-}
-
-dragon_spawn.0004 = {
-	type = empty
-	hidden = yes
-
-	immediate = {
-		create_artifact_stone_dragon_effect = { OWNER = this }
-	}
-}
-
 dragon_spawn.0005 = {
 	type = character_event
 	title = dragon_spawn.0005.t

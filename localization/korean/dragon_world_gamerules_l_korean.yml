@@ -1,0 +1,15 @@
+﻿l_korean:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! AI 역할"
+  setting_non_existent_ai_role:0 "존재하지 않음"
+  setting_non_existent_ai_role_desc:0 "AI는 드래곤 월드 기능을 사용할 수 없습니다."
+  setting_default_ai_role:0 "보통"
+  setting_default_ai_role_desc:0 "AI가 드래곤 월드 기능을 사용합니다."
+  setting_dragon_lords_ai_role:0 "드래곤 영주"
+  setting_dragon_lords_ai_role_desc:0 "인공지능의 드래곤 월드 기능 사용량이 증가하여 다른 드래곤 군주가 상승할 확률이 증가합니다 (#R 현재 일반 역할과 동일한 효과를 가집니다. #!, 향후 확장될 예정입니다)"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! 드래곤 명령 언어"
+  setting_latin_commands:0 "라틴어"
+  setting_latin_commands_desc:0 "명령은 라틴어로 표시됩니다."
+  setting_high_valyrian_commands:0 "하이 밸리언"
+  setting_high_valyrian_commands_desc:0 "명령은 하이발리아어(왕좌의 게임)로 진행됩니다."

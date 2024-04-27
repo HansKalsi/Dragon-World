@@ -1,0 +1,82 @@
+﻿l_simp_chinese:
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "水龙"
+	artifact_water_dragon:1 "这条龙出生在海洋深处，现在和它的主人一起居住在他们的庄园里。"
+
+	artifact_fire_dragon_name:1 "火龙"
+	artifact_fire_dragon:1 "这条龙出生在一座火山的中心，火山爆发后，这条龙与它的骑手相依为命。"
+
+	artifact_stone_dragon_name:1 "石龙"
+	artifact_stone_dragon:1 "这条龙出生在一座山的中心，但由于它的体型太大，无法住进原来的家，所以现在和它的主人一起住在他们的庄园里。"
+
+	artifact_dragon_egg_name:1 “龙蛋”
+	artifact_dragon_egg:1 “龙蛋”。
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "驯服的龙"
+	dragon_spawn.0007.t.found_dragon_egg:0 "找到的龙蛋"
+
+	# Dragon Memories
+	dragon_tamed:0 "驯服的龙"
+	dragon_tamed_desc:1 "我成功驯服了一条龙"
+	dragon_tamed_desc_second_perspective:1 "您成功驯服了一条龙"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] 成功驯服一条龙"
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "个人龙冠军"
+	chosen_dragon_knight_court_position_desc:0 "个人龙骑士负责在战斗中陪伴其陛下，并可在任何龙骑士决斗中担任其冠军。"
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "捕龙者"
+	dragon_hatcher_court_position_desc:0 "孵龙人负责照看他们的龙蛋，确保它们处于适合孵化成巨兽的状态！"
+
+	# Custom Deaths
+	death_dragon_ate:0 "被龙吃掉了"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "生成一条龙"
+	no_dragonrider_courtiers_tooltip:0 "你的宫廷里没有龙骑士"
+	EXECUTION_DRAGON_LATIN:0 ""Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "您的宫廷中没有符合要求的朝臣"
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "龙血"
+	dragon_legacy_track_desc:0 "太阳的力量......在我掌中"
+	dragon_legacy_1_name:0 "龙族"
+	dragon_legacy_1_effect:0 "解锁进入 [GetBuilding('dragon_hatchery_01').GetName] [building|E]"
+	dragon_legacy_2_name:0 "服务者，服务于我们"
+	dragon_legacy_3_name:0 "无限动力"
+	dragon_legacy_4_name:0 "龙的诞生"
+	dragon_legacy_4_effect:0 "GetTrait('dragon_blood').GetName( GetNullCharacter )] [trait|E]有 20% 的几率为本王朝的子民生成，然后将永远流传千古。"
+	dragon_legacy_5_name:0 "龙领主"
+	dragon_legacy_5_effect:0 "解锁 "领主的天选战士"
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "龙孵化场"
+	building_type_dragon_hatchery_01:0 "龙巢"
+	building_dragon_hatchery_01_desc:0 "龙蛋的巢穴，龙蛋可以在这里孵化和养育。"
+	building_dragon_hatchery_02:0 "龙孵化场 II
+	building_dragon_hatchery_02_desc:0 "一个更大的龙蛋巢穴，可以孵化和养育龙蛋。"
+	building_dragon_hatchery_03:0 "龙孵化场三"
+	building_dragon_hatchery_03_desc:0 "龙蛋的大型巢穴，可以孵化和养育龙蛋。"
+	clear_ground_for_dragon_hatchery:0 "为龙孵化场准备土地"
+	clear_ground_for_dragon_hatchery_tooltip:0 "解锁您所在省份中的一个 [special_building|E] 插槽"。
+	clear_ground_for_dragon_hatchery_desc:0 "我们需要为龙孵化场准备场地，这将使我们能够在王国中孵化和饲养龙。"
+	clear_ground_for_dragon_hatchery_confirm:0 "开始准备工作"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "为龙孵化场准备场地"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "训练骑龙技巧"
+	train_child_in_dragon_riding_ways_desc:0 "教孩子骑龙的方法"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "龙骑士训练"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "你们学习龙之道的时候到了"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "我将教你龙族之道"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "龙骑士训练失败"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "我没有生气，但我对你很失望"
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "真是浪费时间"

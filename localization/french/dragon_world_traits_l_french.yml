@@ -1,0 +1,14 @@
+﻿l_french:
+
+	# Dragon Master
+	trait_lifestyle_dragonmaster:0 "Maître du Dragon"
+	trait_track_dragon_rider:0 "Chevaucheur de Dragon"
+	trait_track_dragon_rider_desc:0 "Ce personnage sait monter un dragon."
+	trait_track_dragon_hatcher:0 "Éleveur de Dragon"
+	trait_track_dragon_hatcher_desc:0 "Ce personnage a étudié d'innombrables livres et manuscrits concernant l'art de l'éclosion des dragons. Ce n'est pas une mince affaire et, en raison de son exposition accrue aux œufs de dragon, il ne vivra probablement pas aussi longtemps que la plupart des autres..."
+	trait_dragon_rider_desc:0 "Ce personnage connaît la voie du dragon"
+
+	# Dragon Blood
+	trait_dragon_blood:0 "Sang de Dragon"
+	trait_dragon_blood_desc:0 "Ce personnage est de la lignée des dragons."
+	trait_dragon_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] est issu de la lignée des dragons."

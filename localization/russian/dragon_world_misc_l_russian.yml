@@ -1,0 +1,82 @@
+﻿l_russian:
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "Водяной дракон"
+	artifact_water_dragon:1 "Этот дракон был рожден в глубинах океанов, но сейчас живет со своим повелителем в его поместье".
+
+	artifact_fire_dragon_name:1 "Огненный дракон"
+	artifact_fire_dragon:1 "Этот дракон был рожден в центре вулкана, после его извержения дракон теперь находит утешение у своего всадника".
+
+	artifact_stone_dragon_name:1 "Каменный дракон"
+	artifact_stone_dragon:1 "Этот дракон родился в сердце горы, но, поскольку он стал слишком велик для своего первоначального дома, теперь он живет со своим повелителем в их поместье".
+
+	artifact_dragon_egg_name:1 "Яйцо дракона"
+	artifact_dragon_egg:1 "Яйцо дракона".
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "Прирученный дракон"
+	dragon_spawn.0007.t.found_dragon_egg:0 "Найдено яйцо дракона"
+
+	# Dragon Memories
+	dragon_tamed:0 "Дракон приручен"
+	dragon_tamed_desc:1 "Мне удалось приручить дракона"
+	dragon_tamed_desc_second_perspective:1 "Вам удалось приручить дракона"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] удалось приручить дракона"
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "Личный чемпион дракона"
+	chosen_dragon_knight_court_position_desc:0 "Личный чемпион дракона обязан сопровождать своего сеньора в бою и может быть его чемпионом в любых поединках драконов"
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "Высиживатель драконов"
+	dragon_hatcher_court_position_desc:0 "Драконовод отвечает за заботу о яйцах своих подопечных драконов и за то, чтобы они были в подходящих условиях для вылупления великих зверей!"
+
+	# Custom Deaths
+	death_dragon_ate:0 "был съеден драконом."
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "Порожден дракон"
+	no_dragonrider_courtiers_tooltip:0 "В вашем дворе нет ни одного драконьего всадника"
+	EXECUTION_DRAGON_LATIN:0 ""Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "В вашем суде нет ни одного придворного, отвечающего требованиям"
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "Кровь дракона"
+	dragon_legacy_track_desc:0 "Сила солнца... на моей ладони".
+	dragon_legacy_1_name:0 "Род драконов"
+	dragon_legacy_1_effect:0 "Открывает доступ к [GetBuilding('dragon_hatchery_01').GetName] [building|E]"
+	dragon_legacy_2_name:0 "Те, кто служат, служат нам"
+	dragon_legacy_3_name:0 "Неограниченная власть"
+	dragon_legacy_4_name:0 "Рожденный драконом"
+	dragon_legacy_4_effect:0 "Сайт [GetTrait('dragon_blood').GetName( GetNullCharacter )] [trait|E] имеет 20% шанс породить детей этой династии, и тогда он будет вечно передаваться из поколения в поколение."
+	dragon_legacy_5_name:0 "Повелители драконов"
+	dragon_legacy_5_effect:0 "Разблокирует избранных оруженосцев лорда"
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "Инкубатор драконов"
+	building_type_dragon_hatchery_01:0 "Гнездо дракона"
+	building_dragon_hatchery_01_desc:0 "Гнездо для драконьих яиц, где они могут быть высижены и выращены".
+	building_dragon_hatchery_02:0 "Инкубатор драконов II"
+	building_dragon_hatchery_02_desc:0 "Более просторное гнездо для драконьих яиц, где их можно высиживать и выращивать".
+	building_dragon_hatchery_03:0 "Инкубатор драконов III"
+	building_dragon_hatchery_03_desc:0 "Большое гнездо для драконьих яиц, где их можно высиживать и выращивать."
+	clear_ground_for_dragon_hatchery:0 "Подготовить почву для инкубатора драконов"
+	clear_ground_for_dragon_hatchery_tooltip:0 "Разблокируйте слот [special_building|E] в одной из ваших провинций"
+	clear_ground_for_dragon_hatchery_desc:0 "Нам нужно подготовить почву для инкубатора драконов, это позволит нам выводить и выращивать драконов в нашем королевстве."
+	clear_ground_for_dragon_hatchery_confirm:0 "Начинаем подготовку"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "Площадка, подготовленная для инкубатора драконов"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "Обучить ребенка способам верховой езды на драконе"
+	train_child_in_dragon_riding_ways_desc:0 "Обучить ребенка способам верховой езды на драконе"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "Обучение всадника дракона"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "Пришло время тебе изучить пути дракона"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "Я научу тебя пути Дракона"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Провалил обучение наездника дракона"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "Я не сержусь, но я разочарован в тебе"
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Какая пустая трата времени"

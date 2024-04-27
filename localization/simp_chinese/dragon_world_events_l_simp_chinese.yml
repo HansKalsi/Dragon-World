@@ -1,0 +1,157 @@
+﻿l_simp_chinese:
+
+	# Dragon taming decision
+	attempt_to_train_dragon_decision:0 “尝试驯服一条龙”
+	attempt_too_train_dragon_decision_desc:0 “我们知道附近有一个龙穴，可以让我们尝试驯服其中一条龙......”
+	attempt_too_train_dragon_decision_confirm:0 “准备出发”
+	attempt_to_train_dragon_decision_tooltip:0 “尝试驯服一条龙”
+
+	dragon_world_new_game.0003.t:0 “龙潭”
+	dragon_world_new_game.0003.desc:0 “这是我驯服龙的机会。”
+	dragon_world_new_game.0003.a:0 “今天是我的大日子！”
+	dragon_world_new_game.0003.b:0 “也许下次吧......”
+
+	dragon_world_new_game.0006.t:0 “野兽来临”
+	dragon_world_new_game.0006.desc:0 "随着巨龙的逼近，你感到一种被疑惑淹没的恐惧感。它的眼神凶狠，皮肤锋利...... 巨龙朝你的方向摇了摇头，喷出一小股火焰，现在该你行动了......”
+	dragon_world_new_game.0006.a:0 “向巨龙疯狂投掷！”
+	dragon_world_new_game.0006.food:0 “看来龙又要上场了，孩子们！”
+	dragon_world_new_game.0006.trust:0 “向强大的龙伸出你的手”
+	dragon_world_new_game.0006.confident:0 “快速冲锋，爬上巨龙的背”
+	dragon_world_new_game.0006.run:0 “我必须离开这里！”
+
+	dragon_world_new_game.0009.t:0 “龙的信任”
+	dragon_world_new_game.0009.desc:0“[ROOT.Char.GetFirstName|U]向龙伸出他们的手，令他们惊讶的是龙的回应是将它的头轻轻放在你张开的手掌上。”
+	dragon_world_new_game.0009.a:0 “团结起来，我们势不可挡”
+
+	dragon_world_new_game.0011.t:0 “大逃亡”
+	dragon_world_new_game.0011.desc:0“[ROOT.Char.GetFirstName|U]气喘吁吁，但成功躲过了龙的追捕”
+	dragon_world_new_game.0011.a:0 “我终于安全了......”
+
+	dragon_world_new_game.0007.t:0 "龙宴"
+	dragon_world_new_game.0007.desc:0 "经过与龙的斗争，[ROOT.Char.GetFirstName|U]被吃掉了"
+	dragon_world_new_game.0007.a:0 "呜"
+
+	dragon_world_new_game.0008.t:0 "[ROOT.Char.GetFirstName|U]的晚餐"
+	dragon_world_new_game.0008.desc:0 "在与龙短暂的混战之后，它被制服，并迅速被杀死，然后被煮熟，现在我终于知道龙肉是什么味道了"
+	dragon_world_new_game.0008.a:0 "*大块朵颐*"
+
+	dragon_world_new_game.0013.t:0 "未安装"
+	dragon_world_new_game.0013.desc:0 "在与巨龙的搏斗中，[ROOT.Char.GetFirstName|U]被甩下并卸下马鞍，导致受伤，战斗几乎结束了"
+	dragon_world_new_game.0013.a:0 "撤退"
+	dragon_world_new_game.0013.b:0 ""从来没有""
+
+	dragon_world_new_game.0012.t:0 "降龙伏虎"
+	dragon_world_new_game.0012.desc:0 "在与巨龙搏斗之后，[ROOT.Char.GetFirstName|U] 成功制服了它 - 他们现在完全控制了它"
+	dragon_world_new_game.0012.a:0 "万岁"
+
+	dragon_world_new_game.0010.t:0 "不可信"
+	dragon_world_new_game.0010.desc:0 "[ROOT.Char.GetFirstName|U]向龙伸出他们的手，但龙没有回应，反而表现出完全不感兴趣的样子"
+	dragon_world_new_game.0010.a:0 "那就随你便吧！"
+
+	dragon_spawn.0005.t:0 "没有驯服的龙"
+	dragon_spawn.0005.desc:0 "我们这次没能驯服龙..."
+	dragon_spawn.0005.a:0 "羞耻"
+
+	dragon_spawn.0006.t:0 "驯服的龙"
+	dragon_spawn.0006.desc:0 "我成功驯服了一条强大的龙！"
+	dragon_spawn.0006.a:0 "万岁"
+
+	# Get Dragon Master decision
+	attempt_to_learn_dragon_rider_decision:0 "学习骑龙"
+	attempt_to_learn_dragon_rider_decision_desc:0 "我们知道附近有地方可以帮助我们学习如何骑龙，让我们去拜访一下吧"
+	attempt_to_learn_dragon_rider_decision_confirm:0 "为旅程做好准备"
+	attempt_to_learn_dragon_rider_decision_tooltip:0 "学习骑龙"
+
+	dragon_world_new_game.0004.t:0 "学习骑龙的方法"
+	dragon_world_new_game.0004.desc:0 "我希望学会如何骑龙，无论代价和风险如何！"
+	dragon_world_new_game.0004.a:0 "让我们放手一搏！"
+	dragon_world_new_game.0004.b:0 “也许我可以寻求帮助......”
+	dragon_world_new_game.0004.c:0 “我有更重要的事情......”
+
+	generate_dragon_tooltip:0 “成功几率为 60%”。
+	attempt_tame_dragon_tooltip:0 “这将启动一个事件链，成功与否取决于您的个性和技能”
+
+	# Taming Event Tooltips
+	trusted_by_dragon.tt:0 “龙信任你”
+	not_trusted_by_dragon.tt:0 神龙不信任你
+	dragon_ate_character.tt:0 “神龙会吃掉你” “吃掉神龙”.tt:0
+	ate_dragon.tt:0 “你吃了龙”
+	escaped_from_dragon.tt:0 “您逃离了龙” “您逃离了龙”。
+	successfully_charged_dragon.tt:0 “你成功地骑上了龙” “你成功地骑上了龙” "你成功地骑上了龙
+	thrown_off_dragon.tt:0 "您被龙震飞
+
+  # Dragon Rider related events & decisions
+  dragon_rider_events.0001b.t:0 "训练你的龙"
+  dragon_rider_events.0001b.desc:0 "与您的龙结合并进行训练，以获取缓冲效果，并有可能提升您的龙骑士等级"
+  dragon_rider_events.0001b.a:0 "驾驭你的龙"
+  dragon_rider_events.0001b.b:0 "练习龙指令"
+  dragon_rider_events.0001b.c:0 "与您的龙建立联系"
+
+	# Recruit Dragon Rider decision
+	recruit_dragon_rider_decision:0 "招募知名龙骑士"
+	recruit_dragon_rider_decision_decision_desc:0 "我们将寻找一位知名的龙骑士，并邀请他们来到我们的宫廷"
+	recruit_dragon_rider_specialist_decision.tt:0 "招募一名知名龙骑士入宫"
+	recruit_dragon_rider_decision_confirm:0 "招聘专家"
+	recruit_dragon_rider_decision_tooltip:0 "招募知名龙骑士入宫"
+
+	# Recruit Dragon Hatcher decision
+	recruit_dragon_hatcher_decision:0 "招募猎龙人"
+	recruit_dragon_hatcher_decision_desc:0 "我们将寻找孵龙人，并邀请他们来到我们的宫廷"
+	recruit_dragon_hatcher_decision.tt:0 "招募一名龙孵化者"
+	recruit_dragon_hatcher_decision_confirm:0 "招聘专家"
+	recruit_dragon_hatcher_decision_tooltip:0 "招龙哈奇入宫"
+
+	# Look for Dragon Egg decision
+	look_for_dragon_eggs_decision:0 "寻找龙蛋"
+	look_for_dragon_eggs_decision_desc:0 "寻找龙蛋"
+	look_for_dragon_eggs_decision.tt:0 "招募一名龙孵化者"
+	look_for_dragon_eggs_decision_confirm:0 "寻找龙蛋"
+	look_for_dragon_eggs_decision_tooltip:0 "招龙哈奇入宫"
+
+  # Train with Dragon decision
+  train_with_dragon_decision:0 "驯龙高手"
+  train_with_dragon_decision_desc:0 "与你的龙一起训练，并有机会提升你的龙骑士等级"
+  train_with_dragon_decision_confirm:0 “训练你的龙骑士”
+  train_with_dragon_decision_tooltip:0 “训练可获得各种奖励，并有机会提升你的龙骑士等级”
+
+  # Demand Gold from Populace with Dragon decision
+  demand_gold_from_the_populace_decision:0 “从民众中榨取黄金”
+  demand_gold_from_the_populace_decision_desc:0 “骑上你的巨龙，从民众中提取黄金”
+  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_latin:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_high_valyrian:0 ""Ynot!""
+  demand_gold_from_the_populace_decision_tooltip:0 "从民众那里榨取黄金，冒着激怒他们的风险"
+
+  dragon_rider_events.0014.t:0 "从民众中掘金"
+  dragon_rider_events.0014.desc:0 "来吧，是时候飞翔了..."
+  dragon_rider_events.0014.a_latin:0 ""Volare!""
+  dragon_rider_events.0014.a_high_valyrian:0 ""Sōvēs!""
+
+	# Look for Dragon decision and events
+	dragon_decision_event.0001.t:0 “寻找龙”
+	dragon_decision_event.0001.desc:0 “我们听说附近有龙，我们应该去猎杀它，把它的头带回来作为战利品”
+	dragon_decision_event.0001.a:0 “我们去找一条龙吧！”
+	dragon_decision_event.0001.b:0 “另一方面......”
+
+	look_for_dragons_decision:0 “寻找龙”
+	look_for_dragons_decision_desc:0 “我们听说附近有龙，我们应该猎杀它，并把它的头作为战利品带回来”
+
+	dragon_decision_event.0002.t:0 “发现龙”
+	dragon_decision_event.0002.desc:0 “我们在附近的山洞里发现了一条沉睡的龙，我的人正在等待我的命令......”
+	dragon_decision_event.0002.a:0 “是时候领取我的战利品了！”
+	dragon_decision_event.0002.b:0 “我不能杀死如此壮观的巨兽”
+
+	dragon_decision_event.0003.t:0 “发现龙蛋”
+	dragon_decision_event.0003.desc:0 “我们在附近的山洞里发现了一枚龙蛋，真是奇妙的一天！”
+	dragon_decision_event.0003.a:0 “你将成长为强大的野兽！”
+
+	dragon_egg_events.0002.t:0 “龙蛋孵化”
+	dragon_egg_events.0002.desc:0 “我的龙蛋终于孵化了！”
+	dragon_egg_events.0002.a:0 “你将成长为强大的野兽！”
+
+	dragon_artefact_events.0002.t:0 “龙之羁绊”
+	dragon_artefact_events.0002.desc:0 “我的龙正在衰老，而我们的纽带在一起的时间里变得更加牢固！”
+	dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
+	dragon_artefact_events.0002.a_high_valyrian:0 ""Umbātās...""
+	dragon_artefact_events.0002.b_latin:0 ""Volare!""
+	dragon_artefact_events.0002.b_high_valyrian:0 ""Volare!""

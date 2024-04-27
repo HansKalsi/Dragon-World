@@ -1,0 +1,82 @@
+﻿l_korean:
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "물의 용"
+	artifact_water_dragon:1 "이 용은 깊은 바다에서 태어났지만, 지금은 영지에서 주인과 함께 살고 있죠."
+
+	artifact_fire_dragon_name:1 "불의 용"
+	artifact_fire_dragon:1 "이 용은 화산 한가운데서 태어났고, 화산이 폭발한 후 지금은 기수와 함께 편안함을 찾았어요."
+
+	artifact_stone_dragon_name:1 "석룡"
+	artifact_stone_dragon:1 "이 용은 산 한가운데서 태어났지만, 원래 살던 곳보다 너무 커져서 지금은 영지에서 주인과 함께 살고 있어요."
+
+	artifact_dragon_egg_name:1 "드래곤 에그"
+	artifact_dragon_egg:1 "용의 알."
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "길들인 드래곤"
+	dragon_spawn.0007.t.found_dragon_egg:0 "드래곤 알 발견"
+
+	# Dragon Memories
+	dragon_tamed:0 "드래곤 길들이기"
+	dragon_tamed_desc:1 "드래곤 길들이기에 성공했습니다"
+	dragon_tamed_desc_second_perspective:1 "드래곤을 길들이는 데 성공했습니다."
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive]가 드래곤 길들이기에 성공했습니다."
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "개인 드래곤 챔피언"
+	chosen_dragon_knight_court_position_desc:0 "개인 드래곤 챔피언은 전투에서 군주를 동행하며 모든 드래곤 결투에서 군주의 챔피언이 될 수 있습니다."
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "드래곤 해처"
+	dragon_hatcher_court_position_desc:0 "드래곤 해처는 군주인 드래곤 알을 돌보고 부화하여 거대한 짐승으로 자라기에 적합한 상태가 되도록 하는 일을 담당합니다!"
+
+	# Custom Deaths
+	death_dragon_ate:0 "용에게 잡아먹혔다"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "드래곤이 스폰되었습니다."
+	no_dragonrider_courtiers_tooltip:0 "코트에 드래곤라이더가 없습니다."
+	EXECUTION_DRAGON_LATIN:0 ""Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "귀하의 코트에 요구 사항을 충족하는 법관이 없습니다."
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "용의 피"
+	dragon_legacy_track_desc:0 "태양의 힘... 내 손바닥에"
+	dragon_legacy_1_name:0 "드래곤 킨"
+	dragon_legacy_1_effect:0 "[GetBuilding('dragon_hatchery_01').GetName] [building|E]에 대한 접근을 잠금 해제합니다."
+	dragon_legacy_2_name:0 "봉사하는 자, 우리를 섬기다"
+	dragon_legacy_3_name:0 "무한한 힘"
+	dragon_legacy_4_name:0 "드래곤 탄생"
+	dragon_legacy_4_effect:0 "[GetTrait('dragon_blood').GetName( GetNullCharacter )] [특성|E]는 이 왕조의 자손에게 20%의 확률로 생성되며, 그 후 영원히 대를 이어 계승됩니다."
+	dragon_legacy_5_name:0 "용의 군주"
+	dragon_legacy_5_effect:0 "군주의 선택된 부하 잠금 해제"
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "드래곤 부화장"
+	building_type_dragon_hatchery_01:0 "드래곤 둥지"
+	building_dragon_hatchery_01_desc:0 "드래곤 알을 부화시켜 키울 수 있는 둥지입니다."
+	building_dragon_hatchery_02:0 "드래곤 부화장 II"
+	building_dragon_hatchery_02_desc:0 "드래곤 알을 부화시켜 키울 수 있는 더 큰 둥지입니다."
+	building_dragon_hatchery_03:0 "드래곤 부화장 III"
+	building_dragon_hatchery_03_desc:0 "드래곤 알을 부화시켜 키울 수 있는 웅장한 둥지입니다."
+	clear_ground_for_dragon_hatchery:0 "드래곤 부화장을 위한 부지를 준비하세요"
+	clear_ground_for_dragon_hatchery_tooltip:0 "영토 중 하나에 있는 [special_building|E] 슬롯을 잠금 해제하세요."
+	clear_ground_for_dragon_hatchery_desc:0 "드래곤 부화장을 위한 부지를 준비해야 우리 영토에서 드래곤을 부화시키고 키울 수 있습니다."
+	clear_ground_for_dragon_hatchery_confirm:0 "준비를 시작하세요"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "드래곤 부화장을 위한 부지 준비"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "드래곤 라이딩의 방식으로 기차를 타세요"
+	train_child_in_dragon_riding_ways_desc:0 "아이에게 드래곤 라이딩의 방법을 가르쳐주세요"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "드래곤 라이더 훈련"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "드래곤의 길을 배울 때가 왔어요"
+	teach_child_to_be_드래곤라이더_interaction.1001.a:0 "드래곤의 길을 가르쳐 주겠다"
+	teach_child_to_be_드래곤라이더_interaction.1002.t:0 "드래곤 라이더 훈련 실패"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "화는 안 났지만 실망했어"
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "시간 낭비였어"

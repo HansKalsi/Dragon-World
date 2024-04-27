@@ -1,0 +1,82 @@
+﻿l_spanish:
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "Dragón de agua"
+	artifact_water_dragon:1 "Este dragón nació en las profundidades de los océanos, pero ahora reside con su señor en su propiedad."
+
+	artifact_fire_dragon_name:1 "Dragón de fuego"
+	artifact_fire_dragon:1 "Este dragón nació en el centro de un volcán, después de que entró en erupción, el dragón ahora encuentra consuelo con su jinete."
+
+	artifact_stone_dragon_name:1 "Dragón de piedra"
+	artifact_stone_dragon:1 "Este dragón nació en el corazón de una montaña, pero como se volvió demasiado grande para su hogar original, ahora vive con su señor en su propiedad."
+
+	artifact_dragon_egg_name:1 "Huevo de dragón"
+	artifact_dragon_egg:1 "Un huevo de dragón".
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "Dragón domesticado"
+	dragon_spawn.0007.t.found_dragon_egg:0 "Huevo de dragón encontrado"
+
+	# Dragon Memories
+	dragon_tamed:0 "Dragón domesticado"
+	dragon_tamed_desc:1 "Logré domesticar a un dragón"
+	dragon_tamed_desc_second_perspective:1 "Lograste domesticar a un dragón"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] logró domesticar un dragón"
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "Campeón Personal del Dragón"
+	chosen_dragon_knight_court_position_desc:0 "El Campeón Personal de Dragones es el responsable de acompañar a su señor en la batalla y puede ser su campeón en cualquier duelo de Dragones"
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "Cazador de dragones"
+	dragon_hatcher_court_position_desc:0 "¡El incubador de dragones es responsable de cuidar los huevos de dragón de su señor y asegurarse de que están en condiciones adecuadas para eclosionar en grandes bestias!"
+
+	# Custom Deaths
+	death_dragon_ate:0 "fue devorado por un Dragón"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "Aparece un dragón"
+	no_dragonrider_courtiers_tooltip:0 "No hay jinetes de dragón en su corte"
+	EXECUTION_DRAGON_LATIN:0 ""¡Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""¡Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "No hay cortesanos que cumplan los requisitos en tu corte"
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "Sangre de Dragón"
+	dragon_legacy_track_desc:0 "El poder del sol... en la palma de mi mano"
+	dragon_legacy_1_name:0 "Sangre de Dragón"
+	dragon_legacy_1_effect:0 "Desbloquea el acceso al [GetBuilding('dragon_hatchery_01').GetName] [building|E]"
+	dragon_legacy_2_name:0 "Los que sirven, nos sirven"
+	dragon_legacy_3_name:0 "Poder ilimitado"
+	dragon_legacy_4_name:0 "Nacido Dragón"
+	dragon_legacy_4_effect:0 "El [GetTrait('dragon_blood').GetName( GetNullCharacter )] [trait|E] tiene un 20% de probabilidad de engendrar para los hijos de esta dinastía, y luego se transmitirá para siempre a través de los tiempos."
+	dragon_legacy_5_name:0 "Señores Dragón"
+	dragon_legacy_5_effect:0 "Desbloquea a los Hombres de Armas Elegidos del Señor"
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "Criadero de Dragones"
+	building_type_dragon_hatchery_01:0 "Nido para dragones"
+	building_dragon_hatchery_01_desc:0 "Nido para huevos de dragón, donde se pueden incubar y criar."
+	building_dragon_hatchery_02:0 "Criadero de Dragones II"
+	building_dragon_hatchery_02_desc:0 "Un nido más grande para huevos de dragón, donde pueden ser incubados y criados."
+	building_dragon_hatchery_03:0 "Criadero de Dragones III"
+	building_dragon_hatchery_03_desc:0 "Un gran nido para huevos de dragón, donde pueden ser incubados y criados."
+	clear_ground_for_dragon_hatchery:0 "Prepara el terreno para un criadero de dragones"
+	clear_ground_for_dragon_hatchery_tooltip:0 "Desbloquea una ranura [special_building|E] en una de tus provincias"
+	clear_ground_for_dragon_hatchery_desc:0 "Necesitamos preparar el terreno para un criadero de dragones, esto nos permitirá incubar y criar dragones en nuestro reino."
+	clear_ground_for_dragon_hatchery_confirm:0 "Comienza los preparativos"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""¡Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""¡Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "Terreno preparado para un criadero de dragones"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "Entrenar al niño en los caminos de la Equitación del Dragón"
+	train_child_in_dragon_riding_ways_desc:0 "Enseña al niño los caminos de la Equitación del Dragón"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "Entrenamiento para jinete de dragón"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "Ha llegado el momento de que aprendas los caminos del Dragón"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "Te enseñaré los caminos del Dragón"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Entrenamiento de Jinete de Dragón fallido"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "No estoy enfadado, pero estoy decepcionado contigo"
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Qué pérdida de tiempo"

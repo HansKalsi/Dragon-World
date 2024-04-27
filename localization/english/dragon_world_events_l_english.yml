@@ -1,0 +1,157 @@
+﻿l_english:
+
+	# Dragon taming decision
+	attempt_to_train_dragon_decision:0 "Attempt to tame a Dragon"
+	attempt_to_train_dragon_decision_desc:0 "We know of a nearby dragon pit that will allow us to attempt to train one of its dragons..."
+	attempt_to_train_dragon_decision_confirm:0 "Prepare for the journey"
+	attempt_to_train_dragon_decision_tooltip:0 "Attempt to tame a Dragon"
+
+	dragon_world_new_game.0003.t:0 "The Dragon Pits"
+	dragon_world_new_game.0003.desc:0 "This is my chance to tame a dragon."
+	dragon_world_new_game.0003.a:0 "Today is my day!"
+	dragon_world_new_game.0003.b:0 "Perhaps another time..."
+
+	dragon_world_new_game.0006.t:0 "The Beast Approaches"
+	dragon_world_new_game.0006.desc:0 "As the dragon approaches, you feel a sense of dread overwhelmed by doubt. Its eyes are fierce and skin sharp... The dragon shakes its head in your direction and breaths a small fireblast, now it is your move..."
+	dragon_world_new_game.0006.a:0 "Throw yourself wildly at the Dragon!"
+	dragon_world_new_game.0006.food:0 "Looks like Dragon is back on the menu boys!"
+	dragon_world_new_game.0006.trust:0 "Reach out your hand to the mighty Dragon"
+	dragon_world_new_game.0006.confident:0 "Quickly charge and climb the Dragon's back"
+	dragon_world_new_game.0006.run:0 "I've got to get out of here!"
+
+	dragon_world_new_game.0009.t:0 "The Dragon's Trust"
+	dragon_world_new_game.0009.desc:0 "[ROOT.Char.GetFirstName|U] reaches out their hand out to the Dragon and to their surpise the Dragon responds by gently rests its head in the open palm of your hand."
+	dragon_world_new_game.0009.a:0 "Together we are unstoppable"
+
+	dragon_world_new_game.0011.t:0 "The Great Escape"
+	dragon_world_new_game.0011.desc:0 "[ROOT.Char.GetFirstName|U] is out of breath and wheezing, but has managed to successfully evade the Dragon"
+	dragon_world_new_game.0011.a:0 "Finally I am safe..."
+
+	dragon_world_new_game.0007.t:0 "Dragons Dinner"
+	dragon_world_new_game.0007.desc:0 "After a struggle with the Dragon, [ROOT.Char.GetFirstName|U] was eaten"
+	dragon_world_new_game.0007.a:0 "Oof"
+
+	dragon_world_new_game.0008.t:0 "[ROOT.Char.GetFirstName|U]'s Dinner"
+	dragon_world_new_game.0008.desc:0 "After a brief scuffle with the Dragon it was subdued and promptly killed then boiled, now I will finally know what Dragon flesh tastes like"
+	dragon_world_new_game.0008.a:0 "*munches*"
+
+	dragon_world_new_game.0013.t:0 "Unmounted"
+	dragon_world_new_game.0013.desc:0 "After a struggle with the Dragon, [ROOT.Char.GetFirstName|U] was shaken off and unmounted causing injury, the fight is practically over..."
+	dragon_world_new_game.0013.a:0 "Retreat"
+	dragon_world_new_game.0013.b:0 ""Never!""
+
+	dragon_world_new_game.0012.t:0 "Dragon Subdued"
+	dragon_world_new_game.0012.desc:0 "After a struggle with the Dragon, [ROOT.Char.GetFirstName|U] has managed to subdue it - they are now in total control"
+	dragon_world_new_game.0012.a:0 "Huzzah!"
+
+	dragon_world_new_game.0010.t:0 "Untrustworthy"
+	dragon_world_new_game.0010.desc:0 "[ROOT.Char.GetFirstName|U] reaches out their hand out to the Dragon but it does not respond, instead it manages to show outright disinterest..."
+	dragon_world_new_game.0010.a:0 "Have it your way then!"
+
+	dragon_spawn.0005.t:0 "No Dragon Tamed"
+	dragon_spawn.0005.desc:0 "We failed to tame the dragon this time..."
+	dragon_spawn.0005.a:0 "Shame."
+
+	dragon_spawn.0006.t:0 "Dragon Tamed"
+	dragon_spawn.0006.desc:0 "I have managed to tame a mighty Dragon!"
+	dragon_spawn.0006.a:0 "Huzzah!"
+
+	# Get Dragon Master decision
+	attempt_to_learn_dragon_rider_decision:0 "Learn to ride Dragons"
+	attempt_to_learn_dragon_rider_decision_desc:0 "We know somewhere nearby that will help us learn how to ride dragons, let's pay them a visit..."
+	attempt_to_learn_dragon_rider_decision_confirm:0 "Prepare for the journey"
+	attempt_to_learn_dragon_rider_decision_tooltip:0 "Learn to ride Dragons"
+
+	dragon_world_new_game.0004.t:0 "Learn the methods of riding Dragons"
+	dragon_world_new_game.0004.desc:0 "I wish to learn how to ride dragon, no matter the cost or risk!"
+	dragon_world_new_game.0004.a:0 "Lets give it a go!"
+	dragon_world_new_game.0004.b:0 "Perhaps I could ask for help..."
+	dragon_world_new_game.0004.c:0 "I have more important matters..."
+
+	generate_dragon_tooltip:0 "There is a 60% chance of success"
+	attempt_tame_dragon_tooltip:0 "This will kick off an event chain, your success depends on your personalty and skills"
+
+	# Taming Event Tooltips
+	trusted_by_dragon.tt:0 "The Dragon trusts you"
+	not_trusted_by_dragon.tt:0 "The Dragon doesn't trust you"
+	dragon_ate_character.tt:0 "The Dragon eats you"
+	ate_dragon.tt:0 "You eat the Dragon"
+	escaped_from_dragon.tt:0 "You escape the Dragon"
+	successfully_charged_dragon.tt:0 "You successfully mount the Dragon"
+	thrown_off_dragon.tt:0 "The Dragon shakes you off"
+
+  # Dragon Rider related events & decisions
+  dragon_rider_events.0001b.t:0 "Train with your Dragon"
+  dragon_rider_events.0001b.desc:0 "Bond and train with your Dragon to gain buffs and possibly to upgrade your Dragon Rider tier"
+  dragon_rider_events.0001b.a:0 "Ride your Dragon"
+  dragon_rider_events.0001b.b:0 "Practice Dragon commands"
+  dragon_rider_events.0001b.c:0 "Bond with your Dragon"
+
+	# Recruit Dragon Rider decision
+	recruit_dragon_rider_decision:0 "Recruit Renowned Dragon Rider"
+	recruit_dragon_rider_decision_decision_desc:0 "We will search for a renowned Dragon Rider and invite them to our court"
+	recruit_dragon_rider_specialist_decision.tt:0 "Recruits a Renowned Dragon Rider to court"
+	recruit_dragon_rider_decision_confirm:0 "Recruit Specialist"
+	recruit_dragon_rider_decision_tooltip:0 "Recruit Renowned Dragon Rider to court"
+
+	# Recruit Dragon Hatcher decision
+	recruit_dragon_hatcher_decision:0 "Recruit Dragon Hatcher"
+	recruit_dragon_hatcher_decision_desc:0 "We will search for a Dragon Hatcher and invite them to our court"
+	recruit_dragon_hatcher_decision.tt:0 "Recruits a Dragon Hatcher to court"
+	recruit_dragon_hatcher_decision_confirm:0 "Recruit Specialist"
+	recruit_dragon_hatcher_decision_tooltip:0 "Recruit Dragon Hatcher to court"
+
+	# Look for Dragon Egg decision
+	look_for_dragon_eggs_decision:0 "Look for Dragon Egg"
+	look_for_dragon_eggs_decision_desc:0 "Search for a Dragon Egg"
+	look_for_dragon_eggs_decision.tt:0 "Recruits a Dragon Hatcher to court"
+	look_for_dragon_eggs_decision_confirm:0 "Find Dragon Egg"
+	look_for_dragon_eggs_decision_tooltip:0 "Recruit Dragon Hatcher to court"
+
+  # Train with Dragon decision
+  train_with_dragon_decision:0 "Train with Dragon"
+  train_with_dragon_decision_desc:0 "Train with your Dragon and have the chance to upgrade your Dragon Rider tier"
+  train_with_dragon_decision_confirm:0 "Train with your Dragon"
+  train_with_dragon_decision_tooltip:0 "Training gives various rewards and gives a chance to upgrade your Dragon Rider tier"
+
+  # Demand Gold from Populace with Dragon decision
+  demand_gold_from_the_populace_decision:0 "Extract Gold from the Populace"
+  demand_gold_from_the_populace_decision_desc:0 "Mount your Dragon and ride out to extract gold from the populace"
+  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_latin:0 ""Venire!""
+  demand_gold_from_the_populace_decision_confirm_high_valyrian:0 ""Ynot!""
+  demand_gold_from_the_populace_decision_tooltip:0 "Extract gold from the populace and risk angering them"
+
+  dragon_rider_events.0014.t:0 "Extract Gold from the Populace"
+  dragon_rider_events.0014.desc:0 "Come, it's time to fly..."
+  dragon_rider_events.0014.a_latin:0 ""Volare!""
+  dragon_rider_events.0014.a_high_valyrian:0 ""Sōvēs!""
+
+	# Look for Dragon decision and events
+	dragon_decision_event.0001.t:0 "Looking for Dragons"
+	dragon_decision_event.0001.desc:0 "We have heard rumours of a dragon nearby, we should hunt it and bring it's head back as a trophy"
+	dragon_decision_event.0001.a:0 "Let's find ourselves a dragon!"
+	dragon_decision_event.0001.b:0 "On the other hand..."
+
+	look_for_dragons_decision:0 "Look for Dragons"
+	look_for_dragons_decision_desc:0 "We have heard rumours of a dragon nearby, we should hunt it and bring it's head back as a trophy"
+
+	dragon_decision_event.0002.t:0 "Dragon found"
+	dragon_decision_event.0002.desc:0 "We have found a dragon sleeping in a nearby cave, my men are awaiting my orders..."
+	dragon_decision_event.0002.a:0 "Time to claim my trophy!"
+	dragon_decision_event.0002.b:0 "I cannot kill such a magnificent beast"
+
+	dragon_decision_event.0003.t:0 "Dragon Egg found"
+	dragon_decision_event.0003.desc:0 "We have found a Dragon Egg in a nearby cave, what a wonderous day!"
+	dragon_decision_event.0003.a:0 "You shall grow into a mighty beast!"
+
+	dragon_egg_events.0002.t:0 "Dragon Egg hatched"
+	dragon_egg_events.0002.desc:0 "My Dragon Egg has finally hatched!"
+	dragon_egg_events.0002.a:0 "You shall grow into a mighty beast!"
+
+	dragon_artefact_events.0002.t:0 "Dragon Bond"
+	dragon_artefact_events.0002.desc:0 "My Dragon is ageing, and our bond has become stronger from our time together!"
+	dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
+	dragon_artefact_events.0002.a_high_valyrian:0 ""Umbātās...""
+	dragon_artefact_events.0002.b_latin:0 ""Volare!""
+	dragon_artefact_events.0002.b_high_valyrian:0 ""Volare!""

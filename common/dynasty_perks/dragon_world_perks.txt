@@ -15,7 +15,7 @@ dragon_legacy_1 = { # Dragon Kin
 
 	character_modifier = {
 		name = dragon_legacy_1_name
-		# FIXME: Can build Dragon Hatchery in capital
+		# Can build Dragon Hatchery in capital
 	}
 	
 	ai_chance = {
@@ -58,7 +58,7 @@ dragon_legacy_4 = { # Dragon Born
 
 	character_modifier = {
 		prowess = 5
-		# FIXME: Adds chance of Dragon Blood for children of dynasty (needs to be added to on_birth_child on action)
+		# Adds chance of Dragon Blood for children of dynasty (needs to be added to on_birth_child on action)
 	}
 
 	traits = {

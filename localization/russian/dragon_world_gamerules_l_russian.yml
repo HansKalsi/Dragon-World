@@ -1,0 +1,15 @@
+﻿l_russian:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! Роль ИИ"
+  setting_non_existent_ai_role:0 "Несуществующий"
+  setting_non_existent_ai_role_desc:0 "ИИ не будет позволено использовать возможности Мира Дракона"
+  setting_default_ai_role:0 "Нормальный"
+  setting_default_ai_role_desc:0 "ИИ будет использовать возможности Мира Драконов"
+  setting_dragon_lords_ai_role:0 "Повелители драконов"
+  setting_dragon_lords_ai_role_desc:0 "ИИ будет чаще использовать возможности Мира Драконов, увеличивая шансы других Повелителей Драконов на повышение (#R В настоящее время это имеет тот же эффект, что и обычная роль #!, в будущем она будет расширена"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! Язык команд Dragon"
+  setting_latin_commands:0 "Латинская"
+  setting_latin_commands_desc:0 "Команды будут на латинском языке"
+  setting_high_valyrian_commands:0 "Высокий валирийский"
+  setting_high_valyrian_commands_desc:0 "Команды будут отдаваться на высоком валирийском языке (из "Игры престолов")"

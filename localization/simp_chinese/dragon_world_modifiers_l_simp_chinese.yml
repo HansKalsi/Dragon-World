@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+
+  rode_dragon:0 “骑龙”
+  ate_dragon:0 “吃了龙”
+  trusted_by_dragon:0 “信任龙”
+  gold_extracted_with_dragon:0 “用龙提取的黄金”
+
+  dragon_bond_income_modifier:0 “神龙收入绑定（隐藏在角色界面中）”
+  dragon_bond_prestige_modifier:0 “神龙声望绑定（隐藏在角色界面中）”
+  dragon_bond_piety_modifier:0 “龙虔诚债券（隐藏在角色界面中）”
+  dragon_bond_dread_modifier:0 “龙之恐惧绑定（隐藏在角色界面中）”

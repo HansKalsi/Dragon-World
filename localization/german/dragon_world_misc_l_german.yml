@@ -1,0 +1,82 @@
+﻿l_german:
+
+	# Dragon types and defaults
+	artifact_water_dragon_name:1 "Wasserdrache"
+	artifact_water_dragon:1 "Dieser Drache wurde in den Tiefen der Ozeane geboren, wohnt aber jetzt bei seinem Herrn auf dessen Anwesen."
+
+	artifact_fire_dragon_name:1 "Feuerdrache"
+	artifact_fire_dragon:1 "Dieser Drache wurde im Zentrum eines Vulkans geboren, nachdem dieser ausgebrochen war, findet der Drache nun Trost bei seinem Reiter."
+
+	artifact_stone_dragon_name:1 "Stein-Drache"
+	artifact_stone_dragon:1 "Dieser Drache wurde im Herzen eines Berges geboren, aber da er zu groß für sein ursprüngliches Zuhause wurde, lebt er nun mit seinem Herrn auf dessen Anwesen."
+
+	artifact_dragon_egg_name:1 "Drachenei"
+	artifact_dragon_egg:1 "Ein Drachenei."
+
+	# Custom Notification Toasts
+	dragon_spawn.0006.t.tamed_dragon:0 "Gezähmter Drache"
+	dragon_spawn.0007.t.found_dragon_egg:0 "Gefundenes Drachenei"
+
+	# Dragon Memories
+	dragon_tamed:0 "Drache gezähmt"
+	dragon_tamed_desc:1 "Es ist mir gelungen, einen Drachen zu zähmen"
+	dragon_tamed_desc_second_perspective:1 "Du hast erfolgreich einen Drachen gezähmt"
+	dragon_tamed_desc_third_perspective:1 "[owner.GetNamePossessive] hat erfolgreich einen Drachen gezähmt"
+
+	# Dragon World court positions
+	# Chosen Dragon Knight
+	chosen_dragon_knight_court_position:0 "Persönlicher Drachenchampion"
+	chosen_dragon_knight_court_position_desc:0 "Der persönliche Drachenchampion ist dafür verantwortlich, seinen Lehnsherrn im Kampf zu begleiten und kann dessen Champion in allen Drachenduellen sein.
+	# Dragon Hatcher
+	dragon_hatcher_court_position:0 "Drachenschlüpfer"
+	dragon_hatcher_court_position_desc:0 "Der Dragon Hatcher ist dafür verantwortlich, sich um die Dracheneier seiner Lehnsherren zu kümmern und sicherzustellen, dass sie in einem geeigneten Zustand sind, um zu großen Bestien zu schlüpfen!"
+
+	# Custom Deaths
+	death_dragon_ate:0 "wurde von einem Drachen gefressen"
+
+	# Custom Tooltips
+	spawn_dragon_tooltip:0 "Ein Drache ist gespawnt"
+	no_dragonrider_courtiers_tooltip:0 "Es gibt keine Drachenreiter in deinem Hof"
+	EXECUTION_DRAGON_LATIN:0 ""Ad Infernum!""
+	EXECUTION_DRAGON_HIGH_VALYRIAN:0 ""Drakarys!""
+
+	# Overriding DEBUG text
+	NOT_ANY_OF_MY_COURTIERS:0 "In Ihrem Gericht gibt es keine Höflinge, die den Anforderungen entsprechen"
+
+	# Dragon Blood Dynasty Legacy
+	dragon_legacy_track_name:0 "Drachenblut"
+	dragon_legacy_track_desc:0 "Die Macht der Sonne ... in meiner Handfläche"
+	dragon_legacy_1_name:0 "Drachenkind"
+	dragon_legacy_1_effect:0 "Schaltet den Zugang zum [GetBuilding('dragon_hatchery_01').GetName] [building|E] frei"
+	dragon_legacy_2_name:0 "Diejenigen, die uns dienen, dienen uns"
+	dragon_legacy_3_name:0 "Unbegrenzte Macht"
+	dragon_legacy_4_name:0 "Drachengeboren"
+	dragon_legacy_4_effect:0 "Das [GetTrait('dragon_blood').GetName( GetNullCharacter )] [trait|E] hat eine 20%ige Chance, bei Kindern dieser Dynastie zu spawnen, und wird dann für immer durch die Zeitalter weitergegeben."
+	dragon_legacy_5_name:0 "Drachenlords"
+	dragon_legacy_5_effect:0 "Schaltet die auserwählten Männer des Lords zu den Waffen frei"
+
+	# Dragon Hatchery building
+	building_dragon_hatchery_01:0 "Drachenbrutstätte"
+	building_type_dragon_hatchery_01:0 "Drachennest"
+	building_dragon_hatchery_01_desc:0 "Ein Nest für Dracheneier, in dem sie ausgebrütet und aufgezogen werden können."
+	building_dragon_hatchery_02:0 "Drachenbrutstätte II"
+	building_dragon_hatchery_02_desc:0 "Ein größeres Nest für Dracheneier, in dem sie ausgebrütet und aufgezogen werden können."
+	building_dragon_hatchery_03:0 "Drachenbrutstätte III"
+	building_dragon_hatchery_03_desc:0 "Ein großes Nest für Dracheneier, in dem sie ausgebrütet und aufgezogen werden können."
+	clear_ground_for_dragon_hatchery:0 "Gelände für eine Drachenbrutstätte vorbereiten"
+	clear_ground_for_dragon_hatchery_tooltip:0 "Schalte einen [special_building|E]-Slot in einer Deiner Provinzen frei"
+	clear_ground_for_dragon_hatchery_desc:0 "Wir müssen das Gelände für eine Drachenbrutstätte vorbereiten, damit wir in unserem Reich Drachen ausbrüten und aufziehen können."
+	clear_ground_for_dragon_hatchery_confirm:0 "Beginnen Sie mit den Vorbereitungen"
+	clear_ground_for_dragon_hatchery_confirm_latin:0 ""Benedicite Terram Draconis!""
+	clear_ground_for_dragon_hatchery_confirm_high_valyrian:0 ""Jehikagon Se Tegun Hen Zaldrīzes!""
+	clear_ground_for_dragon_hatchery.toast:0 "Grundstücke für eine Drachenbrutstätte vorbereitet"
+
+	# Custom Child Interactions
+	train_child_in_dragon_riding_ways:0 "Kind in den Wegen des Drachenreitens unterrichten"
+	train_child_in_dragon_riding_ways_desc:0 "Bringe dem Kind die Wege des Drachenreitens bei"
+	teach_child_to_be_dragon_rider_interaction.1001.t:0 "Ausbildung zum Drachenreiter"
+	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "Die Zeit ist gekommen, dass du die Wege des Drachen lernst"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "Ich werde dich die Wege des Drachen lehren"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Ausbildung zum Drachenreiter fehlgeschlagen"
+	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "Ich bin nicht wütend, aber ich bin enttäuscht von dir"
+	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Was für eine Zeitverschwendung"

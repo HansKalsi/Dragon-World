@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+
+  rule_ai_dragon_world_role:0 "#G Dragon World: #! 人工智能的作用"
+  setting_non_existent_ai_role:0 “不存在”
+  setting_non_existent_ai_role_desc:0 "不允许人工智能使用龙腾世界的功能。
+  setting_default_ai_role:0 “正常”
+  setting_default_ai_role_desc:0 “人工智能将使用龙世界功能”
+  setting_dragon_lords_ai_role:0 “龙骑士”
+  setting_dragon_lords_ai_role_desc:0 "人工智能会增加龙世界功能的使用率，从而增加其他龙骑士崛起的几率 (#R 目前，该功能的效果与正常角色相同 #!, 今后将进一步扩展)"
+
+  rule_dragon_command_language:0 "#G Dragon World: #! 龙指令语言"
+  setting_latin_commands:0 "拉丁语"
+  setting_latin_commands_desc:0 "命令将使用拉丁语"
+  setting_high_valyrian_commands:0 "高瓦雷利亚语"
+  setting_high_valyrian_commands_desc:0 "命令将使用高等瓦雷利亚语（来自《权力的游戏》）。"

@@ -361,7 +361,9 @@ clear_ground_for_dragon_hatchery = {
 	sort_order = 100
 
 	is_shown = {
-        has_dynasty_perk = dragon_legacy_1
+        dynasty = {
+            has_dynasty_perk = dragon_legacy_1
+        }
         capital_province = {
             has_special_building_slot = no
         }

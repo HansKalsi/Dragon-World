@@ -81,8 +81,13 @@
 	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "I am not angry, but I am disappointed in you"
 	teach_child_to_be_dragon_rider_interaction.1002.a:0 "What a waste of time"
 
+	# Activity Trait Progress Tooltips
+	dragon_rider_progress_towards_trait_1_tt:0 "Slightly increases [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_2_tt:0 "Increases [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_3_tt:0 "Greatly increases [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] Experience"
 
-  # Dragon name
+	# Dragon name
 	# custom_dragon_name:0 "[this_artifact.GetName]"
 
   # custom_loc_cl:0 "[GetPlayer.Custom('customizable_localization_custom_loc')]" # Could also be replaced with Root.Char.Custom(x) to scope to root rather than player

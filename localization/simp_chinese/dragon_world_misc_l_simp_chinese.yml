@@ -80,3 +80,9 @@
 	teach_child_to_be_dragon_rider_interaction.1002.t:0 "龙骑士训练失败"
 	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "我没有生气，但我对你很失望"
 	teach_child_to_be_dragon_rider_interaction.1002.a:0 "真是浪费时间"
+
+	# Activity Trait Progress Tooltips
+	dragon_rider_progress_towards_trait_1_tt:0 "略微增加 [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_2_tt:0 "增加[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [特质_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_3_tt:0 "大幅提升[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [特质等级_track_xp|E]"
+	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] 经验"

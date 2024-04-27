@@ -80,3 +80,9 @@
 	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Échec de la formation de dragonnier"
 	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "Je ne suis pas en colère, mais je suis déçue par vous."
 	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Quelle perte de temps!"
+
+	# Activity Trait Progress Tooltips
+	dragon_rider_progress_towards_trait_1_tt:0 "Augmente légèrement [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_2_tt:0 "Augmente [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_3_tt:0 "Augmente fortement [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] Expérience"

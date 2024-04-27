@@ -80,3 +80,9 @@
 	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Провалил обучение наездника дракона"
 	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "Я не сержусь, но я разочарован в тебе"
 	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Какая пустая трата времени"
+
+	# Activity Trait Progress Tooltips
+	dragon_rider_progress_towards_trait_1_tt:0 "Слегка увеличивает [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_2_tt:0 "Увеличивает [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_3_tt:0 "Значительно увеличивает [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] Опыт"

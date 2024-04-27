@@ -80,3 +80,9 @@
 	teach_child_to_be_dragon_rider_interaction.1002.t:0 "Entrenamiento de Jinete de Dragón fallido"
 	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "No estoy enfadado, pero estoy decepcionado contigo"
 	teach_child_to_be_dragon_rider_interaction.1002.a:0 "Qué pérdida de tiempo"
+
+	# Activity Trait Progress Tooltips
+	dragon_rider_progress_towards_trait_1_tt:0 "Aumenta ligeramente [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_2_tt:0 "Aumenta [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragon_rider_progress_towards_trait_3_tt:0 "Aumenta en gran medida [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
+	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] Experiencia"

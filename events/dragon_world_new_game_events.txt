@@ -407,20 +407,32 @@ dragon_world_new_game.0005 = {
 			modifier = rode_dragon
 			days = 1825
 		}
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		name = dragon_rider_events.0001b.b
 		add_prestige = 350
-		dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		name = dragon_rider_events.0001b.c
 		add_piety = 100
-		dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 }
 

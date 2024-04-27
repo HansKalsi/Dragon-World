@@ -25,13 +25,13 @@ dragonmaster_progress_point_gain_effect = {
 		# Tooltips
 		if = {
 			limit = { scope:dragonmaster_base_increase <= 1 }
-			custom_tooltip = hunt_progress_towards_trait_1_tt
+			custom_tooltip = dragon_rider_progress_towards_trait_1_tt
 		}
 		else_if = {
 			limit = { scope:dragonmaster_base_increase = 2 }
-			custom_tooltip = hunt_progress_towards_trait_2_tt
+			custom_tooltip = dragon_rider_progress_towards_trait_2_tt
 		}
-		else = { custom_tooltip = hunt_progress_towards_trait_3_tt }
+		else = { custom_tooltip = dragon_rider_progress_towards_trait_3_tt }
 		#Random chance of additional point to increase unpredictability
 		hidden_effect = {
 			random = {
@@ -53,19 +53,19 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 	if = {
 		limit = {
 			is_alive = yes
-			NOT = { has_trait = lifestyle_dragonmaster }
+			has_trait = lifestyle_dragonmaster
 			exists = var:dragonmaster_lifestyle_progress
 		}
 		add_trait = lifestyle_dragonmaster
 	}
-	else_if = { # To show host trait gain for guests
-		limit = {
-			is_alive = yes
-			exists = var:dragonmaster_lifestyle_progress
-			NOT = { has_character_flag = host_existing_hunter }
-		}
-		add_trait_force_tooltip = lifestyle_dragonmaster
-	}	
+	# else_if = { # To show host trait gain for guests
+	# 	limit = {
+	# 		is_alive = yes
+	# 		exists = var:dragonmaster_lifestyle_progress
+	# 		NOT = { has_character_flag = host_existing_hunter }
+	# 	}
+	# 	add_trait_force_tooltip = lifestyle_dragonmaster
+	# }
 	if = {
 		limit = {
 			is_alive = yes 
@@ -74,7 +74,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 			scope:dragon_hatcher = yes
 		}
 		send_interface_toast = {
-			title = hunter_xp_gain_message
+			title = dragonmaster_xp_gain_message
 			if = {
 				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_3_threshold }
 				add_trait_xp = {
@@ -115,7 +115,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 			has_trait = lifestyle_dragonmaster
 		}
 		send_interface_toast = {
-			title = hunter_xp_gain_message
+			title = dragonmaster_xp_gain_message
 			if = {
 				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_3_threshold }
 				add_trait_xp = {

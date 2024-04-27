@@ -34,8 +34,12 @@ dragon_artefact_events.0002 = {
 			name = dragon_artefact_events.0002.a_latin
 		# }
 		add_martial_skill = 2
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		trigger = {
@@ -51,8 +55,12 @@ dragon_artefact_events.0002 = {
 			name = dragon_artefact_events.0002.b_latin
 		# }
 		add_prowess_skill = 5
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 
 	option = {
@@ -69,8 +77,12 @@ dragon_artefact_events.0002 = {
 			name = dragon_artefact_events.0002.a_latin
 		# }
 		add_stewardship_skill = 2
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		trigger = {
@@ -88,8 +100,12 @@ dragon_artefact_events.0002 = {
 		add_character_modifier = {
 			modifier = dragon_bond_income_modifier
 		}
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 
 	option = {
@@ -106,8 +122,12 @@ dragon_artefact_events.0002 = {
 			name = dragon_artefact_events.0002.a_latin
 		# }
 		add_learning_skill = 2
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		trigger = {
@@ -125,8 +145,12 @@ dragon_artefact_events.0002 = {
 		add_character_modifier = {
 			modifier = dragon_bond_piety_modifier
 		}
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 
 	option = {
@@ -143,8 +167,12 @@ dragon_artefact_events.0002 = {
 			name = dragon_artefact_events.0002.a_latin
 		# }
 		add_intrigue_skill = 2
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		trigger = {
@@ -162,8 +190,12 @@ dragon_artefact_events.0002 = {
 		add_character_modifier = {
 			modifier = dragon_bond_dread_modifier
 		}
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 
 	option = {
@@ -180,8 +212,12 @@ dragon_artefact_events.0002 = {
 			name = dragon_artefact_events.0002.a_latin
 		# }
 		add_diplomacy_skill = 2
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 	option = {
 		trigger = {
@@ -199,7 +235,11 @@ dragon_artefact_events.0002 = {
 		add_character_modifier = {
 			modifier = dragon_bond_prestige_modifier
 		}
-		dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
-		# dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+		root = {
+			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
+			hidden_effect = {
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+			}
+		}
 	}
 }

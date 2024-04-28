@@ -4,6 +4,12 @@ dragon_legacy_1_effect = {
 	third = dragon_legacy_1_effect
 }
 
+dragon_legacy_1_requirement = {
+	global = dragon_legacy_1_requirement
+	first = dragon_legacy_1_requirement
+	third = dragon_legacy_1_requirement
+}
+
 dragon_legacy_4_effect = {
 	global = dragon_legacy_4_effect
 	first = dragon_legacy_4_effect

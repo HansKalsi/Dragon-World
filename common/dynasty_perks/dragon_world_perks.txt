@@ -11,6 +11,17 @@ dragon_legacy_1 = { # Dragon Kin
 		custom_description_no_bullet = {
 			text = dragon_legacy_1_effect
 		}
+		if = {
+			limit ={
+				NOT = {
+					has_dragon_rider_trigger = yes
+					has_dragon_equipped_trigger = yes
+				}
+			}
+			custom_description = {
+				text = dragon_legacy_1_requirement
+			}
+		}
 	}
 
 	character_modifier = {

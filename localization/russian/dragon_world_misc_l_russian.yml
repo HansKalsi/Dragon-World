@@ -48,6 +48,7 @@
 	dragon_legacy_track_desc:0 "Сила солнца... на моей ладони".
 	dragon_legacy_1_name:0 "Род драконов"
 	dragon_legacy_1_effect:0 "Открывает доступ к [GetBuilding('dragon_hatchery_01').GetName] [building|E]"
+	dragon_legacy_1_requirement:0 "Чтобы открыть это наследие, вам нужен дракон."
 	dragon_legacy_2_name:0 "Те, кто служат, служат нам"
 	dragon_legacy_3_name:0 "Неограниченная власть"
 	dragon_legacy_4_name:0 "Рожденный драконом"
@@ -56,12 +57,13 @@
 	dragon_legacy_5_effect:0 "Разблокирует избранных оруженосцев лорда"
 
 	# Dragon Hatchery building
-	building_dragon_hatchery_01:0 "Инкубатор драконов"
-	building_type_dragon_hatchery_01:0 "Гнездо дракона"
+	building_type_dragon_hatchery_01:0 "Инкубатор драконов"
+	building_type_dragon_hatchery_01_desc:0 "Массивное сооружение, в котором можно высиживать и выращивать драконьи яйца."
+	building_dragon_hatchery_01:0 "Гнездо дракона"
 	building_dragon_hatchery_01_desc:0 "Гнездо для драконьих яиц, где они могут быть высижены и выращены".
-	building_dragon_hatchery_02:0 "Инкубатор драконов II"
+	building_dragon_hatchery_02:0 "Гнездо дракона II"
 	building_dragon_hatchery_02_desc:0 "Более просторное гнездо для драконьих яиц, где их можно высиживать и выращивать".
-	building_dragon_hatchery_03:0 "Инкубатор драконов III"
+	building_dragon_hatchery_03:0 "Гнездо дракона III"
 	building_dragon_hatchery_03_desc:0 "Большое гнездо для драконьих яиц, где их можно высиживать и выращивать."
 	clear_ground_for_dragon_hatchery:0 "Подготовить почву для инкубатора драконов"
 	clear_ground_for_dragon_hatchery_tooltip:0 "Разблокируйте слот [special_building|E] в одной из ваших провинций"

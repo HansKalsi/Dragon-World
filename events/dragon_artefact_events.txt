@@ -6,7 +6,7 @@ dragon_artefact_events.0001 = {
 
 	trigger = {
 		any_character_artifact = {
-			artifact_type = dragon
+			artifact_type = type_dragon
 		}
 	}
 

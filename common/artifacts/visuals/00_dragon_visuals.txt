@@ -23,3 +23,10 @@ dragon_visual = {
 dragon_egg_visual = {
 	icon = "dragon_egg_image.dds"
 }
+
+dragon_court = {
+	default_type = pedestal
+	icon = "dragon.dds"
+	asset = ep1_generic_jewelry_01_a_entity
+	# pedestal = "short_pillow"
+}

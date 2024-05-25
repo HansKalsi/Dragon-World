@@ -18,12 +18,12 @@ has_dragon_hatcher_trigger = {
 
 has_dragon_trigger = {
 	any_character_artifact = {
-		artifact_type = dragon
+		artifact_type = type_dragon
 	}
 }
 
 has_dragon_equipped_trigger = {
 	any_equipped_character_artifact = {
-		artifact_type = dragon
+		artifact_type = type_dragon
 	}
 }

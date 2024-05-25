@@ -1,8 +1,8 @@
-dragon = {
-	slot = miscellaneous
-	required_features = { dragon_type }
-	optional_features = {}
-	can_reforge = no
+type_dragon = {
+	slot = dragon
+	# required_features = { dragon_type }
+	# optional_features = {}
+	# can_reforge = no
 }
 
 dragon_egg = {

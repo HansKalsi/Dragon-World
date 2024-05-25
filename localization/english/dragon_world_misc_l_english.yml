@@ -96,3 +96,19 @@
   # custom_loc:0 "[ROOT.Var('custom_loc_var')]"
   # custom_loc:0 "[ROOT.Var('custom_loc_var').GetFlagName]"
   # custom_loc_default:0 "Default entry"
+
+	# Custom Dragon Inventory Slot
+ 	dragon:0 "Dragon"
+	artifact_type_dragon:0 "dragon"
+	artifact_slot_dragon:0 "Dragon"
+	# Dragon
+	artifact_dragon_name:0 "$artifact_name_prefix$ Dragon"
+ 	# artifact_dragon_description:1 "[SCOPE.Custom('ArtifactArticleWealth')] dragon made of [SCOPE.Custom('ArtifactQuality')] stock. It consists of [newly_created_artifact.GetFeatureText( 'regalia_scepter' )], [newly_created_artifact.GetFeatureText( 'regalia_clothes' )], and [newly_created_artifact.GetFeatureText( '`_accessory' )]."
+	# Dragon Features
+	# feature_dragon_scepter_gemstone:0 "a [Artifact.GetFeatureText( 'decoration_material_wire' )] scepter set with pieces of [Artifact.GetFeatureText( 'decoration_material_gem' )]"
+ 	# feature_dragon_accessory_orb:0 "a [Artifact.GetFeatureText( 'decoration_material_wire' )] cross-bearing orb"
+	# feature_dragon_accessory_necklace:0 "a large [Artifact.GetFeatureText( 'decoration_material_gem' )] cabochon necklace"
+	# feature_dragon_clothes_robe:0 "fine [Artifact.GetFeatureText( 'generic_material_cloth' )] robes that have been embroidered with [Artifact.GetFeatureText( 'decoration_material_embroidery' )]"
+	# feature_dragon_clothes_cloak:0 "a [Artifact.GetFeatureText( 'generic_material_cloth' )] cloak that has been embroidered with [Artifact.GetFeatureText( 'decoration_material_embroidery' )] thread"
+
+ 	# create_artifact_dragon_tooltip:1 "[inspiration_owner.GetShortUIName] produced a regalia set of [SCOPE.Custom('ArtifactQuality')] craftsmanship"

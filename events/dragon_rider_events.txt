@@ -12,7 +12,7 @@ dragon_rider_events.0001a = {
 			scope:owner = {
 				is_alive = yes
 			}
-			artifact_type = dragon
+			artifact_type = type_dragon
 		}
 		save_scope_as = root_equipped_dragon_artifact
 		scope:owner = {

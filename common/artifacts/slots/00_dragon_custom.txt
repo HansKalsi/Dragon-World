@@ -1,0 +1,4 @@
+dragon = {
+	type = "dragon"
+	category = inventory
+}

@@ -194,6 +194,9 @@ dragon_spawn.0008 = {
 	}
 
 	option = {
+		trigger = {
+			is_ai = no
+		}
 		name = dragon_spawn.0008.a
 		add_prestige = 200
 		custom_tooltip = dragon_spawn.0008.a.tt # Mentions renaming of baby dragon
@@ -209,6 +212,15 @@ dragon_spawn.0008 = {
 				set_artifact_name = rename_artifact_entered_text
 			}
 		}
+	}
+
+	# AI Option - forced to keep the default name
+	option = {
+		trigger = {
+			is_ai = yes
+		}
+		name = dragon_spawn.0008.b
+		add_prestige = 200
 	}
 
 	after = {

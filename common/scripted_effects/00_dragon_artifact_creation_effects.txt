@@ -40,7 +40,7 @@ create_artifact_baby_dragon_effect = {
 
 	# Create the artifact
 	create_artifact = {
-		name = artifact_baby_dragon_name
+		name = artifact_dragon_name
 		description = artifact_baby_dragon
 		type = type_baby_dragon
 		template = non_ridable_dragon_template

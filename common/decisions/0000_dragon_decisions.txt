@@ -207,18 +207,6 @@ demand_gold_from_the_populace_decision = {
 
     desc = demand_gold_from_the_populace_decision_desc
 
-    # confirm_text = {
-	# 	# if = {
-	# 	# 	limit = {
-	# 	# 		has_game_rule = high_valyrian_commands
-	# 	# 	}
-	# 	# 	localization = "demand_gold_from_the_populace_decision_confirm_high_valyrian"
-	# 	# }
-	# 	# else = {
-	# 		localization = "demand_gold_from_the_populace_decision_confirm_latin"
-	# 	# }
-    # }
-
 	cooldown = { years = 5 }
     
     # AI rule check

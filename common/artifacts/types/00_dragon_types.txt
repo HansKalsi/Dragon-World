@@ -1,13 +1,42 @@
 type_dragon = {
 	slot = dragon
-	# required_features = { dragon_type }
 	# optional_features = {}
-	# can_reforge = no
+	can_reforge = no
 }
 
 dragon_egg = {
 	slot = miscellaneous
-	required_features = { dragon_type }
-	optional_features = {}
+	required_features = { dragon_element_type }
+	# optional_features = {}
+	can_reforge = no
+}
+
+type_baby_dragon = {
+	slot = dragon
+	required_features = { dragon_element_type }
+	can_reforge = no
+}
+
+type_adolescent_dragon = {
+	slot = dragon
+	required_features = { dragon_element_type }
+	can_reforge = no
+}
+
+type_young_dragon = {
+	slot = dragon
+	required_features = { dragon_element_type }
+	can_reforge = no
+}
+
+type_adult_dragon = {
+	slot = dragon
+	required_features = { dragon_element_type }
+	can_reforge = no
+}
+
+type_ancient_dragon = {
+	slot = dragon
+	required_features = { dragon_element_type }
 	can_reforge = no
 }

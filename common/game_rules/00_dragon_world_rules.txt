@@ -21,11 +21,10 @@ ai_dragon_world_role = {
 # Latin
 # High Valyrian
 
-# When trying to do if, else's for confirm buttons and name of option button, no text appears
-# dragon_command_language = {
-# 	default = latin_commands
+dragon_command_language = {
+	default = latin_commands
 
-# 	latin_commands = {}
+	latin_commands = {}
 	
-# 	high_valyrian_commands = {}
-# }
+	high_valyrian_commands = {}
+}

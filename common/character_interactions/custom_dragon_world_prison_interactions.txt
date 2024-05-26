@@ -637,7 +637,7 @@
 		localization = "EXECUTION_DEVOUR"
 	}
 
-	# Execution by Dragon
+	# Execution by Dragon - Latin
 	send_option = {
 		is_shown = {
 			scope:actor = {
@@ -645,17 +645,24 @@
 					has_artifact_flag = dragon_artifact
 				}
 			}
+			has_game_rule = latin_commands
 		}
 		flag = execution_beheaded
-		# if = {
-		# 	limit = {
-		# 		has_game_rule = high_valyrian_commands
-		# 	}
-		# 	localization = "EXECUTION_DRAGON_HIGH_VALYRIAN"
-		# }
-		# else = {
-			localization = "EXECUTION_DRAGON_LATIN"
-		# }
+		localization = "EXECUTION_DRAGON_LATIN"
+	}
+
+	# Execution by Dragon - High Valyrian
+	send_option = {
+		is_shown = {
+			scope:actor = {
+				any_equipped_character_artifact = {
+					has_artifact_flag = dragon_artifact
+				}
+			}
+			has_game_rule = high_valyrian_commands
+		}
+		flag = execution_beheaded
+		localization = "EXECUTION_DRAGON_HIGH_VALYRIAN"
 	}
 
 	send_option = {

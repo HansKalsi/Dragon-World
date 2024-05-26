@@ -117,9 +117,7 @@
   # Demand Gold from Populace with Dragon decision
   demand_gold_from_the_populace_decision:0 "Extract Gold from the Populace"
   demand_gold_from_the_populace_decision_desc:0 "Mount your Dragon and ride out to extract gold from the populace"
-  demand_gold_from_the_populace_decision_confirm:0 ""Venire!""
-  demand_gold_from_the_populace_decision_confirm_latin:0 ""Venire!""
-  demand_gold_from_the_populace_decision_confirm_high_valyrian:0 ""Ynot!""
+  demand_gold_from_the_populace_decision_confirm:0 "They have something of mine..."
   demand_gold_from_the_populace_decision_tooltip:0 "Extract gold from the populace and risk angering them"
 
   dragon_rider_events.0014.t:0 "Extract Gold from the Populace"
@@ -145,13 +143,13 @@
 	dragon_decision_event.0003.desc:0 "We have found a Dragon Egg in a nearby cave, what a wonderous day!"
 	dragon_decision_event.0003.a:0 "You shall grow into a mighty beast!"
 
-	dragon_egg_events.0002.t:0 "Dragon Egg hatched"
-	dragon_egg_events.0002.desc:0 "My Dragon Egg has finally hatched!"
-	dragon_egg_events.0002.a:0 "You shall grow into a mighty beast!"
+	dragon_spawn.0008.t:0 "Dragon Egg hatched"
+	dragon_spawn.0008.desc:0 "My Dragon Egg has finally hatched!"
+	dragon_spawn.0008.a:0 "You shall grow into a mighty beast!"
 
 	dragon_artefact_events.0002.t:0 "Dragon Bond"
 	dragon_artefact_events.0002.desc:0 "My Dragon is ageing, and our bond has become stronger from our time together!"
 	dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
 	dragon_artefact_events.0002.a_high_valyrian:0 ""Umbātās...""
 	dragon_artefact_events.0002.b_latin:0 ""Volare!""
-	dragon_artefact_events.0002.b_high_valyrian:0 ""Volare!""
+	dragon_artefact_events.0002.b_high_valyrian:0 ""Sōvēs!""

@@ -18,7 +18,6 @@ dragon_spawn.0006 = {
 	desc = dragon_spawn.0006.desc
 
 	theme = pet
-	# theme = family
 	override_background = {
 		event_background = courtyard
 	}
@@ -180,6 +179,17 @@ dragon_spawn.0007 = {
 	hidden = yes
 
 	immediate = {
+		random_list = {
+			30 = {
+				set_variable = { name = dragon_type value = flag:fire }
+			}
+			30 = {
+				set_variable = { name = dragon_type value = flag:water }
+			}
+			30 = {
+				set_variable = { name = dragon_type value = flag:stone }
+			}
+		}
 		create_artifact_dragon_egg_effect = { OWNER = this }
 		send_interface_toast = {
 			title = dragon_spawn.0007.t.found_dragon_egg
@@ -190,5 +200,73 @@ dragon_spawn.0007 = {
 				}
 			}
 		}
+	}
+}
+
+# Dragon Egg Hatches - Spawn Baby Dragon
+dragon_spawn.0008 = {
+	type = character_event
+	title = dragon_spawn.0008.t
+	desc = dragon_spawn.0008.desc
+	theme = pet
+
+	override_background = {
+		event_background = courtyard
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_right_portrait
+	}
+
+	
+	# #NAMING WIDGET
+	# widgets = {
+	# 	widget = {
+	# 		is_shown = {
+	# 			allow_naming_on_birth_of_child_trigger = { CHILD = scope:child }
+	# 		}
+	# 		gui = "event_window_widget_name_child"
+	# 		container = "dynamic_birth_name"
+	# 		controller = name_character
+	# 		setup_scope = {
+	# 			scope:child = { save_scope_as = name_character_target }
+	# 		}
+	# 	}
+	# }
+
+	option = {
+		name = dragon_spawn.0008.a
+		add_prestige = 200
+	}
+
+	immediate = {
+		scope:dragon_egg_artifact = {
+			if = {
+				limit = {
+					has_artifact_feature = dragon_element_fire
+				}
+				set_variable = { name = dragon_type value = flag:fire }
+			}
+			else_if = {
+				limit = {
+					has_artifact_feature = dragon_element_water
+				}
+				set_variable = { name = dragon_type value = flag:water }
+			}
+			else_if = {
+				limit = {
+					has_artifact_feature = dragon_element_stone
+				}
+				set_variable = { name = dragon_type value = flag:stone }
+			}
+		}
+		create_artifact_baby_dragon_effect = { OWNER = this }
+		destroy_artifact = scope:dragon_egg_artifact
 	}
 }

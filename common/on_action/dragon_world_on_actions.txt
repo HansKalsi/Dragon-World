@@ -1,27 +1,21 @@
-﻿# For some reason this isn't triggering whilst the five year one is
-# yearly_global_pulse = {
-# 	on_actions = {
-# 		on_dragon_egg_pulse
-# 	}
-# }
-
+﻿# Triggers for everyone at different random points in the year
 random_yearly_everyone_pulse = {
 	on_actions = {
-		on_dragon_age_pulse
 		on_dragon_egg_pulse
+		on_dragon_age_pulse
+		on_dragon_mature_pulse
 	}
 }
 
-# five_year_everyone_pulse = {
-# 	on_actions = {
-# 		on_dragon_age_pulse
-# 		on_dragon_egg_pulse
-# 	}
-# }
+on_dragon_mature_pulse = {
+	effect = {
+		trigger_event = dragon_artefact_events.0001
+	}
+}
 
 on_dragon_age_pulse = {
 	effect = {
-		trigger_event = dragon_artefact_events.0001
+		trigger_event = dragon_aging_events.0001
 	}
 }
 
@@ -30,11 +24,3 @@ on_dragon_egg_pulse = {
 		trigger_event = dragon_egg_events.0001
 	}
 }
-
-# pre hatching mechanism:
-# hatch egg 3 years
-# baby dragon 5 years
-# adolescent dragon 10 years
-# young dragon 15 years
-# adult dragon 120 years
-# ancient dragon

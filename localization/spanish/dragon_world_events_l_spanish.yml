@@ -116,9 +116,7 @@
   # Demand Gold from Populace with Dragon decision
   demand_gold_from_the_populace_decision:0 "Extrae oro del populacho"
   demand_gold_from_the_populace_decision_desc:0 "Monta en tu Dragón y cabalga para extraer oro del populacho"
-  demand_gold_from_the_populace_decision_confirm:0 ""¡Venire!""
-  demand_gold_from_the_populace_decision_confirm_latin:0 ""¡Venire!""
-  demand_gold_from_the_populace_decision_confirm_high_valyrian:0 ""¡Ynot!""
+  demand_gold_from_the_populace_decision_confirm:0 "Tienen algo mío..."
   demand_gold_from_the_populace_decision_tooltip:0 "Extraer oro del populacho y arriesgarse a enfadarlo"
 
   dragon_rider_events.0014.t:0 "Extrae oro de la población"
@@ -144,13 +142,13 @@
 	dragon_decision_event.0003.desc:0 "Hemos encontrado un Huevo de Dragón en una cueva cercana, ¡qué día tan maravilloso!"
 	dragon_decision_event.0003.a:0 "¡Te convertirás en una bestia poderosa!"
 
-	dragon_egg_events.0002.t:0 "Huevo de dragón eclosionado"
-	dragon_egg_events.0002.desc:0 "¡Mi huevo de dragón por fin ha eclosionado!"
-	dragon_egg_events.0002.a:0 "¡Te convertirás en una poderosa bestia!"
+	dragon_spawn.0008.t:0 "Huevo de dragón eclosionado"
+	dragon_spawn.0008.desc:0 "¡Mi huevo de dragón por fin ha eclosionado!"
+	dragon_spawn.0008.a:0 "¡Te convertirás en una poderosa bestia!"
 
 	dragon_artefact_events.0002.t:0 "Vínculo Dragón"
 	dragon_artefact_events.0002.desc:0 "¡Mi Dragón está envejeciendo, y nuestro vínculo se ha hecho más fuerte gracias al tiempo que hemos pasado juntos!"
 	dragon_artefact_events.0002.a_latin:0 ""Nos Aetate...""
 	dragon_artefact_events.0002.a_high_valyrian:0 ""Umbātās...""
 	dragon_artefact_events.0002.b_latin:0 ""¡Volare!""
-	dragon_artefact_events.0002.b_high_valyrian:0 ""¡Volare!""
+	dragon_artefact_events.0002.b_high_valyrian:0 ""¡Sōvēs!""

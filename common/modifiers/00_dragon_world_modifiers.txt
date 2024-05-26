@@ -48,22 +48,27 @@ gold_extracted_with_dragon = {
 }
 
 dragon_egg_modifier = {
+	icon = health_positive 
 	court_grandeur_baseline_add = 5
 	monthly_prestige_gain_mult = 0.05
 }
 
 dragon_bond_income_modifier = {
+	icon = income_positive
 	monthly_income_mult = 0.05
 }
 
 dragon_bond_prestige_modifier = {
+	icon = prestige_positive
 	monthly_prestige_gain_mult = 0.05
 }
 
 dragon_bond_piety_modifier = {
+	icon = piety_positive
 	monthly_piety_gain_mult = 0.05
 }
 
 dragon_bond_dread_modifier = {
+	icon = dread_positive
 	dread_baseline_add = 10
 }

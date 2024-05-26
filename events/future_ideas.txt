@@ -1,0 +1,4 @@
+### File for commands that may be useful for future developments
+# Could be used to find random dragons in the 'wild' (since 'owned/rode dragons' will always be equipped
+# any_artifact - iterates through all artifacts
+# random_artifact - iterates through all artifacts

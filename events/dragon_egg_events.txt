@@ -6,7 +6,7 @@ dragon_egg_events.0001 = {
 	hidden = yes
 
 	trigger = {
-		random_character_artifact = {
+		any_character_artifact = {
 			limit = {
 				artifact_type = dragon_egg
 			}
@@ -20,28 +20,12 @@ dragon_egg_events.0001 = {
 			}
 			save_scope_as = dragon_egg_artifact
 		}
-		trigger_event = dragon_egg_events.0003
-	}
-}
-
-# Dragon Egg Hatches
-dragon_egg_events.0002 = {
-	type = character_event
-	title = dragon_egg_events.0002.t
-	desc = dragon_egg_events.0002.desc
-
-	option = {
-		name = dragon_egg_events.0002.a
-		trigger_event = dragon_spawn.0006
-	}
-
-	after = {
-		destroy_artifact = scope:dragon_egg_artifact
+		trigger_event = dragon_egg_events.0002
 	}
 }
 
 # Age Dragon Egg
-dragon_egg_events.0003 = {
+dragon_egg_events.0002 = {
 	type = character_event
 	hidden = yes
 
@@ -50,7 +34,7 @@ dragon_egg_events.0003 = {
 			limit = {
 				scope:dragon_egg_artifact.var:egg_age >= 2 # aka if already 2 years old, this is its 3rd year, so it hatches
 			}
-			trigger_event = dragon_egg_events.0002
+			trigger_event = dragon_spawn.0008
 		} else = {
 			scope:dragon_egg_artifact = {
 				change_variable = {

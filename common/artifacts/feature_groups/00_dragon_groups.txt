@@ -1,2 +1,2 @@
 # Dragon Features
-dragon_type = {}
+dragon_element_type = {}

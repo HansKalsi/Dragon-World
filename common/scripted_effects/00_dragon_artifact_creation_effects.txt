@@ -182,7 +182,7 @@ create_artifact_dragon_egg_effect = {
 		name = artifact_dragon_egg_name
 		description = artifact_dragon_egg
 		type = dragon_egg
-		template = dragon_template
+		template = dragon_egg_template
 		visuals = dragon_egg_visual
 		wealth = scope:wealth
 		quality = scope:quality
@@ -198,12 +198,183 @@ create_artifact_dragon_egg_effect = {
 	}
 
 	scope:newly_created_artifact = {
-		# set_variable = { name = historical_unique_artifact value = yes }
-		# set_variable = riding_dragon
 		set_variable = { # Tracks age
 			name = egg_age
 			value = 0
 		}
-		# save_scope_as = epic
+	}
+}
+
+create_artifact_baby_dragon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_baby_dragon_name
+		description = artifact_baby_dragon
+		type = type_baby_dragon
+		template = non_ridable_dragon_template
+		visuals = baby_dragon_visual
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = dragon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+		history = {
+			location = root.capital_province
+			actor = root
+			recipient = root
+			type = discovered
+		}
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { # Tracks age
+			name = baby_dragon_age
+			value = 0
+		}
+	}
+}
+
+create_artifact_adolescent_dragon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_adolescent_dragon_name
+		description = artifact_adolescent_dragon
+		type = type_adolescent_dragon
+		template = non_ridable_dragon_template
+		visuals = adolescent_dragon_visual
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = dragon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+		history = {
+			location = root.capital_province
+			actor = root
+			recipient = root
+			type = discovered
+		}
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { # Tracks age
+			name = adolescent_dragon_age
+			value = 0
+		}
+	}
+}
+
+create_artifact_young_dragon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_young_dragon_name
+		description = artifact_young_dragon
+		type = type_young_dragon
+		template = dragon_template
+		visuals = young_dragon_visual
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = dragon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+		history = {
+			location = root.capital_province
+			actor = root
+			recipient = root
+			type = discovered
+		}
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { # Tracks age
+			name = young_dragon_age
+			value = 0
+		}
+	}
+}
+
+create_artifact_adult_dragon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_adult_dragon_name
+		description = artifact_adult_dragon
+		type = type_adult_dragon
+		template = dragon_template
+		visuals = adult_dragon_visual
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = dragon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+		history = {
+			location = root.capital_province
+			actor = root
+			recipient = root
+			type = discovered
+		}
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { # Tracks age
+			name = adult_dragon_age
+			value = 0
+		}
+	}
+}
+
+create_artifact_ancient_dragon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# $DRAGON_NAME$ = { save_scope_as = dragon_name }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_ancient_dragon_name
+		description = artifact_ancient_dragon
+		type = type_ancient_dragon
+		template = dragon_template
+		visuals = ancient_dragon_visual
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = dragon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+		history = {
+			location = root.capital_province
+			actor = root
+			recipient = root
+			type = discovered
+		}
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		# set_variable = riding_dragon
+		save_scope_as = epic
 	}
 }

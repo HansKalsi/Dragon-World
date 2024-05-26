@@ -88,3 +88,10 @@
 	dragon_rider_progress_towards_trait_2_tt:0 "Erhöht [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
 	dragon_rider_progress_towards_trait_3_tt:0 "Erhöht [GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] [trait_level_track_xp|E]"
 	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] Erfahrung"
+
+	# Custom Dragon Inventory Slot
+ 	dragon:0 "Drache"
+	artifact_type_dragon:0 "Drache"
+	artifact_slot_dragon:0 "Drache"
+	# Dragon
+	artifact_dragon_name:0 "$artifact_name_prefix$ Drache"

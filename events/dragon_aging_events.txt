@@ -224,6 +224,11 @@ dragon_aging_events.0003 = {
 			}
 			create_artifact_ancient_dragon_effect = { OWNER = this }
 		}
-		destroy_artifact = scope:dragon_artifact
+		scope:newly_created_artifact = {
+			set_artifact_name = artifact_aged_dragon_name
+		}
+		hidden_effect = {
+			destroy_artifact = scope:dragon_artifact
+		}
 	}
 }

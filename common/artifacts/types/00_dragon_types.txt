@@ -1,8 +1,10 @@
+# TO DELETE, KEEPING FOR NOW TO TRY TO ALLOW PRE-EXISTING SAVE GAMES TO CONTINUE TO WORK
 type_dragon = {
 	slot = dragon
 	# optional_features = {}
 	can_reforge = no
 }
+# END DELETE
 
 dragon_egg = {
 	slot = miscellaneous

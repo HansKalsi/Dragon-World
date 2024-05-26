@@ -5,7 +5,7 @@
   trusted_by_dragon:0 "Vertraut von Drache"
   gold_extracted_with_dragon:0 "Mit Drachen gewonnenes Gold"
 
-  dragon_bond_income_modifier:0 "Drachen-Einkommensbindung (im Charakterbildschirm verborgen)"
-  dragon_bond_prestige_modifier:0 "Drachen-Prestige-Anleihe (im Charakterbildschirm verborgen)"
-  dragon_bond_piety_modifier:0 "Drachenfrömmigkeitsbindung (im Charakterbildschirm verborgen)"
-  dragon_bond_dread_modifier:0 "Drachenfurcht-Bindung (im Charakterbildschirm verborgen)"
+  dragon_bond_income_modifier:0 "Drachen-Einkommensbindung"
+  dragon_bond_prestige_modifier:0 "Drachen-Prestige-Anleihe"
+  dragon_bond_piety_modifier:0 "Drachenfrömmigkeitsbindung"
+  dragon_bond_dread_modifier:0 "Drachenfurcht-Bindung"

@@ -1,33 +1,25 @@
-test_dragon_modifier = {
+spawned_dragon_modifier = {
 	court_grandeur_baseline_add = 10
 	monthly_dynasty_prestige_mult = 0.1
 	monthly_prestige_gain_mult = 0.1
 	dread_gain_mult = 0.5
-	prowess = 12
+	prowess = 20
 	martial = 2
-}
-
-dragon_modifier = {
-	court_grandeur_baseline_add = 10
-	monthly_dynasty_prestige_mult = 0.1
-	monthly_prestige_gain_mult = 0.1
-	dread_gain_mult = 0.5
-	prowess = 12
-	martial = 2
-	advantage = 20
-	siege_phase_time = -0.2
+	advantage = 50
+	# siege_phase_time = -0.2
 	# casualty_modifier = 0.2
 	# hard_casualty_modifier = -0.1
 }
 
+new_dragon_modifier = {}
+
 rode_dragon = {
 	icon = martial_positive
 	martial = 2
-	monthly_prestige_gain_mult = 0.05
 	prowess = 4
-	health = 0.25
-	general_opinion = -5
-	dread_baseline_add = 10
+	monthly_prestige_gain_mult = 0.05
+	general_opinion = -10
+	dread_baseline_add = 20
 }
 
 ate_dragon = {
@@ -44,7 +36,7 @@ trusted_by_dragon = {
 
 gold_extracted_with_dragon = {
 	icon = county_modifier_opinion_negative
-	county_opinion_add = -25
+	county_opinion_add = -50
 }
 
 dragon_egg_modifier = {
@@ -55,17 +47,17 @@ dragon_egg_modifier = {
 
 dragon_bond_income_modifier = {
 	icon = income_positive
-	monthly_income_mult = 0.05
+	monthly_income_mult = 0.03
 }
 
 dragon_bond_prestige_modifier = {
 	icon = prestige_positive
-	monthly_prestige_gain_mult = 0.05
+	monthly_prestige_gain_mult = 0.03
 }
 
 dragon_bond_piety_modifier = {
 	icon = piety_positive
-	monthly_piety_gain_mult = 0.05
+	monthly_piety_gain_mult = 0.03
 }
 
 dragon_bond_dread_modifier = {

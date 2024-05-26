@@ -99,7 +99,7 @@
 
 	# Custom Dragon Inventory Slot
  	dragon:0 "Dragon"
-	artifact_type_dragon:0 "dragon"
+	artifact_type_dragon:0 "Dragon"
 	artifact_slot_dragon:0 "Dragon"
 	# Dragon
 	artifact_dragon_name:0 "$artifact_name_prefix$ Dragon"

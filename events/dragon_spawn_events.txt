@@ -16,15 +16,11 @@ dragon_spawn.0006 = {
 	type = character_event
 	title = dragon_spawn.0006.t
 	desc = dragon_spawn.0006.desc
-
 	theme = pet
-	override_background = {
-		event_background = courtyard
-	}
 
 	left_portrait = {
 		character = root
-		animation = personality_cynical
+		animation = ecstasy
 	}
 
 	artifact = { # To display the artifact in the event-window
@@ -33,132 +29,32 @@ dragon_spawn.0006 = {
 	}
 
 	immediate = {
-		# random_memory = {
-		# 	limit = { has_memory_type = dragon_tamed }
-		# 	save_scope_as = dragon_tamed_memory
-		# }
 		play_music_cue = "mx_cue_low_key_positive"
 		create_character_memory = {
 			type = dragon_tamed
 		}
-		# if = {
-		# 	limit = { exists = scope:bday_memory.var:bday_artifact_gift }
-		# 	scope:bday_memory.var:bday_artifact_gift = { save_scope_as = old_bday_gift }
-		# }
-        # save_scope_as = root_char
+		random_list = {
+			30 = {
+				set_variable = { name = dragon_type value = flag:fire }
+			}
+			30 = {
+				set_variable = { name = dragon_type value = flag:water }
+			}
+			30 = {
+				set_variable = { name = dragon_type value = flag:stone }
+			}
+		}
+		create_artifact_adult_dragon_effect = {
+			OWNER = root
+		}
+		scope:newly_created_artifact = {
+			add_artifact_modifier = spawned_dragon_modifier
+		}
 	}
-
-	#DRAGON NAMING WIDGET
-	# widgets = {
-    #     # widget = {
-    #     #     gui = "custom_loc_widget"  
-    #     #     container = "customizable_localization_custom_loc"
-    #     #     controller = {
-    #     #         type = text
-    #     #         data = {
-    #     #             variable = custom_loc_var # This is the var that's gonna be referenced through localization
-    #     #             default = "Dragon"
-    #     #         }  
-    #     #     }
-    #     #     setup_scope = {
-    #     #         root = { save_scope_as = text_target }
-    #     #     }
-    #     # }
-    #     widget = {
-    #         gui = "event_window_widget_enter_text"  
-    #         container = "dynamic_birth_name"
-    #         controller = {
-    #             type = text
-    #             data = {
-    #                 variable = custom_loc_var # This is the var that's gonna be referenced through localization
-    #                 default = "Dragon"
-    #             }  
-    #         }
-    #         setup_scope = {
-    #             root = { save_scope_as = text_target }
-    #         }
-    #     }
-    # }
 
 	option = {
 		name = dragon_spawn.0006.a
 		add_prestige = 500
-
-		random_list = {
-			30 = {
-				create_artifact_fire_dragon_effect = {
-					OWNER = root
-					# DRAGON_NAME = scope:name_character_target
-				}
-				save_scope_value_as = {
-					name = dragon
-					value = yes
-				}
-				if = {
-					limit = {
-						exists = scope:newly_created_artifact
-					}
-					send_interface_toast = {
-						title = dragon_spawn.0006.t.tamed_dragon
-						left_icon = scope:newly_created_artifact
-						show_as_tooltip = {
-							scope:newly_created_artifact = {
-								set_owner = root
-							}
-						}
-					}
-				}
-			}
-			30 = {
-				create_artifact_water_dragon_effect = {
-					OWNER = root
-					# DRAGON_NAME = dragon_name
-					# DRAGON_NAME = scope:name_character_target
-				}
-				save_scope_value_as = {
-					name = dragon
-					value = yes
-				}
-				if = {
-					limit = {
-						exists = scope:newly_created_artifact
-					}
-					send_interface_toast = {
-						title = dragon_spawn.0006.t.tamed_dragon
-						left_icon = scope:newly_created_artifact
-						show_as_tooltip = {
-							scope:newly_created_artifact = {
-								set_owner = root
-							}
-						}
-					}
-				}
-			}
-			30 = {
-				create_artifact_stone_dragon_effect = {
-					OWNER = root
-					# DRAGON_NAME = scope:name_character_target
-				}
-				save_scope_value_as = {
-					name = dragon
-					value = yes
-				}
-				if = {
-					limit = {
-						exists = scope:newly_created_artifact
-					}
-					send_interface_toast = {
-						title = dragon_spawn.0006.t.tamed_dragon
-						left_icon = scope:newly_created_artifact
-						show_as_tooltip = {
-							scope:newly_created_artifact = {
-								set_owner = root
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 
 	after = {
@@ -168,6 +64,15 @@ dragon_spawn.0006 = {
 			set_variable = {
 				name = dragon_artifact_tamed
 				value = scope:newly_created_artifact
+			}
+		}
+		send_interface_toast = {
+			title = dragon_spawn.0006.t.tamed_dragon
+			left_icon = scope:newly_created_artifact
+			show_as_tooltip = {
+				scope:newly_created_artifact = {
+					set_owner = root
+				}
 			}
 		}
 	}
@@ -210,63 +115,107 @@ dragon_spawn.0008 = {
 	desc = dragon_spawn.0008.desc
 	theme = pet
 
-	override_background = {
-		event_background = courtyard
-	}
-
 	left_portrait = {
 		character = root
-		animation = personality_cynical
+		animation = ecstasy
 	}
 
 	artifact = { # To display the artifact in the event-window
 		target = scope:newly_created_artifact
-		position = lower_right_portrait
-	}
-
-	
-	# #NAMING WIDGET
-	# widgets = {
-	# 	widget = {
-	# 		is_shown = {
-	# 			allow_naming_on_birth_of_child_trigger = { CHILD = scope:child }
-	# 		}
-	# 		gui = "event_window_widget_name_child"
-	# 		container = "dynamic_birth_name"
-	# 		controller = name_character
-	# 		setup_scope = {
-	# 			scope:child = { save_scope_as = name_character_target }
-	# 		}
-	# 	}
-	# }
-
-	option = {
-		name = dragon_spawn.0008.a
-		add_prestige = 200
+		position = lower_center_portrait
 	}
 
 	immediate = {
+		#To give some options to show
 		scope:dragon_egg_artifact = {
 			if = {
 				limit = {
 					has_artifact_feature = dragon_element_fire
 				}
 				set_variable = { name = dragon_type value = flag:fire }
+				root = {
+					add_character_flag = sword_name_flamberge
+				}
 			}
 			else_if = {
 				limit = {
 					has_artifact_feature = dragon_element_water
 				}
 				set_variable = { name = dragon_type value = flag:water }
+				root = {
+					add_character_flag = sword_name_galatine
+				}
 			}
 			else_if = {
 				limit = {
 					has_artifact_feature = dragon_element_stone
 				}
 				set_variable = { name = dragon_type value = flag:stone }
+				root = {
+					add_character_flag = sword_name_grinder
+				}
 			}
 		}
 		create_artifact_baby_dragon_effect = { OWNER = this }
 		destroy_artifact = scope:dragon_egg_artifact
+	}
+
+	#DRAGON NAMING WIDGET
+	widget = { 
+		gui = "event_window_widget_name_dragon"
+		container = "dynamic_birth_name"
+		controller = {
+			type = text
+			data = {
+				key = new_artifact_name
+				default = {
+					localization_key = sword_name_flamberge
+					trigger = {
+						has_character_flag = sword_name_flamberge
+					}
+				}
+				default = {
+					localization_key = sword_name_galatine
+					trigger = {
+						has_character_flag = sword_name_galatine
+					}
+				}
+				default = {
+					localization_key = sword_name_grinder
+					trigger = {
+						has_character_flag = sword_name_grinder
+					}
+				}
+			}
+		}
+		setup_scope = {
+			root = { save_scope_as = text_target }
+		}
+	}
+
+	option = {
+		name = dragon_spawn.0008.a
+		add_prestige = 200
+		custom_tooltip = dragon_spawn.0008.a.tt # Mentions renaming of baby dragon
+		# Apply Dragon Name
+		if = {
+			limit = { has_variable = new_artifact_name }
+			scope:newly_created_artifact = {
+				set_artifact_name = rename_artifact_default_key
+			}
+		}
+		else = {
+			scope:newly_created_artifact = {
+				set_artifact_name = rename_artifact_entered_text
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = { has_variable = new_artifact_name }
+			remove_variable = new_artifact_name
+		}
+		remove_sword_flags_effect = yes
 	}
 }

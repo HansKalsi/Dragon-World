@@ -78,8 +78,8 @@
 	train_child_in_dragon_riding_ways_desc:0 "아이에게 드래곤 라이딩의 방법을 가르쳐주세요"
 	teach_child_to_be_dragon_rider_interaction.1001.t:0 "드래곤 라이더 훈련"
 	teach_child_to_be_dragon_rider_interaction.1001.desc:0 "드래곤의 길을 배울 때가 왔어요"
-	teach_child_to_be_드래곤라이더_interaction.1001.a:0 "드래곤의 길을 가르쳐 주겠다"
-	teach_child_to_be_드래곤라이더_interaction.1002.t:0 "드래곤 라이더 훈련 실패"
+	teach_child_to_be_dragon_rider_interaction.1001.a:0 "드래곤의 길을 가르쳐 주겠다"
+	teach_child_to_be_dragon_rider_interaction.1002.t:0 "드래곤 라이더 훈련 실패"
 	teach_child_to_be_dragon_rider_interaction.1002.desc:0 "화는 안 났지만 실망했어"
 	teach_child_to_be_dragon_rider_interaction.1002.a:0 "시간 낭비였어"
 
@@ -88,3 +88,10 @@
 	dragon_rider_progress_towards_trait_2_tt:0 "증가 [GetTrait('lifestyle_dragonmaster').GetName( GetNullChacter )] [trait_level_track_xp|E]"
 	dragon_rider_progress_towards_trait_3_tt:0 "크게 증가 [GetTrait('lifestyle_dragonmaster').GetName( GetNullChacter )] [trait_level_track_xp|E]"
 	dragonmaster_xp_gain_message:0 "[GetTrait('lifestyle_dragonmaster').GetName( GetNullCharacter )] 경험치"
+
+	# Custom Dragon Inventory Slot
+ 	dragon:0 "드래곤"
+	artifact_type_dragon:0 "드래곤"
+	artifact_slot_dragon:0 "드래곤"
+	# Dragon
+	artifact_dragon_name:0 "$artifact_name_prefix$ 드래곤"

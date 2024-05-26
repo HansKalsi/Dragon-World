@@ -11,7 +11,7 @@
 	artifact_stone_dragon:1 "Ce dragon est né au cœur d'une montagne, mais depuis qu'il est devenu trop grand pour sa demeure d'origine, il vit désormais avec son seigneur sur leur domaine."
 
 	artifact_dragon_egg_name:1 "Œuf de dragon"
-	artifact_dragon_egg:1 "Un œuf de dragon."
+	artifact_dragon_egg:1 "Œuf de dragon"
 
 	# Custom Notification Toasts
 	dragon_spawn.0006.t.tamed_dragon:0 "Dragon apprivoisé"

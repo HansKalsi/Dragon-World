@@ -11,7 +11,7 @@
 	artifact_stone_dragon:1 "Dieser Drache wurde im Herzen eines Berges geboren, aber da er zu groß für sein ursprüngliches Zuhause wurde, lebt er nun mit seinem Herrn auf dessen Anwesen."
 
 	artifact_dragon_egg_name:1 "Drachenei"
-	artifact_dragon_egg:1 "Ein Drachenei."
+	artifact_dragon_egg:1 "Drachenei"
 
 	# Custom Notification Toasts
 	dragon_spawn.0006.t.tamed_dragon:0 "Gezähmter Drache"

@@ -11,7 +11,7 @@
 	artifact_stone_dragon:1 "이 용은 산 한가운데서 태어났지만, 원래 살던 곳보다 너무 커져서 지금은 영지에서 주인과 함께 살고 있어요."
 
 	artifact_dragon_egg_name:1 "드래곤 에그"
-	artifact_dragon_egg:1 "용의 알."
+	artifact_dragon_egg:1 "드래곤 에그"
 
 	# Custom Notification Toasts
 	dragon_spawn.0006.t.tamed_dragon:0 "길들인 드래곤"

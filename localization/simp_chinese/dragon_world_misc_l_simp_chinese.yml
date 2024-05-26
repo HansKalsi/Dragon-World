@@ -11,7 +11,7 @@
 	artifact_stone_dragon:1 "这条龙出生在一座山的中心，但由于它的体型太大，无法住进原来的家，所以现在和它的主人一起住在他们的庄园里。"
 
 	artifact_dragon_egg_name:1 “龙蛋”
-	artifact_dragon_egg:1 “龙蛋”。
+	artifact_dragon_egg:1 “龙蛋”
 
 	# Custom Notification Toasts
 	dragon_spawn.0006.t.tamed_dragon:0 "驯服的龙"

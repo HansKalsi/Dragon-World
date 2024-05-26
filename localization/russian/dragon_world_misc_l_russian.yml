@@ -11,7 +11,7 @@
 	artifact_stone_dragon:1 "Этот дракон родился в сердце горы, но, поскольку он стал слишком велик для своего первоначального дома, теперь он живет со своим повелителем в их поместье".
 
 	artifact_dragon_egg_name:1 "Яйцо дракона"
-	artifact_dragon_egg:1 "Яйцо дракона".
+	artifact_dragon_egg:1 "Яйцо дракона"
 
 	# Custom Notification Toasts
 	dragon_spawn.0006.t.tamed_dragon:0 "Прирученный дракон"

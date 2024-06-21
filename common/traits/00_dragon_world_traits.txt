@@ -6,6 +6,20 @@ lifestyle_dragonmaster = {
 	desc = trait_dragon_rider_desc
 
 	tracks = {
+		dragon_slayer = {
+			25 = {
+				prowess = 2
+			}
+			50 = {
+				intrigue = 1
+				prowess = 4
+			}
+			100 = {
+				intrigue = 1
+				prowess = 6
+				health = 0.25
+			}
+		}
 		dragon_rider = {
 			25 = {
 				martial = 1

@@ -341,6 +341,12 @@ dragon_world_new_game.0004 = {
 	title = dragon_world_new_game.0004.t
 	desc = dragon_world_new_game.0004.desc
 
+	theme = court
+	left_portrait = {
+		character = ROOT
+		animation = thinking
+	}
+
 	option = {
 		name = dragon_world_new_game.0004.a
 		add_trait = lifestyle_dragonmaster
@@ -385,10 +391,10 @@ dragon_world_new_game.0004 = {
 			value = 25
 		}
 	}
-	option = {
-		name = dragon_world_new_game.0004.c
-		add_gold = 100
-	}
+	# option = {
+	# 	name = dragon_world_new_game.0004.c
+	# 	add_gold = 100
+	# }
 }
 
 # Train with Dragon event
@@ -410,7 +416,7 @@ dragon_world_new_game.0005 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -420,7 +426,7 @@ dragon_world_new_game.0005 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -430,7 +436,7 @@ dragon_world_new_game.0005 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 1 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}

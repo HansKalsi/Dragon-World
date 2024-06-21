@@ -7,6 +7,15 @@ has_dragon_rider_trigger = {
 	}
 }
 
+has_dragon_slayer_trigger = {
+	has_trait = lifestyle_dragonmaster
+	has_trait_xp = {
+		trait = lifestyle_dragonmaster
+		track = dragon_slayer
+		value >= 25
+	}
+}
+
 has_dragon_hatcher_trigger = {
 	has_trait = lifestyle_dragonmaster
 	has_trait_xp = {

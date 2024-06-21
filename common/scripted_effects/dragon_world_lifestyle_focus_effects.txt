@@ -1,4 +1,3 @@
-
 #Dragonmaster
 dragonmaster_progress_point_gain_effect = {
 	if = {
@@ -35,7 +34,7 @@ dragonmaster_progress_point_gain_effect = {
 		#Random chance of additional point to increase unpredictability
 		hidden_effect = {
 			random = {
-				chance = 50
+				chance = 30
 				change_variable = {
 					name = dragonmaster_lifestyle_progress
 					add = $RANDOM_CHANGE$
@@ -49,6 +48,10 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 	save_scope_value_as = {
 		name = dragon_hatcher
 		value = $DRAGON_HATCHER$
+	}
+	save_scope_value_as = {
+		name = dragon_slayer
+		value = $DRAGON_SLAYER$
 	}
 	if = {
 		limit = {
@@ -76,7 +79,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 		send_interface_toast = {
 			title = dragonmaster_xp_gain_message
 			if = {
-				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_3_threshold }
+				limit = { var:dragonmaster_lifestyle_progress >= 7 }
 				add_trait_xp = {
 					trait = lifestyle_dragonmaster
 					track = dragon_hatcher
@@ -84,7 +87,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 				}
 			}
 			else_if = {
-				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_2_threshold }
+				limit = { var:dragonmaster_lifestyle_progress >= 5 }
 				add_trait_xp = {
 					trait = lifestyle_dragonmaster
 					track = dragon_hatcher
@@ -92,7 +95,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 				}
 			}
 			else_if = {
-				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_1_threshold }
+				limit = { var:dragonmaster_lifestyle_progress >= 3 }
 				add_trait_xp = {
 					trait = lifestyle_dragonmaster
 					track = dragon_hatcher
@@ -110,6 +113,48 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 	}
 	else_if = {
 		limit = {
+			is_alive = yes 
+			exists = var:dragonmaster_lifestyle_progress
+			has_trait = lifestyle_dragonmaster
+			scope:dragon_slayer = yes
+		}
+		send_interface_toast = {
+			title = dragonmaster_xp_gain_message
+			if = {
+				limit = { var:dragonmaster_lifestyle_progress >= 7 }
+				add_trait_xp = {
+					trait = lifestyle_dragonmaster
+					track = dragon_slayer
+					value = 15
+				}
+			}
+			else_if = {
+				limit = { var:dragonmaster_lifestyle_progress >= 5 }
+				add_trait_xp = {
+					trait = lifestyle_dragonmaster
+					track = dragon_slayer
+					value = 10
+				}
+			}
+			else_if = {
+				limit = { var:dragonmaster_lifestyle_progress >= 3 }
+				add_trait_xp = {
+					trait = lifestyle_dragonmaster
+					track = dragon_slayer
+					value = 5
+				}
+			}
+			else = {
+				add_trait_xp = {
+					trait = lifestyle_dragonmaster
+					track = dragon_slayer
+					value = 3
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
 			is_alive = yes
 			exists = var:dragonmaster_lifestyle_progress
 			has_trait = lifestyle_dragonmaster
@@ -117,7 +162,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 		send_interface_toast = {
 			title = dragonmaster_xp_gain_message
 			if = {
-				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_3_threshold }
+				limit = { var:dragonmaster_lifestyle_progress >= 7 }
 				add_trait_xp = {
 					trait = lifestyle_dragonmaster
 					track = dragon_rider
@@ -125,7 +170,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 				}
 			}
 			else_if = {
-				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_2_threshold }
+				limit = { var:dragonmaster_lifestyle_progress >= 5 }
 				add_trait_xp = {
 					trait = lifestyle_dragonmaster
 					track = dragon_rider
@@ -133,7 +178,7 @@ dragonmaster_lifestyle_rank_up_check_effect = {
 				}
 			}
 			else_if = {
-				limit = { var:dragonmaster_lifestyle_progress >= hunter_rank_up_1_threshold }
+				limit = { var:dragonmaster_lifestyle_progress >= 3 }
 				add_trait_xp = {
 					trait = lifestyle_dragonmaster
 					track = dragon_rider

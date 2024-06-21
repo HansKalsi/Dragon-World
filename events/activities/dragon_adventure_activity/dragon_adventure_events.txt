@@ -504,7 +504,8 @@ dragon_adventure.1012 = {
 		}
 		random_list = {
 			75 = {
-				trigger_event = dragon_spawn.0006
+				trigger_event = dragon_world_new_game.0006 # Using pre-existing fleshed out tame dragon event chain
+				# FIXME: Will count as success even if they fail afterwards
 				scope:activity = {
 					set_variable = {
 						name = dragons_success
@@ -565,15 +566,6 @@ dragon_adventure.1012 = {
 			}
 		}
 	}
-
-	# after = {
-	# 	scope:activity = {
-	# 		every_attending_character = {
-	# 			limit = { is_ai = no }
-	# 			trigger_event = dragon_adventure.2000
-	# 		}
-	# 	}
-	# }
 }
 
 # Dragon Cave Found - With Dragon
@@ -682,15 +674,6 @@ dragon_adventure.1013 = {
 			}
 		}
 	}
-
-	# after = {
-	# 	scope:activity = {
-	# 		every_attending_character = {
-	# 			limit = { is_ai = no }
-	# 			trigger_event = dragon_adventure.2000
-	# 		}
-	# 	}
-	# }
 }
 
 # Dragon Cave Found - Without Dragon
@@ -741,15 +724,6 @@ dragon_adventure.1014 = {
 		}
 		trigger_event = dragon_spawn.0007
 	}
-
-	# after = {
-	# 	scope:activity = {
-	# 		every_attending_character = {
-	# 			limit = { is_ai = no }
-	# 			trigger_event = dragon_adventure.2000
-	# 		}
-	# 	}
-	# }
 }
 
 # Huge Dragon Cave Found - With Dragon
@@ -854,15 +828,6 @@ dragon_adventure.1015 = {
 			}
 		}
 	}
-
-	# after = {
-	# 	scope:activity = {
-	# 		every_attending_character = {
-	# 			limit = { is_ai = no }
-	# 			trigger_event = dragon_adventure.2000
-	# 		}
-	# 	}
-	# }
 }
 
 
@@ -919,15 +884,6 @@ dragon_adventure.1016 = {
 			}
 		}
 	}
-
-	# after = {
-	# 	scope:activity = {
-	# 		every_attending_character = {
-	# 			limit = { is_ai = no }
-	# 			trigger_event = dragon_adventure.2000
-	# 		}
-	# 	}
-	# }
 }
 
 # Dragon Charge Result

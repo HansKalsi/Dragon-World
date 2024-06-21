@@ -1,63 +1,3 @@
-# look_for_dragons_decision = {
-#     picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
-    
-#     desc = look_for_dragons_decision_desc
-
-#     is_shown = {
-#         is_landed = yes
-#         is_adult = yes
-#     }
-
-#     cost = { gold = 100 }
-
-#     is_valid = {
-#         gold > 100
-#     }
-
-#     effect = {
-#         root = { trigger_event = dragon_decision_event.0001 }
-#     }
-# }
-
-attempt_to_train_dragon_decision = {
-    picture = "gfx/interface/illustrations/decisions/dragon_taming_image.dds"
-
-    desc = attempt_to_train_dragon_decision_desc
-
-	major = yes
-
-    # AI rule check
-    ai_potential = {
-        NOT = {
-            has_game_rule = non_existent_ai_role
-        }
-    }
-	ai_goal = yes
-	ai_will_do = 100
-
-    is_shown = {
-        is_landed = yes
-        is_adult = yes
-        has_dragon_rider_trigger = yes
-    }
-
-    cost = {
-        gold = 250
-    }
-
-    is_valid = {
-        has_dragon_rider_trigger = yes
-        NOT = {
-            has_dragon_trigger = yes
-        }
-    }
-
-    effect = {
-        root = { trigger_event = dragon_world_new_game.0003 }
-        add_stress = 40
-    }
-}
-
 attempt_to_learn_dragon_rider_decision = {
     picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
 
@@ -151,7 +91,7 @@ recruit_dragon_rider_decision = {
     }
 
     effect = {
-        custom_tooltip = recruit_dragon_rider_specialist_decision.tt
+        # custom_tooltip = recruit_dragon_rider_specialist_decision.tt
         hidden_effect = {
             generate_specialist_character_effect = {
                 SPECIALIST_TEMPLATE_CHARACTER = dragon_rider_commander_character
@@ -295,7 +235,7 @@ recruit_dragon_hatcher_decision = {
     }
 
     effect = {
-        custom_tooltip = recruit_dragon_hatcher_decision.tt
+        # custom_tooltip = recruit_dragon_hatcher_decision.tt
         hidden_effect = {
             generate_specialist_character_effect = {
                 SPECIALIST_TEMPLATE_CHARACTER = dragon_hatcher_character
@@ -303,45 +243,6 @@ recruit_dragon_hatcher_decision = {
         }
     }
 }
-
-look_for_dragon_eggs_decision = {
-    picture = "gfx/interface/illustrations/decisions/dragon_taming_image.dds"
-	sort_order = 73
-
-    desc = look_for_dragon_eggs_decision_desc
-
-    # AI rule check
-    ai_potential = {
-        NOT = {
-            has_game_rule = non_existent_ai_role
-        }
-    }
-	ai_will_do = 50
-
-    is_shown = {
-        is_landed = yes
-        is_adult = yes
-        has_dragon_rider_trigger = yes
-        NOT = {
-            any_character_artifact = {
-                artifact_type = dragon_egg
-            }
-        }
-    }
-
-    cost = {
-        gold = 100
-    }
-
-    is_valid = {
-        has_dragon_rider_trigger = yes
-    }
-
-    effect = {
-        root = { trigger_event = dragon_decision_event.0003 }
-    }
-}
-
 
 clear_ground_for_dragon_hatchery = {
 	picture = "gfx/interface/illustrations/decisions/decision_legend.dds"

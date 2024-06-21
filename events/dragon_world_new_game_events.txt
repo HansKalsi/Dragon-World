@@ -7,27 +7,9 @@ dragon_world_new_game.0002 = {
 
 	immediate = {
 		random_list = {
-			60 = { trigger_event = dragon_spawn.0006 }
-			40 = { trigger_event = dragon_spawn.0005 }
+			75 = { trigger_event = dragon_spawn.0006 }
+			25 = { trigger_event = dragon_spawn.0005 }
 		}
-	}
-}
-
-# Dragon taming decision
-dragon_world_new_game.0003 = {
-	type = character_event
-	title = dragon_world_new_game.0003.t
-	desc = dragon_world_new_game.0003.desc
-
-	option = {
-		name = dragon_world_new_game.0003.a
-		trigger_event = dragon_world_new_game.0006
-		custom_tooltip = attempt_tame_dragon_tooltip
-	}
-	option = {
-		name = dragon_world_new_game.0003.b
-		add_gold = 250
-		add_stress = -40
 	}
 }
 
@@ -71,11 +53,11 @@ dragon_world_new_game.0006 = {
 			}
 		}
 		random_list = {
-			60 = {
+			80 = {
 				trigger_event = dragon_world_new_game.0009
 				custom_tooltip = trusted_by_dragon.tt
 			}
-			40 = {
+			20 = {
 				trigger_event = dragon_world_new_game.0010
 				custom_tooltip = not_trusted_by_dragon.tt
 			}
@@ -93,11 +75,11 @@ dragon_world_new_game.0006 = {
 			}
 		}
 		random_list = {
-			60 = {
+			80 = {
 				trigger_event = dragon_world_new_game.0012
 				custom_tooltip = successfully_charged_dragon.tt
 			}
-			40 = {
+			20 = {
 				trigger_event = dragon_world_new_game.0013
 				custom_tooltip = thrown_off_dragon.tt
 			}
@@ -223,7 +205,10 @@ dragon_world_new_game.0010 = {
 				trigger_event = dragon_world_new_game.0012
 				custom_tooltip = successfully_charged_dragon.tt
 			}
-			40 = { death = { death_reason = death_laughter } }
+			40 = {
+				trigger_event = dragon_world_new_game.0007
+				custom_tooltip = dragon_ate_character.tt
+			}
 		}
 	}
 }
@@ -322,11 +307,11 @@ dragon_world_new_game.0013 = {
 		}
 		
 		random_list = {
-			60 = {
+			80 = {
 				trigger_event = dragon_world_new_game.0012
 				custom_tooltip = successfully_charged_dragon.tt
 			}
-			40 = {
+			20 = {
 				trigger_event = dragon_world_new_game.0013
 				custom_tooltip = thrown_off_dragon.tt
 			}

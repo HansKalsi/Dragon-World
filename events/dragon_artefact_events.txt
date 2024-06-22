@@ -1,28 +1,5 @@
 namespace = dragon_artefact_events
 
-dragon_artefact_events.0001 = {
-	type = character_event
-	hidden = yes
-
-	trigger = {
-		any_character_artifact = {
-			limit = {
-				artifact_type = type_adult_dragon
-			}
-		}
-	}
-
-	immediate = {
-		random_character_artifact = {
-			limit = {
-				artifact_type = type_adult_dragon
-			}
-			save_scope_as = dragon_artifact
-		}
-		trigger_event = dragon_artefact_events.0002
-	}
-}
-
 dragon_artefact_events.0002 = {
 	type = character_event
 	title = dragon_artefact_events.0002.t
@@ -37,6 +14,21 @@ dragon_artefact_events.0002 = {
 	artifact = { # To display the artifact in the event-window
 		target = scope:dragon_artifact
 		position = lower_center_portrait
+	}
+
+	trigger = {
+		any_character_artifact = {
+			artifact_type = type_adult_dragon
+		}
+	}
+
+	immediate = {
+		random_character_artifact = {
+			limit = {
+				artifact_type = type_adult_dragon
+			}
+			save_scope_as = dragon_artifact
+		}
 	}
 
 	option = {
@@ -55,7 +47,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -78,7 +70,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -99,7 +91,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -124,7 +116,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -145,7 +137,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -170,7 +162,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -191,7 +183,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -216,7 +208,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -237,7 +229,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}
@@ -262,7 +254,7 @@ dragon_artefact_events.0002 = {
 		root = {
 			dragonmaster_progress_point_gain_effect = { CHANGE = 3 RANDOM_CHANGE = 1 }
 			hidden_effect = {
-				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no }
+				dragonmaster_lifestyle_rank_up_check_effect = { DRAGON_HATCHER = no DRAGON_SLAYER = no }
 			}
 		}
 	}

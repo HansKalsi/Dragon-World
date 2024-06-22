@@ -9,7 +9,7 @@ random_yearly_everyone_pulse = {
 
 on_dragon_mature_pulse = {
 	effect = {
-		trigger_event = dragon_artefact_events.0001
+		trigger_event = dragon_artefact_events.0002
 	}
 }
 

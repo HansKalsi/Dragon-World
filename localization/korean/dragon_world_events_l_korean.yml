@@ -1,16 +1,6 @@
 ﻿l_korean:
 
-	# Dragon taming decision
-	attempt_to_train_dragon_decision:0 "드래곤 길들이기 시도"
-	attempt_to_train_dragon_decision_desc:0 "근처 드래곤 구덩이에서 드래곤을 조련할 수 있는 곳을 알고 있습니다..."
-	attempt_to_train_dragon_decision_confirm:0 "여정을 준비하세요"
-	attempt_to_train_dragon_decision_tooltip:0 "드래곤 길들이기 시도"
-
-	dragon_world_new_game.0003.t:0 "드래곤 구덩이"
-	dragon_world_new_game.0003.desc:0 "이번이 용을 길들일 기회입니다."
-	dragon_world_new_game.0003.a:0 "오늘은 나의 날!"
-	dragon_world_new_game.0003.b:0 "아마도 다음에..."
-
+	# Dragon taming events
 	dragon_world_new_game.0006.t:0 "야수가 다가온다"
 	dragon_world_new_game.0006.desc:0 "용이 다가오자, 의심에 압도된 공포감이 밀려옵니다. 용의 눈은 사납고 피부는 날카로운데.... 드래곤이 당신의 방향으로 고개를 흔들며 작은 불길을 내뿜는 순간, 이제 당신의 차례입니다..."
 	dragon_world_new_game.0006.a:0 "드래곤에게 거칠게 몸을 던져라!"
@@ -101,13 +91,6 @@
 	recruit_dragon_hatcher_decision_confirm:0 "전문가 모집"
 	recruit_dragon_hatcher_decision_tooltip:0 "드래곤 해처를 법정에 모집합니다."
 
-	# Look for Dragon Egg decision
-	look_for_dragon_eggs_decision:0 "드래곤 에그 찾기"
-	look_for_dragon_eggs_decision_desc:0 "드래곤 알을 찾습니다."
-	look_for_dragon_eggs_decision.tt:0 "드래곤 부화자를 궁정으로 모집합니다."
-	look_for_dragon_eggs_decision_confirm:0 "드래곤 에그 찾기"
-	look_for_dragon_eggs_decision_tooltip:0 "드래곤 부화자를 법정에 모집합니다."
-
   # Train with Dragon decision
   train_with_dragon_decision:0 "드래곤과 함께 훈련"
   train_with_dragon_decision_desc:0 "드래곤과 함께 훈련하고 드래곤 라이더 티어를 업그레이드할 수 있는 기회를 얻으세요"
@@ -139,13 +122,10 @@
 	dragon_decision_event.0002.a:0 "내 트로피를 차지할 시간이다!"
 	dragon_decision_event.0002.b:0 "이런 장엄한 짐승을 죽일 수는 없어"
 
-	dragon_decision_event.0003.t:0 "드래곤 에그 발견"
-	dragon_decision_event.0003.desc:0 "근처 동굴에서 드래곤 알을 발견했어, 정말 멋진 날이야!"
-	dragon_decision_event.0003.a:0 "너는 강력한 야수로 성장하리라!"
-
 	dragon_spawn.0008.t:0 "드래곤 에그 부화"
 	dragon_spawn.0008.desc:0 "나의 드래곤 알이 드디어 부화했습니다!"
 	dragon_spawn.0008.a:0 "강력한 야수로 성장하리라!"
+	dragon_spawn.0008.a.tt:0 "[newly_created_artifact.GetName] 에 이름이 지정됩니다"
 
 	dragon_artefact_events.0002.t:0 "드래곤의 유대"
 	dragon_artefact_events.0002.desc:0 "나의 드래곤은 나이를 먹었고, 함께한 시간으로 우리의 유대감은 더욱 강해졌어요!"

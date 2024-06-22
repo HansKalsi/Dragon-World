@@ -3,7 +3,9 @@
 	# Dragon Master
 	trait_lifestyle_dragonmaster:0 "Maestro dragón"
 	trait_track_dragon_rider:0 "Jinete de dragón"
-	trait_track_dragon_rider_desc:0 "Este personaje sabe montar un dragón".
+	trait_track_dragon_rider_desc:0 "Este personaje sabe montar un dragón"
+	trait_track_dragon_slayer:0 "Cazador de dragones"
+	trait_track_dragon_slayer_desc:0 "Este personaje conoce las mejores formas de cómo matar a un dragón."
 	trait_track_dragon_hatcher:0 "Cazador de dragones"
 	trait_track_dragon_hatcher_desc:0 "Este personaje ha estudiado innumerables libros y manuscritos sobre el arte de incubar dragones, no es nada fácil y por su mayor exposición a los huevos de dragón es probable que no viva tanto como la mayoría..."
 	trait_dragon_rider_desc:0 "Este personaje conoce el camino del dragón"

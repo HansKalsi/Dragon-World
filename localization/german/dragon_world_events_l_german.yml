@@ -1,16 +1,6 @@
 ﻿l_german:
 
-	# Dragon taming decision
-	attempt_to_train_dragon_decision:0 "Versuch, einen Drachen zu zähmen"
-	attempt_to_train_dragon_decision_desc:0 "Wir kennen eine Drachengrube in der Nähe, in der wir versuchen können, einen ihrer Drachen zu trainieren..."
-	attempt_to_train_dragon_decision_confirm:0 "Bereitet euch auf die Reise vor"
-	attempt_to_train_dragon_decision_tooltip:0 "Versuch, einen Drachen zu zähmen"
-
-	dragon_world_new_game.0003.t:0 "Die Drachengruben"
-	dragon_world_new_game.0003.desc:0 "Das ist meine Chance, einen Drachen zu zähmen".
-	dragon_world_new_game.0003.a:0 "Heute ist mein Tag!"
-	dragon_world_new_game.0003.b:0 "Vielleicht ein anderes Mal..."
-
+	# Dragon taming events
 	dragon_world_new_game.0006.t:0 "Die Bestie nähert sich"
 	dragon_world_new_game.0006.desc:0 "Als sich der Drache nähert, fühlst du ein Gefühl der Angst, das von Zweifeln überwältigt wird. Seine Augen sind grimmig und seine Haut scharf... Der Drache schüttelt den Kopf in deine Richtung und spuckt einen kleinen Feuerstoß aus, jetzt bist du am Zug..."
 	dragon_world_new_game.0006.a:0 "Wirf dich wild auf den Drachen!"
@@ -101,13 +91,6 @@
 	recruit_dragon_hatcher_decision_confirm:0 "Rekrutiert einen Spezialisten"
 	recruit_dragon_hatcher_decision_tooltip:0 "Rekrutiert einen Drachenbezwinger für den Hof"
 
-	# Look for Dragon Egg decision
-	look_for_dragon_eggs_decision:0 "Suche nach einem Drachenei"
-	look_for_dragon_eggs_decision_desc:0 "Suche nach einem Drachenei"
-	look_for_dragon_eggs_decision.tt:0 "Rekrutiert einen Drachenschlüpfer für den Hof"
-	look_for_dragon_eggs_decision_confirm:0 "Drachenei finden"
-	look_for_dragon_eggs_decision_tooltip:0 "Rekrutiert einen Drachenbeißer für den Hof"
-
   # Train with Dragon decision
   train_with_dragon_decision:0 "Trainiere mit dem Drachen"
   train_with_dragon_decision_desc:0 "Trainiere mit deinem Drachen und erhalte die Chance, deinen Drachenreiterrang zu verbessern"
@@ -139,13 +122,10 @@
 	dragon_decision_event.0002.a:0 "Zeit, meine Trophäe einzufordern!"
 	dragon_decision_event.0002.b:0 "Ich kann ein so prächtiges Biest nicht töten"
 
-	dragon_decision_event.0003.t:0 "Drachenei gefunden"
-	dragon_decision_event.0003.desc:0 "Wir haben ein Drachenei in einer nahe gelegenen Höhle gefunden, was für ein wunderbarer Tag!"
-	dragon_decision_event.0003.a:0 "Du wirst zu einer mächtigen Bestie heranwachsen!"
-
 	dragon_spawn.0008.t:0 "Drachenei ausgebrütet"
 	dragon_spawn.0008.desc:0 "Mein Drachenei ist endlich geschlüpft!"
 	dragon_spawn.0008.a:0 "Du wirst zu einer mächtigen Bestie heranwachsen!"
+	dragon_spawn.0008.a.tt:0 "[newly_created_artifact.GetName] wird ein Name gegeben"
 
 	dragon_artefact_events.0002.t:0 "Drachenband"
 	dragon_artefact_events.0002.desc:0 "Mein Drache altert, und unser Band ist durch unsere gemeinsame Zeit stärker geworden!"

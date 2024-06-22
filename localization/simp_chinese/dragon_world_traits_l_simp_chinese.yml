@@ -3,7 +3,9 @@
 	# Dragon Master
 	trait_lifestyle_dragonmaster:0 “龙骑士”
 	trait_track_dragon_rider:0 “龙骑士”
-	trait_track_dragon_rider_desc:0 “此角色会骑龙”。
+	trait_track_dragon_rider_desc:0 “此角色会骑龙”
+	trait_track_dragon_slayer:0 "屠龙勇士"
+	trait_track_dragon_slayer_desc:0 "此角色了解屠龙的最佳方法"
 	trait_track_dragon_hatcher:0 “捕龙者”
 	trait_track_dragon_hatcher_desc:0 “该角色研读了无数关于龙孵化艺术的书籍和手稿，这可不是一蹴而就的事情，而且由于他们接触龙蛋的机会越来越多，他们很可能不像大多数人那样长寿......”
 	trait_dragon_rider_desc:0 “此角色深谙龙之道”

@@ -3,7 +3,9 @@
 	# Dragon Master
 	trait_lifestyle_dragonmaster:0 "Повелитель драконов"
 	trait_track_dragon_rider:0 "Наездник дракона"
-	trait_track_dragon_rider_desc:0 "Этот персонаж умеет ездить на драконе".
+	trait_track_dragon_rider_desc:0 "Этот персонаж умеет ездить на драконе"
+	trait_track_dragon_slayer:0 "Убийца драконов"
+	trait_track_dragon_slayer_desc:0 "Этот персонаж знает лучшие способы, как убить дракона"
 	trait_track_dragon_hatcher:0 "Охотник на драконов"
 	trait_track_dragon_hatcher_desc:0 "Этот персонаж изучил бесчисленное количество книг и манускриптов, посвященных искусству высиживания драконов, это нелегкое дело, и из-за повышенного контакта с яйцами дракона он, скорее всего, не проживет так долго, как большинство..."
 	trait_dragon_rider_desc:0 "Этот персонаж знает путь дракона".

@@ -4,6 +4,8 @@
 	trait_lifestyle_dragonmaster:0 "Drachenmeister"
 	trait_track_dragon_rider:0 "Drachenreiter"
 	trait_track_dragon_rider_desc:0 "Dieser Charakter weiß, wie man einen Drachen reitet."
+	trait_track_dragon_slayer:0 "Drachentöter"
+	trait_track_dragon_slayer_desc:0 "Dieser Charakter kennt die besten Methoden, um einen Drachen zu töten."
 	trait_track_dragon_hatcher:0 "Drachenbezwinger"
 	trait_track_dragon_hatcher_desc:0 "Dieser Charakter hat zahllose Bücher und Manuskripte über die Kunst des Drachenschlüpfens studiert, das ist keine leichte Aufgabe, und durch den erhöhten Kontakt mit Dracheneiern wird er wahrscheinlich nicht so lange leben wie die meisten anderen..."
 	trait_dragon_rider_desc:0 "Dieser Charakter kennt den Weg des Drachens"

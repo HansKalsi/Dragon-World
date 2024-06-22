@@ -1,16 +1,6 @@
 ﻿l_simp_chinese:
 
-	# Dragon taming decision
-	attempt_to_train_dragon_decision:0 “尝试驯服一条龙”
-	attempt_too_train_dragon_decision_desc:0 “我们知道附近有一个龙穴，可以让我们尝试驯服其中一条龙......”
-	attempt_too_train_dragon_decision_confirm:0 “准备出发”
-	attempt_to_train_dragon_decision_tooltip:0 “尝试驯服一条龙”
-
-	dragon_world_new_game.0003.t:0 “龙潭”
-	dragon_world_new_game.0003.desc:0 “这是我驯服龙的机会。”
-	dragon_world_new_game.0003.a:0 “今天是我的大日子！”
-	dragon_world_new_game.0003.b:0 “也许下次吧......”
-
+	# Dragon taming events
 	dragon_world_new_game.0006.t:0 “野兽来临”
 	dragon_world_new_game.0006.desc:0 "随着巨龙的逼近，你感到一种被疑惑淹没的恐惧感。它的眼神凶狠，皮肤锋利...... 巨龙朝你的方向摇了摇头，喷出一小股火焰，现在该你行动了......”
 	dragon_world_new_game.0006.a:0 “向巨龙疯狂投掷！”
@@ -101,13 +91,6 @@
 	recruit_dragon_hatcher_decision_confirm:0 "招聘专家"
 	recruit_dragon_hatcher_decision_tooltip:0 "招龙哈奇入宫"
 
-	# Look for Dragon Egg decision
-	look_for_dragon_eggs_decision:0 "寻找龙蛋"
-	look_for_dragon_eggs_decision_desc:0 "寻找龙蛋"
-	look_for_dragon_eggs_decision.tt:0 "招募一名龙孵化者"
-	look_for_dragon_eggs_decision_confirm:0 "寻找龙蛋"
-	look_for_dragon_eggs_decision_tooltip:0 "招龙哈奇入宫"
-
   # Train with Dragon decision
   train_with_dragon_decision:0 "驯龙高手"
   train_with_dragon_decision_desc:0 "与你的龙一起训练，并有机会提升你的龙骑士等级"
@@ -139,13 +122,10 @@
 	dragon_decision_event.0002.a:0 “是时候领取我的战利品了！”
 	dragon_decision_event.0002.b:0 “我不能杀死如此壮观的巨兽”
 
-	dragon_decision_event.0003.t:0 “发现龙蛋”
-	dragon_decision_event.0003.desc:0 “我们在附近的山洞里发现了一枚龙蛋，真是奇妙的一天！”
-	dragon_decision_event.0003.a:0 “你将成长为强大的野兽！”
-
 	dragon_spawn.0008.t:0 “龙蛋孵化”
 	dragon_spawn.0008.desc:0 “我的龙蛋终于孵化了！”
 	dragon_spawn.0008.a:0 “你将成长为强大的野兽！”
+	dragon_spawn.0008.a.tt:0 "[newly_created_artifact.GetName] 被赋予一个名称"
 
 	dragon_artefact_events.0002.t:0 “龙之羁绊”
 	dragon_artefact_events.0002.desc:0 “我的龙正在衰老，而我们的纽带在一起的时间里变得更加牢固！”

@@ -1,16 +1,6 @@
 ﻿l_russian:
 
-	# Dragon taming decision
-	attempt_to_train_dragon_decision:0 "Попытка приручить дракона"
-	attempt_to_train_dragon_decision_desc:0 "Мы знаем о близлежащей драконьей яме, которая позволит нам попытаться приручить одного из ее драконов..."
-	attempt_to_train_dragon_decision_confirm:0 "Приготовиться к путешествию".
-	attempt_to_train_dragon_decision_tooltip:0 "Попытка приручить дракона".
-
-	dragon_world_new_game.0003.t:0 "Драконьи ямы"
-	dragon_world_new_game.0003.desc:0 "Это мой шанс приручить дракона".
-	dragon_world_new_game.0003.a:0 "Сегодня мой день!"
-	dragon_world_new_game.0003.b:0 "Возможно, в другой раз..."
-
+	# Dragon taming events
 	dragon_world_new_game.0006.t:0 "Зверь приближается"
 	dragon_world_new_game.0006.desc:0 "Когда дракон приближается, вы испытываете чувство ужаса, переполненное сомнениями. Его глаза свирепы, а кожа остра... Дракон качает головой в вашу сторону и выдыхает небольшой огненный взрыв, теперь ваш ход..."
 	dragon_world_new_game.0006.a:0 "Дико броситься на дракона!"
@@ -101,13 +91,6 @@
 	recruit_dragon_hatcher_decision_confirm:0 "Вербуем специалиста"
 	recruit_dragon_hatcher_decision_tooltip:0 "Привлечь к суду Драконьего Шляпника"
 
-	# Look for Dragon Egg decision
-	look_for_dragon_eggs_decision:0 "Искать яйцо дракона"
-	look_for_dragon_eggs_decision_desc:0 "Искать яйцо дракона"
-	look_for_dragon_eggs_decision.tt:0 "Вербует драконьего инкубатора в суд"
-	look_for_dragon_eggs_decision_confirm:0 "Найти яйцо дракона"
-	look_for_dragon_eggs_decision_tooltip:0 "Привлечь к суду дракона"
-
   # Train with Dragon decision
   train_with_dragon_decision:0 "Тренируйтесь с драконом"
   train_with_dragon_decision_desc:0 "Тренируйтесь с драконом и получите шанс повысить уровень всадника дракона".
@@ -139,13 +122,10 @@
 	dragon_decision_event.0002.a:0 "Пора забрать свой трофей!"
 	dragon_decision_event.0002.b:0 "Я не могу убить такого великолепного зверя".
 
-	dragon_decision_event.0003.t:0 "Найдено яйцо дракона"
-	dragon_decision_event.0003.desc:0 "Мы нашли яйцо дракона в соседней пещере, какой чудесный день!"
-	dragon_decision_event.0003.a:0 "Ты вырастешь в могучего зверя!"
-
 	dragon_spawn.0008.t:0 "Яйцо дракона вылупилось"
 	dragon_spawn.0008.desc:0 "Мое яйцо дракона наконец-то вылупилось!"
 	dragon_spawn.0008.a:0 "Ты вырастешь в могучего зверя!"
+	dragon_spawn.0008.a.tt:0 "[newly_created_artifact.GetName] получает имя"
 
 	dragon_artefact_events.0002.t:0 "Узы дракона"
 	dragon_artefact_events.0002.desc:0 "Мой дракон стареет, а наша связь стала сильнее от того, что мы провели вместе!"

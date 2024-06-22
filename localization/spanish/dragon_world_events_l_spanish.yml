@@ -1,16 +1,6 @@
 ﻿l_spanish:
 
-	# Dragon taming decision
-	attempt_to_train_dragon_decision:0 "Intento de entrenar a un dragón"
-	attempt_to_train_dragon_decision_desc:0 "Conocemos un foso de dragones cercano que nos permitirá intentar entrenar a uno de sus dragones..."
-	attempt_to_train_dragon_decision_confirm:0 "Prepárate para el viaje"
-	attempt_to_train_dragon_decision_tooltip:0 "Intento de entrenar a un dragón"
-
-	dragon_world_new_game.0003.t:0 "Los fosos del dragón"
-	dragon_world_new_game.0003.desc:0 "Esta es mi oportunidad de domar un dragón"
-	dragon_world_new_game.0003.a:0 "¡Hoy es mi día!"
-	dragon_world_new_game.0003.b:0 "Quizás en otro momento..."
-
+	# Dragon taming events
 	dragon_world_new_game.0006.t:0 "La bestia se acerca"
 	dragon_world_new_game.0006.desc:0 "A medida que el dragón se acerca, sientes un pavor abrumado por la duda. Sus ojos son feroces y su piel afilada... El dragón sacude la cabeza en tu dirección y exhala una pequeña ráfaga de fuego, ahora te toca a ti..."
 	dragon_world_new_game.0006.a:0 "¡Lánzate salvajemente contra el Dragón!"
@@ -100,13 +90,6 @@
 	recruit_dragon_hatcher_decision_confirm:0 "Recluta a un especialista"
 	recruit_dragon_hatcher_decision_tooltip:0 "Recluta a un Dragon Hatcher a la corte"
 
-	# Look for Dragon Egg decision
-	look_for_dragon_eggs_decision:0 "Buscar un huevo de dragón"
-	look_for_dragon_eggs_decision_desc:0 "Busca un huevo de dragón"
-	look_for_dragon_eggs_decision.tt:0 "Recluta a un incubador de dragones para la corte"
-	look_for_dragon_eggs_decision_confirm:0 "Encuentra un huevo de dragón"
-	look_for_dragon_eggs_decision_tooltip:0 "Recluta a un Dragon Hatcher para la corte"
-
   # Train with Dragon decision
 	train_with_dragon_decision:0 "Entrena con el dragón"
 	train_with_dragon_decision_desc:0 "Entrena con tu dragón y ten la oportunidad de mejorar tu nivel de Dragon Rider"
@@ -138,13 +121,10 @@
 	dragon_decision_event.0002.a:0 "¡Es hora de reclamar mi trofeo!"
 	dragon_decision_event.0002.b:0 "No puedo matar a una bestia tan magnífica"
 
-	dragon_decision_event.0003.t:0 "Huevo de Dragón encontrado"
-	dragon_decision_event.0003.desc:0 "Hemos encontrado un Huevo de Dragón en una cueva cercana, ¡qué día tan maravilloso!"
-	dragon_decision_event.0003.a:0 "¡Te convertirás en una bestia poderosa!"
-
 	dragon_spawn.0008.t:0 "Huevo de dragón eclosionado"
 	dragon_spawn.0008.desc:0 "¡Mi huevo de dragón por fin ha eclosionado!"
 	dragon_spawn.0008.a:0 "¡Te convertirás en una poderosa bestia!"
+	dragon_spawn.0008.a.tt:0 "[newly_created_artifact.GetName] recibe un nombre"
 
 	dragon_artefact_events.0002.t:0 "Vínculo Dragón"
 	dragon_artefact_events.0002.desc:0 "¡Mi Dragón está envejeciendo, y nuestro vínculo se ha hecho más fuerte gracias al tiempo que hemos pasado juntos!"

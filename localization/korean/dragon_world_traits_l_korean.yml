@@ -4,6 +4,8 @@
 	trait_lifestyle_dragonmaster:0 "드래곤 마스터"
 	trait_track_dragon_rider:0 "드래곤 라이더"
 	trait_track_dragon_rider_desc:0 "이 캐릭터는 용을 탈 줄 압니다."
+	trait_track_dragon_slayer:0 "드래곤 슬레이어"
+	trait_track_dragon_slayer_desc:0 "이 캐릭터는 드래곤을 처치하는 가장 좋은 방법을 알고 있습니다."
 	trait_track_dragon_hatcher:0 "드래곤 해처"
 	trait_track_dragon_hatcher_desc:0 "이 캐릭터는 드래곤 부화 기술에 관한 수많은 책과 원고를 연구했으며, 드래곤 알에 대한 노출이 많아 오래 살지 못할 가능성이 높습니다..."
 	trait_dragon_rider_desc:0 "이 캐릭터는 용의 길을 알고 있습니다."

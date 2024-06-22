@@ -4,6 +4,8 @@
 	trait_lifestyle_dragonmaster:0 "Dragon Master"
 	trait_track_dragon_rider:0 "Dragon Rider"
 	trait_track_dragon_rider_desc:0 "This character knows how to ride a dragon."
+	trait_track_dragon_slayer:0 "Dragon Slayer"
+	trait_track_dragon_slayer_desc:0 "This character knows the best ways of how to slay a dragon."
 	trait_track_dragon_hatcher:0 "Dragon Hatcher"
 	trait_track_dragon_hatcher_desc:0 "This character has studied countless books and manuscripts regarding the art of Dragon Hatching, this is no easy feet and from their increased  exposure to Dragon Eggs they are likely to not live as long as most…"
 	trait_dragon_rider_desc:0 "This character knows the way of the dragon"

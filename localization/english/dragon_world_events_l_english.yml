@@ -1,16 +1,6 @@
 ﻿l_english:
 
-	# Dragon taming decision
-	attempt_to_train_dragon_decision:0 "Attempt to tame a Dragon"
-	attempt_to_train_dragon_decision_desc:0 "We know of a nearby dragon pit that will allow us to attempt to train one of its dragons..."
-	attempt_to_train_dragon_decision_confirm:0 "Prepare for the journey"
-	attempt_to_train_dragon_decision_tooltip:0 "Attempt to tame a Dragon"
-
-	dragon_world_new_game.0003.t:0 "The Dragon Pits"
-	dragon_world_new_game.0003.desc:0 "This is my chance to tame a dragon."
-	dragon_world_new_game.0003.a:0 "Today is my day!"
-	dragon_world_new_game.0003.b:0 "Perhaps another time..."
-
+	# Dragon taming events
 	dragon_world_new_game.0006.t:0 "The Beast Approaches"
 	dragon_world_new_game.0006.desc:0 "As the dragon approaches, you feel a sense of dread overwhelmed by doubt. Its eyes are fierce and skin sharp... The dragon shakes its head in your direction and breaths a small fireblast, now it is your move..."
 	dragon_world_new_game.0006.a:0 "Throw yourself wildly at the Dragon!"
@@ -101,13 +91,6 @@
 	recruit_dragon_hatcher_decision_confirm:0 "Recruit Specialist"
 	recruit_dragon_hatcher_decision_tooltip:0 "Recruit Dragon Hatcher to court"
 
-	# Look for Dragon Egg decision
-	look_for_dragon_eggs_decision:0 "Look for Dragon Egg"
-	look_for_dragon_eggs_decision_desc:0 "Search for a Dragon Egg"
-	look_for_dragon_eggs_decision.tt:0 "Recruits a Dragon Hatcher to court"
-	look_for_dragon_eggs_decision_confirm:0 "Find Dragon Egg"
-	look_for_dragon_eggs_decision_tooltip:0 "Recruit Dragon Hatcher to court"
-
   # Train with Dragon decision
   train_with_dragon_decision:0 "Train with Dragon"
   train_with_dragon_decision_desc:0 "Train with your Dragon and have the chance to upgrade your Dragon Rider tier"
@@ -139,13 +122,10 @@
 	dragon_decision_event.0002.a:0 "Time to claim my trophy!"
 	dragon_decision_event.0002.b:0 "I cannot kill such a magnificent beast"
 
-	dragon_decision_event.0003.t:0 "Dragon Egg found"
-	dragon_decision_event.0003.desc:0 "We have found a Dragon Egg in a nearby cave, what a wonderous day!"
-	dragon_decision_event.0003.a:0 "You shall grow into a mighty beast!"
-
 	dragon_spawn.0008.t:0 "Dragon Egg hatched"
 	dragon_spawn.0008.desc:0 "My Dragon Egg has finally hatched!"
 	dragon_spawn.0008.a:0 "You shall grow into a mighty beast!"
+	dragon_spawn.0008.a.tt:0 "[newly_created_artifact.GetName] is given a name"
 
 	dragon_artefact_events.0002.t:0 "Dragon Bond"
 	dragon_artefact_events.0002.desc:0 "My Dragon is ageing, and our bond has become stronger from our time together!"

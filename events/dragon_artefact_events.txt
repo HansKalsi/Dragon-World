@@ -18,14 +18,20 @@ dragon_artefact_events.0002 = {
 
 	trigger = {
 		any_equipped_character_artifact = {
-			artifact_type = type_adult_dragon
+			OR = {
+				artifact_type = type_adult_dragon
+				artifact_type = type_young_dragon
+			}
 		}
 	}
 
 	immediate = {
 		random_equipped_character_artifact = {
 			limit = {
-				artifact_type = type_adult_dragon
+				OR = {
+					artifact_type = type_adult_dragon
+					artifact_type = type_young_dragon
+				}
 			}
 			save_scope_as = dragon_artifact
 		}

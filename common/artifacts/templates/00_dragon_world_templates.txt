@@ -3,6 +3,14 @@ dragon_template = {
 	# can this character equip this artifact?
 	can_equip = {
 		has_dragon_rider_trigger = yes
+		NOT = {
+			scope:artifact = {
+				OR = {
+					artifact_type = type_adolescent_dragon
+					artifact_type = type_baby_dragon
+				}
+			}
+		}
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -23,32 +31,40 @@ dragon_template = {
 	unique = yes
 }
 
-non_ridable_dragon_template = {
+# non_ridable_dragon_template = {
 
-	# can this character equip this artifact?
-	can_equip = {
-		always = no
-	}
+# 	# can this character equip this artifact?
+# 	can_equip = {
+# 		# always = no
+# 		NOT = {
+# 			scope:artifact = {
+# 				OR = {
+# 					artifact_type = type_adolescent_dragon
+# 					artifact_type = type_baby_dragon
+# 				}
+# 			}
+# 		}
+# 	}
 
-	# can this character benefit from the full modifiers of the artifact?
-	can_benefit = {
-		has_dragon_rider_trigger = yes
-	}
+# 	# can this character benefit from the full modifiers of the artifact?
+# 	can_benefit = {
+# 		has_dragon_rider_trigger = yes
+# 	}
 
-	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-	fallback = {
-		monthly_prestige = 1
-	}
+# 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+# 	fallback = {
+# 		monthly_prestige = 1
+# 	}
 
-	# Adds the final value to the AI equipping score, note the can_benefit takes precedence over the score when AI equipping
-	# artifact_ai_will_equip_score in game/common/scripted_values/00_artifact_values.txt also effect the final score
-	ai_score = {
-		value = 0
-	}
+# 	# Adds the final value to the AI equipping score, note the can_benefit takes precedence over the score when AI equipping
+# 	# artifact_ai_will_equip_score in game/common/scripted_values/00_artifact_values.txt also effect the final score
+# 	ai_score = {
+# 		value = 0
+# 	}
 
-	# Artifacts with this templates show as unique, default = no 
-	unique = yes
-}
+# 	# Artifacts with this templates show as unique, default = no 
+# 	unique = yes
+# }
 
 dragon_egg_template = {
 

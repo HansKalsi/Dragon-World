@@ -230,3 +230,8 @@
 	dragon_adventure.1016.t: "Desolate Huge Dragon Cave Found"
 	dragon_adventure.1016.opening: "We have come within an arms reach of a huge dragon cave there's no doubt that there will be a hoard of its eggs in there. There's no signs of any dragons around..."
 	dragon_adventure.1016.a: "Like taking candy from an Emperor!"
+
+	# Dragon Aging Event
+	dragon_aging_events.0003.t: "Dragon Aging"
+	dragon_aging_events.0003.desc: "My dragon has aged, it has grown even mightier!"
+	dragon_aging_events.0003.a: "My dear [newly_created_artifact.GetName] how time has flown!"

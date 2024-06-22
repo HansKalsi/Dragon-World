@@ -146,6 +146,46 @@ dragon_aging_events.0003 = {
 			scope:newly_created_artifact = {
 				add_artifact_modifier = dragon_adolescent_defaults
 			}
+			if = {
+				limit = {
+					has_trait = education_diplomacy
+				}
+				scope:newly_created_artifact = {
+					add_artifact_modifier = dragon_adolescent_diplomacy_defaults
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = education_martial
+				}
+				scope:newly_created_artifact = {
+					add_artifact_modifier = dragon_adolescent_martial_defaults
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = education_stewardship
+				}
+				scope:newly_created_artifact = {
+					add_artifact_modifier = dragon_adolescent_stewardship_defaults
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = education_intrigue
+				}
+				scope:newly_created_artifact = {
+					add_artifact_modifier = dragon_adolescent_intrigue_defaults
+				}
+			}
+			else_if = {
+				limit = {
+					has_trait = education_learning
+				}
+				scope:newly_created_artifact = {
+					add_artifact_modifier = dragon_adolescent_learning_defaults
+				}
+			}
 		}
 		else_if = {
 			limit = {

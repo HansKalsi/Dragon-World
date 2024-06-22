@@ -6,7 +6,8 @@ spawned_dragon_modifier = {
 	monthly_prestige_gain_mult = 0.1
 	dread_gain_mult = 0.5
 	prowess = 20
-	martial = 2
+	martial = 5
+	intrigue = 3
 	advantage = 50
 	# siege_phase_time = -0.2
 	# casualty_modifier = 0.2
@@ -70,4 +71,44 @@ dragon_bond_dread_modifier = {
 dragon_adolescent_defaults = {
 	travel_safety = 10
 	travel_speed = 25
+}
+
+dragon_adolescent_diplomacy_defaults = {
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	diplomacy = 2
+	prowess = 5
+	monthly_dynasty_prestige_mult = 0.1
+	general_opinion = 10
+}
+dragon_adolescent_martial_defaults = {
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	martial = 2
+	prowess = 20
+	siege_phase_time = -0.2
+	monthly_prestige_gain_mult = 0.1
+	advantage = 20
+}
+dragon_adolescent_stewardship_defaults = {
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	stewardship = 2
+	prowess = 10
+	monthly_prestige_gain_mult = 0.1
+	build_gold_cost = -0.1
+	holding_build_gold_cost = -0.1
+}
+dragon_adolescent_intrigue_defaults = {
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+	intrigue = 2
+	prowess = 5
+	dread_baseline_add = 10
+	dread_gain_mult = 0.25
+	hostile_scheme_power_add = 10
+	owned_hostile_scheme_success_chance_add = 5
+}
+dragon_adolescent_learning_defaults = {
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+	learning = 2
+	prowess = 5
+	monthly_piety_gain_mult = 0.1
+	court_grandeur_baseline_add = 10
 }

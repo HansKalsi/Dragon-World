@@ -213,3 +213,8 @@
 	dragon_adventure.1016.t: "Desolada Enorme Cueva de Dragones Encontrada"
 	dragon_adventure.1016.opening: "Hemos llegado al alcance de un brazo de una enorme cueva de dragón no hay duda de que habrá un tesoro de sus huevos allí. No hay señales de ningún dragón alrededor..."
 	dragon_adventure.1016.a: "¡Como quitarle un caramelo a un Emperador!"
+
+	# Dragon Aging Event
+	dragon_aging_events.0003.t: "Envejecimiento del dragón"
+	dragon_aging_events.0003.desc: "Mi dragón ha envejecido, ¡se ha hecho aún más poderoso!"
+	dragon_aging_events.0003.a: "Mi querido [newly_created_artifact.GetName] ¡cómo ha volado el tiempo!".

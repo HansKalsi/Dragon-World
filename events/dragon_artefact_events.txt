@@ -17,13 +17,13 @@ dragon_artefact_events.0002 = {
 	}
 
 	trigger = {
-		any_character_artifact = {
+		any_equipped_character_artifact = {
 			artifact_type = type_adult_dragon
 		}
 	}
 
 	immediate = {
-		random_character_artifact = {
+		random_equipped_character_artifact = {
 			limit = {
 				artifact_type = type_adult_dragon
 			}

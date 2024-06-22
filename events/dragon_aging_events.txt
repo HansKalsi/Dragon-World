@@ -143,6 +143,9 @@ dragon_aging_events.0003 = {
 				}
 			}
 			add_prestige = 250
+			scope:newly_created_artifact = {
+				add_artifact_modifier = dragon_adolescent_defaults
+			}
 		}
 		else_if = {
 			limit = {
@@ -226,6 +229,9 @@ dragon_aging_events.0003 = {
 		}
 		scope:newly_created_artifact = {
 			set_artifact_name = artifact_aged_dragon_name
+			hidden_effect = {
+				copy_artifact_modifiers = scope:dragon_artifact 
+			}
 		}
 		hidden_effect = {
 			destroy_artifact = scope:dragon_artifact

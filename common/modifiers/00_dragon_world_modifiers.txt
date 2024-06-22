@@ -1,4 +1,6 @@
 spawned_dragon_modifier = {
+	travel_safety = 10
+	travel_speed = 25
 	court_grandeur_baseline_add = 10
 	monthly_dynasty_prestige_mult = 0.1
 	monthly_prestige_gain_mult = 0.1
@@ -63,4 +65,9 @@ dragon_bond_piety_modifier = {
 dragon_bond_dread_modifier = {
 	icon = dread_positive
 	dread_baseline_add = 10
+}
+
+dragon_adolescent_defaults = {
+	travel_safety = 10
+	travel_speed = 25
 }

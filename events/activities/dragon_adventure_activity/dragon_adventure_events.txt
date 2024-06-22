@@ -635,6 +635,7 @@ dragon_adventure.1013 = {
 		name = dragon_adventure.1013.b
 		random_list = {
 			90 = {
+				custom_tooltip = "You attain a Dragon egg"
 				trigger_event = dragon_spawn.0007
 				scope:activity = {
 					set_variable = {
@@ -644,7 +645,10 @@ dragon_adventure.1013 = {
 				}
 			}
 			# Forced to fight Dragon
-			10 = { trigger_event = dragon_adventure.1011 }
+			10 = {
+				custom_tooltip = "Forced to fight the Dragon"
+				trigger_event = dragon_adventure.1011
+			}
 		}
 		ai_chance = {
 			base = 50
@@ -793,6 +797,7 @@ dragon_adventure.1015 = {
 		name = dragon_adventure.1015.b
 		random_list = {
 			80 = {
+				custom_tooltip = "Everyone in your party attains a Dragon egg"
 				scope:activity = {
 					every_attending_character = {
 						trigger_event = dragon_spawn.0007
@@ -804,7 +809,10 @@ dragon_adventure.1015 = {
 				}
 			}
 			# Forced to fight Dragon
-			20 = { trigger_event = dragon_adventure.1011 }
+			20 = {
+				custom_tooltip = "Forced to fight the Dragon"
+				trigger_event = dragon_adventure.1011
+			}
 		}
 		ai_chance = {
 			base = 50

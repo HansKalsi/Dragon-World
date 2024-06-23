@@ -295,6 +295,18 @@
 					}
 				}
 			}
+			# Executing with a dragon
+			if = {
+				limit = {
+					OR = {
+						always = scope:execution_dragon_latin
+						always = scope:execution_dragon_high_valyrian
+					}
+				}
+				scope:recipient = {
+					add_character_flag = executed_by_dragon
+				}
+			}
 			if = {
 				limit = { always = scope:execution_public }
 				if = {
@@ -647,7 +659,7 @@
 			}
 			has_game_rule = latin_commands
 		}
-		flag = execution_beheaded
+		flag = execution_dragon_latin
 		localization = "EXECUTION_DRAGON_LATIN"
 	}
 
@@ -661,7 +673,7 @@
 			}
 			has_game_rule = high_valyrian_commands
 		}
-		flag = execution_beheaded
+		flag = execution_dragon_high_valyrian
 		localization = "EXECUTION_DRAGON_HIGH_VALYRIAN"
 	}
 

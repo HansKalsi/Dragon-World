@@ -33,6 +33,8 @@
 
 	# Custom Deaths
 	death_dragon_ate:0 "fue devorado por un Dragón"
+	death_dragon_execution: "fue ejecutado por un Dragón"
+	death_dragon_execution_killer: "fue ejecutado por [TARGET_CHARACTER.GetUINamePossessive] Dragón"
 
 	# Custom Tooltips
 	spawn_dragon_tooltip:0 "Aparece un dragón"

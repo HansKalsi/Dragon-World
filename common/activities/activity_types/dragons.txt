@@ -1,6 +1,6 @@
 ﻿activity_dragons = {
 	is_shown = {
-		highest_held_title_tier > tier_county #Dukes or above only
+		highest_held_title_tier > tier_barony #Dukes or above only
 		is_landed = yes
 		trigger_if = {
 			limit = {

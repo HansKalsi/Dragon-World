@@ -8,9 +8,7 @@
 ai_dragon_world_role = {
 	default = default_ai_role
 
-	non_existent_ai_role = {
-		flag = blocks_achievements
-	}
+	non_existent_ai_role = {}
 
 	default_ai_role = {}
 

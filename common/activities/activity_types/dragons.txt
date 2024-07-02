@@ -8,6 +8,9 @@
 			}
 			is_at_war = no
 		}
+        NOT = {
+            has_game_rule = non_existent_ai_role
+        }
 	}
 
 	can_start_showing_failures_only = {

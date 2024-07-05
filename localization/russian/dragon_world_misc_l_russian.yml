@@ -50,7 +50,7 @@
 	dragon_legacy_track_desc:0 "Сила солнца... на моей ладони".
 	dragon_legacy_1_name:0 "Род драконов"
 	dragon_legacy_1_effect:0 "Открывает доступ к [GetBuilding('dragon_hatchery_01').GetName] [building|E] и делает отслеживание дракона [activity|E] дешевле."
-	dragon_legacy_1_requirement:0 "Чтобы открыть это наследие, вам нужен дракон."
+	dragon_legacy_1_requirement:0 "#R Чтобы открыть это наследие, у вас должен быть экипированный дракон. #!"
 	dragon_legacy_2_name:0 "Те, кто служат, служат нам"
 	dragon_legacy_3_name:0 "Неограниченная власть"
 	dragon_legacy_4_name:0 "Рожденный драконом"
@@ -220,3 +220,7 @@
 	dragon_aging_events.0003.t: "Dragon Aging"
 	dragon_aging_events.0003.desc: "My dragon has aged, it has grown even mightier!"
 	dragon_aging_events.0003.a: "My dear [newly_created_artifact.GetName] how time has flown!"
+
+	# Artifact Gift Reasons
+	ARTIFACT_DRAGON_REASON : "#I Является ли дракон #!"
+	ARTIFACT_DRAGON_EGG_REASON : "#I Яйцо дракона #!"

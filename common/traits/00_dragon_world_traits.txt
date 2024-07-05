@@ -55,15 +55,15 @@ lifestyle_dragonmaster = {
 
 dragon_blood = {
 	physical = yes
-	health = 0.25
-	martial = 3
-	learning = 3
-	inbreeding_chance = 0.5
+	health = 1
+	martial = 5
+	learning = 5
+	inbreeding_chance = 0.25
 	
 	inherit_chance = 100
 	inherit_from_real_father = yes
 	
-	ruler_designer_cost = 50
+	ruler_designer_cost = 80
 
 	desc = {
 		first_valid = {

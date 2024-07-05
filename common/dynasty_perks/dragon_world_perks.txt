@@ -18,7 +18,7 @@ dragon_legacy_1 = { # Dragon Kin
 					has_dragon_equipped_trigger = yes
 				}
 			}
-			custom_description = {
+			custom_description_no_bullet = {
 				text = dragon_legacy_1_requirement
 			}
 		}

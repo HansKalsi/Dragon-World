@@ -50,7 +50,7 @@
 	dragon_legacy_track_desc:0 "Die Macht der Sonne ... in meiner Handfläche"
 	dragon_legacy_1_name:0 "Drachenkind"
 	dragon_legacy_1_effect:0 "Schaltet den Zugang zum [GetBuilding('dragon_hatchery_01').GetName] [building|E] frei und macht die Drachenverfolgung [activity|E] billiger"
-	dragon_legacy_1_requirement:0 "Man braucht einen Drachen, um dieses Vermächtnis zu entschlüsseln."
+	dragon_legacy_1_requirement:0 "#R Sie benötigen einen ausgerüsteten Drachen, um dieses Vermächtnis freizuschalten. #!"
 	dragon_legacy_2_name:0 "Diejenigen, die uns dienen, dienen uns"
 	dragon_legacy_3_name:0 "Unbegrenzte Macht"
 	dragon_legacy_4_name:0 "Drachengeboren"
@@ -220,3 +220,7 @@
 	dragon_aging_events.0003.t: "Dragon Aging"
 	dragon_aging_events.0003.desc: "My dragon has aged, it has grown even mightier!"
 	dragon_aging_events.0003.a: "My dear [newly_created_artifact.GetName] how time has flown!"
+
+	# Artifact Gift Reasons
+	ARTIFACT_DRAGON_REASON : "#I Ist ein Drache #!"
+	ARTIFACT_DRAGON_EGG_REASON : "#I Ist ein Drachenei #!"

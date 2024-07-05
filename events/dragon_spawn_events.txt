@@ -35,13 +35,19 @@ dragon_spawn.0006 = {
 		}
 		random_list = {
 			30 = {
-				set_variable = { name = dragon_type value = flag:fire }
+				root = {
+					set_variable = { name = dragon_type value = flag:fire }
+				}
 			}
 			30 = {
-				set_variable = { name = dragon_type value = flag:water }
+				root = {
+					set_variable = { name = dragon_type value = flag:water }
+				}
 			}
 			30 = {
-				set_variable = { name = dragon_type value = flag:stone }
+				root = {
+					set_variable = { name = dragon_type value = flag:stone }
+				}
 			}
 		}
 		create_artifact_adult_dragon_effect = {
@@ -86,13 +92,19 @@ dragon_spawn.0007 = {
 	immediate = {
 		random_list = {
 			30 = {
-				set_variable = { name = dragon_type value = flag:fire }
+				root = {
+					set_variable = { name = dragon_type value = flag:fire }
+				}
 			}
 			30 = {
-				set_variable = { name = dragon_type value = flag:water }
+				root = {
+					set_variable = { name = dragon_type value = flag:water }
+				}
 			}
 			30 = {
-				set_variable = { name = dragon_type value = flag:stone }
+				root = {
+					set_variable = { name = dragon_type value = flag:stone }
+				}
 			}
 		}
 		create_artifact_dragon_egg_effect = { OWNER = this }
@@ -132,8 +144,8 @@ dragon_spawn.0008 = {
 				limit = {
 					has_artifact_feature = dragon_element_fire
 				}
-				set_variable = { name = dragon_type value = flag:fire }
 				root = {
+					set_variable = { name = dragon_type value = flag:fire }
 					add_character_flag = sword_name_flamberge
 				}
 			}
@@ -141,8 +153,8 @@ dragon_spawn.0008 = {
 				limit = {
 					has_artifact_feature = dragon_element_water
 				}
-				set_variable = { name = dragon_type value = flag:water }
 				root = {
+					set_variable = { name = dragon_type value = flag:water }
 					add_character_flag = sword_name_galatine
 				}
 			}
@@ -150,8 +162,8 @@ dragon_spawn.0008 = {
 				limit = {
 					has_artifact_feature = dragon_element_stone
 				}
-				set_variable = { name = dragon_type value = flag:stone }
 				root = {
+					set_variable = { name = dragon_type value = flag:stone }
 					add_character_flag = sword_name_grinder
 				}
 			}

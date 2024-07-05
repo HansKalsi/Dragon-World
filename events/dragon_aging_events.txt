@@ -220,19 +220,25 @@ dragon_aging_events.0003 = {
 				limit = {
 					has_artifact_feature = dragon_element_fire
 				}
-				set_variable = { name = dragon_type value = flag:fire }
+				root = {
+					set_variable = { name = dragon_type value = flag:fire }
+				}
 			}
 			else_if = {
 				limit = {
 					has_artifact_feature = dragon_element_water
 				}
-				set_variable = { name = dragon_type value = flag:water }
+				root = {
+					set_variable = { name = dragon_type value = flag:water }
+				}
 			}
 			else_if = {
 				limit = {
 					has_artifact_feature = dragon_element_stone
 				}
-				set_variable = { name = dragon_type value = flag:stone }
+				root = {
+					set_variable = { name = dragon_type value = flag:stone }
+				}
 			}
 		}
 		if = {

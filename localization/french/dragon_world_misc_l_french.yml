@@ -50,7 +50,7 @@
 	dragon_legacy_track_desc:0 "Le pouvoir du soleil ... dans la paume de ma main"
 	dragon_legacy_1_name:0 "Dragon Kin"
 	dragon_legacy_1_effect:0 "Déverrouille l'accès à la [GetBuilding('dragon_hatchery_01').GetName] [building|E] et rend la traque du dragon [activity|E] moins coûteuse"
-	dragon_legacy_1_requirement:0 "Il faut un dragon pour pouvoir débloquer cet héritage."
+	dragon_legacy_1_requirement:0 "#R Vous devez avoir un dragon équipé pour pouvoir débloquer cet héritage. #!"
 	dragon_legacy_2_name:0 "Ceux qui servent, nous servent"
 	dragon_legacy_3_name:0 "Un pouvoir illimité"
 	dragon_legacy_4_name:0 "Naissance d'un dragon"
@@ -220,3 +220,7 @@
 	dragon_aging_events.0003.t: "Dragon Aging"
 	dragon_aging_events.0003.desc: "My dragon has aged, it has grown even mightier!"
 	dragon_aging_events.0003.a: "My dear [newly_created_artifact.GetName] how time has flown!"
+
+	# Artifact Gift Reasons
+	ARTIFACT_DRAGON_REASON : "#I Est un Dragon #!"
+	ARTIFACT_DRAGON_EGG_REASON : "#I Est un œuf de Dragon #!"

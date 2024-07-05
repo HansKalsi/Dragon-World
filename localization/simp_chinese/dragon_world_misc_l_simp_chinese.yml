@@ -50,7 +50,7 @@
 	dragon_legacy_track_desc:0 "太阳的力量......在我掌中"
 	dragon_legacy_1_name:0 "龙族"
 	dragon_legacy_1_effect:0 "解锁进入 [GetBuilding('dragon_hatchery_01').GetName] [building|E]  并降低 '龙追踪'[activity|E]的成本"
-	dragon_legacy_1_requirement:0 "你需要一条龙，才能开启这项遗产。"
+	dragon_legacy_1_requirement:0 "#R 您需要拥有一条装备好的龙，才能解锁这项遗产。 #!"
 	dragon_legacy_2_name:0 "服务者，服务于我们"
 	dragon_legacy_3_name:0 "无限动力"
 	dragon_legacy_4_name:0 "龙的诞生"
@@ -220,3 +220,7 @@
 	dragon_aging_events.0003.t: "Dragon Aging"
 	dragon_aging_events.0003.desc: "My dragon has aged, it has grown even mightier!"
 	dragon_aging_events.0003.a: "My dear [newly_created_artifact.GetName] how time has flown!"
+
+	# Artifact Gift Reasons
+	ARTIFACT_DRAGON_REASON : "#I 是龙 #!"
+	ARTIFACT_DRAGON_EGG_REASON : "#I 是龙蛋 #!"

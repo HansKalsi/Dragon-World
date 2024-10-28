@@ -1,5 +1,7 @@
 attempt_to_learn_dragon_rider_decision = {
-    picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+    }    
 
     desc = attempt_to_learn_dragon_rider_decision_desc
 
@@ -40,7 +42,10 @@ attempt_to_learn_dragon_rider_decision = {
 }
 
 recruit_dragon_rider_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_invite_knights.dds"
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_invite_knights.dds"
+    }
+
 	sort_order = 75
 
 	cooldown = { years = 3 }
@@ -101,7 +106,9 @@ recruit_dragon_rider_decision = {
 }
 
 train_with_dragon_decision = {
-    picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+    }
 
     desc = train_with_dragon_decision_desc
 
@@ -142,7 +149,10 @@ train_with_dragon_decision = {
 }
 
 demand_gold_from_the_populace_decision = {
-    picture = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+    }
+
 	sort_order = 75
 
     desc = demand_gold_from_the_populace_decision_desc
@@ -184,7 +194,10 @@ demand_gold_from_the_populace_decision = {
 }
 
 recruit_dragon_hatcher_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+    }
+
 	sort_order = 74
 
 	cooldown = { years = 10 }
@@ -245,7 +258,10 @@ recruit_dragon_hatcher_decision = {
 }
 
 clear_ground_for_dragon_hatchery = {
-	picture = "gfx/interface/illustrations/decisions/decision_legend.dds"
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_legend.dds"
+    }
+
 	major = yes
 	sort_order = 100
 

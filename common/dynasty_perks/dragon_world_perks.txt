@@ -3,8 +3,10 @@ dragon_legacy_1 = { # Dragon Kin
 	legacy = dragon_legacy_track
 
 	can_be_picked = {
-		has_dragon_rider_trigger = yes
-		has_dragon_equipped_trigger = yes
+		AND = {
+			has_dragon_rider_trigger = yes
+			has_dragon_equipped_trigger = yes
+		}
 	}
 
 	effect = {
@@ -14,8 +16,10 @@ dragon_legacy_1 = { # Dragon Kin
 		if = {
 			limit ={
 				NOT = {
-					has_dragon_rider_trigger = yes
-					has_dragon_equipped_trigger = yes
+					AND = {
+						has_dragon_rider_trigger = yes
+						has_dragon_equipped_trigger = yes
+					}
 				}
 			}
 			custom_description_no_bullet = {

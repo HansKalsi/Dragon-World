@@ -1,6 +1,6 @@
 attempt_to_learn_dragon_rider_decision = {
     picture = {
-        reference = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+        reference = "gfx/interface/illustrations/decisions/become_a_dragon_rider.dds"
     }    
 
     desc = attempt_to_learn_dragon_rider_decision_desc
@@ -107,7 +107,7 @@ recruit_dragon_rider_decision = {
 
 train_with_dragon_decision = {
     picture = {
-        reference = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+        reference = "gfx/interface/illustrations/decisions/train_with_dragon.dds"
     }
 
     desc = train_with_dragon_decision_desc
@@ -150,7 +150,7 @@ train_with_dragon_decision = {
 
 demand_gold_from_the_populace_decision = {
     picture = {
-        reference = "gfx/interface/illustrations/decisions/dragon_riding_image.dds"
+        reference = "gfx/interface/illustrations/decisions/extract_gold_from_populace.dds"
     }
 
 	sort_order = 75

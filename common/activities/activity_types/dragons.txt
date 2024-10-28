@@ -2194,6 +2194,12 @@
 		#########
 		adventure_option_companions = {
 			adventure_companions_few = {
+				# Entourage option grabbing chosen dragon knight, suitable bodyguards & maybe someone from court who really likes you, + randos.
+				travel_entourage_selection = { 
+					weight = dragon_adventure_entourage_base_set_weighting_value
+					max = 5
+					invite_rule_order = 2
+				}
 				# desc is only shown in debug AI watch window
 				ai_will_do = {
 					value = 10
@@ -2202,6 +2208,16 @@
 
 			adventure_companions_normal = {
 				default = yes
+
+				#Entourage option grabbing most people suitable from court, + randos.
+				travel_entourage_selection = {
+					weight = {
+						add = dragon_adventure_entourage_base_set_weighting_value
+						add = dragon_adventure_entourage_extras_set_weighting_value
+					}
+					max = 8
+   					invite_rule_order = 2
+				}
 
 				is_valid = {
 					can_make_expensive_purchase_trigger = {
@@ -2263,6 +2279,18 @@
 			}
 
 			adventure_companions_many = {
+				#Entourage option grabbing sodding everyone suitable from court, + every grabbable rando in the duchy and maybe a few extra.
+				travel_entourage_selection = {
+					weight = {
+						add = dragon_adventure_entourage_base_set_weighting_value
+						add = dragon_adventure_entourage_extras_set_weighting_value
+						add = dragon_adventure_entourage_sodding_everyone_set_weighting_value
+					}
+
+					max = 15
+						invite_rule_order = 2
+				}
+
 				is_valid = {
 					can_make_expensive_purchase_trigger = {
 						PRICE = root.hunt_good_option_cost
@@ -2317,143 +2345,6 @@
 						add = {
 			            	value = 10
 			            	desc = "Ambitious"
-			            }
-					}
-					if = { # Warlike
-						limit = { ai_has_warlike_personality = yes }
-						add = {
-			            	value = 40
-			            	desc = "Warlike"
-			            }
-					}
-				}
-			}
-		}
-
-		#########
-		# EXPEDITION SCALE
-		#########
-		adventure_option_expedition_scale = {
-			adventure_expedition_scale_few = {
-				# Entourage option grabbing chosen dragon knight, suitable bodyguards & maybe someone from court who really likes you, + randos.
-				travel_entourage_selection = { 
-					weight = dragon_adventure_entourage_base_set_weighting_value
-					max = 5
-   					invite_rule_order = 2
-				}
-
-				# desc is only shown in debug AI watch window
-				ai_will_do = {
-					value = 10
-				}
-			}
-
-			adventure_expedition_scale_normal = {
-				default = yes
-
-				cost = {
-					gold = {
-						add = {
-							add = {
-								value = hunt_normal_option_cost
-								desc = adventure_expedition_scale_normal
-							}
-							if = {
-								limit = {
-									dynasty ?= {
-										has_dynasty_perk = dragon_legacy_1
-									}
-								}
-								subtract = {
-									value = hunt_normal_option_cost
-									multiply = law_legacy_cost_reduction_mult
-									desc = dragon_legacy_1_name
-								}
-							}
-						}
-					}
-				}
-
-				#Entourage option grabbing most people suitable from court, + randos.
-				travel_entourage_selection = {
-					weight = {
-						add = dragon_adventure_entourage_base_set_weighting_value
-						add = dragon_adventure_entourage_extras_set_weighting_value
-					}
-					max = 8
-   					invite_rule_order = 2
-				}
-
-				# desc is only shown in debug AI watch window
-				ai_will_do = {
-					add = {
-						value = 25
-						desc = adventure_expedition_scale_normal
-					}
-				}
-			}
-
-			adventure_expedition_scale_many = {
-				cost = {
-					gold = {
-						add = {
-							add = {
-								value = hunt_good_option_cost
-								desc = adventure_expedition_scale_many
-							}
-							if = {
-								limit = {
-									dynasty ?= {
-										has_dynasty_perk = dragon_legacy_1
-									}
-								}
-								subtract = {
-									value = hunt_good_option_cost
-									multiply = law_legacy_cost_reduction_mult
-									desc = dragon_legacy_1_name
-								}
-							}
-						}
-					}
-				}
-
-				#Entourage option grabbing sodding everyone suitable from court, + every grabbable rando in the duchy and maybe a few extra.
-				travel_entourage_selection = {
-					weight = {
-						add = dragon_adventure_entourage_base_set_weighting_value
-						add = dragon_adventure_entourage_extras_set_weighting_value
-						add = dragon_adventure_entourage_sodding_everyone_set_weighting_value
-					}
-
-					max = 15
-   					invite_rule_order = 2
-				}
-
-				# desc is only shown in debug AI watch window
-				ai_will_do = {
-					add = {
-						value = 10
-						desc = adventure_expedition_scale_many
-					}
-					if = { # Cautious
-						limit = { gold >= monumental_gold_value }
-						add = {
-			            	value = 25
-			            	desc = "Rich"
-			            }
-					}
-					if = { # Ambitious
-						limit = { has_trait = ambitious }
-						add = {
-			            	value = 40
-			            	desc = "Ambitious"
-			            }
-					}
-					if = { # Brave
-						limit = { has_trait = brave }
-						add = {
-			            	value = 20
-			            	desc = "Brave"
 			            }
 					}
 					if = { # Warlike

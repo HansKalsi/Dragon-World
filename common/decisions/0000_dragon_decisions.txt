@@ -17,7 +17,6 @@ attempt_to_learn_dragon_rider_decision = {
     ai_will_do = 100
 
     is_shown = {
-        is_landed = yes
         is_adult = yes
         not = {
             has_dragon_rider_trigger = yes
@@ -126,7 +125,6 @@ train_with_dragon_decision = {
 	ai_will_do = 100
 
     is_shown = {
-        is_landed = yes
         is_adult = yes
         has_dragon_rider_trigger = yes
         has_dragon_trigger = yes

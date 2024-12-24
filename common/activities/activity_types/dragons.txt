@@ -1,7 +1,6 @@
 ﻿activity_dragons = {
 	is_shown = {
 		highest_held_title_tier > tier_barony #Dukes or above only
-		is_landed = yes
 		trigger_if = {
 			limit = {
 				is_ai = yes
@@ -22,7 +21,6 @@
 		scope:host = {
 			is_alive = yes
 			is_imprisoned = no
-			is_landed = yes 
 			NOT = { is_incapable = yes }
 		}
 		# NOT = { has_variable = hunt_invalidated }

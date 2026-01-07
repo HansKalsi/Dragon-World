@@ -1,4 +1,4 @@
-generate_specialist_character_effect = {
+﻿generate_specialist_character_effect = {
     create_character = {
         employer = root
         template = $SPECIALIST_TEMPLATE_CHARACTER$

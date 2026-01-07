@@ -1,4 +1,4 @@
-#Used for all executions
+﻿#Used for all executions
 execute_prisoner_effect = {
 
 	$VICTIM$ = {

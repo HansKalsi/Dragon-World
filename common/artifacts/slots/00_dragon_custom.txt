@@ -1,4 +1,4 @@
-dragon = {
+﻿dragon = {
 	type = "dragon"
 	category = inventory
 }

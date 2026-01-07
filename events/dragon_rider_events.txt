@@ -1,4 +1,4 @@
-namespace = dragon_rider_events
+﻿namespace = dragon_rider_events
 
 dragon_rider_events.0001a = {
 	scope = artifact

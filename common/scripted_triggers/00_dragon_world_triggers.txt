@@ -1,4 +1,4 @@
-dragon_used_on_populace_county_trigger = {
+﻿dragon_used_on_populace_county_trigger = {
 	OR = {
 		NOT = { has_county_modifier = gold_extracted_with_dragon }
 	}

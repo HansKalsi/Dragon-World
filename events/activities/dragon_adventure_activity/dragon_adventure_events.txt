@@ -1,4 +1,4 @@
-namespace = dragon_adventure
+﻿namespace = dragon_adventure
 
 # Start Tracking Adventure
 dragon_adventure.0001 = {

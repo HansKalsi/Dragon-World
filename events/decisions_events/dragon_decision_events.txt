@@ -1,4 +1,4 @@
-namespace = dragon_decision_event
+﻿namespace = dragon_decision_event
 
 # TODO: Placeholder event for future re-usage of this file
 # dragon_decision_event.0001 = {

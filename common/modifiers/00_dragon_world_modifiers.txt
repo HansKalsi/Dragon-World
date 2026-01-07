@@ -1,4 +1,4 @@
-spawned_dragon_modifier = {
+﻿spawned_dragon_modifier = {
 	travel_safety = 10
 	travel_speed = 25
 	court_grandeur_baseline_add = 10

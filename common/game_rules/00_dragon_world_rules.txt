@@ -1,4 +1,4 @@
-# Dragon World Custom Rules
+﻿# Dragon World Custom Rules
 
 # AI role in Dragon World
 # Non-existent

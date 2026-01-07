@@ -1,4 +1,4 @@
-dragon_template = {
+﻿dragon_template = {
 
 	# can this character equip this artifact?
 	can_equip = {

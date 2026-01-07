@@ -1,4 +1,4 @@
-namespace = dragon_aging_events
+﻿namespace = dragon_aging_events
 
 # Trigger to age Dragons
 dragon_aging_events.0001 = {

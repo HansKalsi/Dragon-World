@@ -1,4 +1,4 @@
-namespace = dragon_spawn
+﻿namespace = dragon_spawn
 
 dragon_spawn.0005 = {
 	type = character_event

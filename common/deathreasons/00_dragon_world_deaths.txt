@@ -1,4 +1,4 @@
-death_dragon_ate = {
+﻿death_dragon_ate = {
 	public_knowledge = yes
 	icon = "death_dragon_natural.dds"
 }

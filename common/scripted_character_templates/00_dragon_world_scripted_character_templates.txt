@@ -1,4 +1,4 @@
-dragon_rider_commander_character = {
+﻿dragon_rider_commander_character = {
 	age = { 30 50 }
 	dynasty = none
 	random_traits = yes

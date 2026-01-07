@@ -1,4 +1,4 @@
-# DragonName = {
+﻿# DragonName = {
 #     type = character
 #     # type = artifact
 

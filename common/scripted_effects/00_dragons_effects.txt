@@ -1,4 +1,4 @@
-# Give dragon slayer xp to every attending character
+﻿# Give dragon slayer xp to every attending character
 dragon_slayer_all_attendee_xp_effect = {
 	hidden_effect = {
 		scope:activity = {

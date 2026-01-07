@@ -1,4 +1,4 @@
-attempt_to_learn_dragon_rider_decision = {
+﻿attempt_to_learn_dragon_rider_decision = {
     picture = {
         reference = "gfx/interface/illustrations/decisions/become_a_dragon_rider.dds"
     }    

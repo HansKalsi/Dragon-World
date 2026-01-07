@@ -1,4 +1,4 @@
-
+﻿
 ### Trait interaction for guardians
 # actor = guardian
 # recipient = ward/hostage

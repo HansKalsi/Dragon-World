@@ -1,4 +1,4 @@
-#Dragonmaster
+﻿#Dragonmaster
 dragonmaster_progress_point_gain_effect = {
 	if = {
 		limit = { is_alive = yes }

@@ -1,4 +1,4 @@
-dragon_legacy_1_effect = {
+﻿dragon_legacy_1_effect = {
 	global = dragon_legacy_1_effect
 	first = dragon_legacy_1_effect
 	third = dragon_legacy_1_effect

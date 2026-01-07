@@ -1,4 +1,4 @@
-# OVERWRITE DEFAULT TO ADD CHECK FOR DRAGON BLOOD
+﻿# OVERWRITE DEFAULT TO ADD CHECK FOR DRAGON BLOOD
 # called for the newborn child
 # scope:child is the new born character
 # scope:mother is the pregnant mother

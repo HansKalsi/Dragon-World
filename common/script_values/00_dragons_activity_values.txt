@@ -1,4 +1,4 @@
-dragon_adventure_entourage_base_set_weighting_value = {
+﻿dragon_adventure_entourage_base_set_weighting_value = {
 	if = {
 		limit = {
 			is_available_healthy_adult = yes

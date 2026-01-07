@@ -1,4 +1,4 @@
-namespace = dragon_artefact_events
+﻿namespace = dragon_artefact_events
 
 dragon_artefact_events.0002 = {
 	type = character_event

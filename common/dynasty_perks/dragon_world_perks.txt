@@ -1,4 +1,4 @@
-# DRAGON BLOOD LEGACIES
+﻿# DRAGON BLOOD LEGACIES
 dragon_legacy_1 = { # Dragon Kin
 	legacy = dragon_legacy_track
 

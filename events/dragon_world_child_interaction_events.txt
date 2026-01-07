@@ -1,4 +1,4 @@
-namespace = teach_child_to_be_dragon_rider_interaction
+﻿namespace = teach_child_to_be_dragon_rider_interaction
 
 # Basic Success Event
 teach_child_to_be_dragon_rider_interaction.1001 = { # Success

@@ -5,7 +5,7 @@
 
     desc = attempt_to_learn_dragon_rider_decision_desc
 
-	major = yes
+    decision_group_type = major
 
     # AI rule check
     ai_potential = {
@@ -111,7 +111,7 @@ train_with_dragon_decision = {
 
     desc = train_with_dragon_decision_desc
 
-	major = yes
+    decision_group_type = major
 
 	cooldown = { months = 12 }
 
@@ -260,7 +260,7 @@ clear_ground_for_dragon_hatchery = {
         reference = "gfx/interface/illustrations/decisions/decision_legend.dds"
     }
 
-	major = yes
+    decision_group_type = major
 	sort_order = 100
 
 	is_shown = {

@@ -1,18 +1,4 @@
-﻿# TO DELETE, KEEPING FOR SAVE GAMES CURRENTLY
-riding_fire_dragon = {
-	icon = "fire_dragon.dds"
-}
-
-riding_water_dragon = {
-	icon = "water_dragon.dds"
-}
-
-riding_stone_dragon = {
-	icon = "stone_dragon.dds"
-}
-# END DELETE
-
-dragon_egg_visual = {
+﻿dragon_egg_visual = {
 	icon = "dragon_egg_image.dds"
 }
 

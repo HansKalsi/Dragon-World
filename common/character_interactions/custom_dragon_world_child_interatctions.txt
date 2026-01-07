@@ -65,7 +65,7 @@ train_child_in_dragon_riding_ways = {
 		localization = trait_lifestyle_dragonmaster
 	}
 
-	send_options_exclusive = yes
+	#send_options_exclusive = yes
 
 	on_send = {
 		scope:lifestyle_dragonmaster = {

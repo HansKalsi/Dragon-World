@@ -1,4 +1,4 @@
-version="1.14.*"
+version="1.18.*"
 tags={
 	"Decisions"
 	"Events"
@@ -6,5 +6,5 @@ tags={
 	"Gameplay"
 }
 name="Dragon World"
-supported_version="1.14.*"
+supported_version="1.18.*"
 remote_file_id="2744166597"

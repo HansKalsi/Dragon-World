@@ -4,6 +4,7 @@ dragon_spawn.0005 = {
 	type = character_event
 	title = dragon_spawn.0005.t
 	desc = dragon_spawn.0005.desc
+	theme = death
 
 	option = {
 		name = dragon_spawn.0005.a

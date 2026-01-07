@@ -17,6 +17,7 @@ dragon_world_new_game.0006 = {
 	type = character_event
 	title = dragon_world_new_game.0006.t
 	desc = dragon_world_new_game.0006.desc
+	theme = death
 
 	# Standard attempt
 	option = {
@@ -112,6 +113,7 @@ dragon_world_new_game.0007 = {
 	type =  character_event
 	title = dragon_world_new_game.0007.t
 	desc = dragon_world_new_game.0007.desc
+	theme = death
 	
 	# dies
 	option = {
@@ -126,6 +128,7 @@ dragon_world_new_game.0008 = {
 	type =  character_event
 	title = dragon_world_new_game.0008.t
 	desc = dragon_world_new_game.0008.desc
+	theme = death
 	
 	# gains health boost
 	# gains dread
@@ -141,6 +144,7 @@ dragon_world_new_game.0009 = {
 	type =  character_event
 	title = dragon_world_new_game.0009.t
 	desc = dragon_world_new_game.0009.desc
+	theme = death
 	
 	# gains opinion modifier
 	# gains renown
@@ -173,6 +177,7 @@ dragon_world_new_game.0010 = {
 	type = character_event
 	title = dragon_world_new_game.0010.t
 	desc = dragon_world_new_game.0010.desc
+	theme = death
 
 	# loses prestige
 	option = {
@@ -218,6 +223,7 @@ dragon_world_new_game.0011 = {
 	type = character_event
 	title = dragon_world_new_game.0011.t
 	desc = dragon_world_new_game.0011.desc
+	theme = death
 
 	# loses prestige
 	# reduces stress
@@ -234,6 +240,7 @@ dragon_world_new_game.0012 = {
 	type = character_event
 	title = dragon_world_new_game.0012.t
 	desc = dragon_world_new_game.0012.desc
+	theme = death
 
 	# gains Dragon artefact
 	# gains major Prestige (or major Piety if zealous)
@@ -263,6 +270,7 @@ dragon_world_new_game.0013 = {
 	type = character_event
 	title = dragon_world_new_game.0013.t
 	desc = dragon_world_new_game.0013.desc
+	theme = death
 
 	# gains wounded or maimed (80/20) if not wounded else maimed
 	immediate = {
@@ -273,8 +281,16 @@ dragon_world_new_game.0013 = {
 				}
 			}
 			random_list = {
-				80 = { add_trait = wounded }
-				20 = { add_trait = maimed }
+				80 = { 
+					root = {
+						add_trait = wounded
+					}
+				}
+				20 = {
+					root = {
+						add_trait = maimed
+					}
+				}
 			}
 		}
 		if = {
@@ -307,13 +323,17 @@ dragon_world_new_game.0013 = {
 		}
 		
 		random_list = {
-			80 = {
-				trigger_event = dragon_world_new_game.0012
-				custom_tooltip = successfully_charged_dragon.tt
+			80 = { 
+				root = {
+					trigger_event = dragon_world_new_game.0012
+					custom_tooltip = successfully_charged_dragon.tt
+				}
 			}
 			20 = {
-				trigger_event = dragon_world_new_game.0013
-				custom_tooltip = thrown_off_dragon.tt
+				root = {
+					trigger_event = dragon_world_new_game.0013
+					custom_tooltip = thrown_off_dragon.tt
+				}
 			}
 		}
 	}
@@ -387,6 +407,7 @@ dragon_world_new_game.0005 = {
 	type = character_event
 	title = dragon_rider_events.0001b.t
 	desc = dragon_rider_events.0001b.desc
+	theme = death
 
 	left_portrait = {
 		character = ROOT
@@ -432,6 +453,7 @@ dragon_world_new_game.0014 = {
 	type = character_event
 	title = dragon_rider_events.0014.t
 	desc = dragon_rider_events.0014.desc
+	theme = death
 
 	left_portrait = {
 		character = ROOT

@@ -958,7 +958,7 @@ dragon_adventure.2000 = {
 					scope:animal_slayer ?= this
 				}
 			}
-			scripted_animation = marshal
+			#scripted_animation = marshal
 		}
 		triggered_animation = {
 			trigger = {

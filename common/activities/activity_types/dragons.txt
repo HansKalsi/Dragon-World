@@ -874,7 +874,7 @@
 	# PARAMETERS
 	###################
 
-	is_grand_activity = no
+	# is_grand_activity = no
 
 	is_single_location = yes
 
@@ -1509,7 +1509,7 @@
 							can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
 						}
 					}
-					animation = { hunting_knife_start throne_room_two_handed_passive_1 lantern marshal throne_room_one_handed_passive_1 }
+					animation = { hunting_knife_start throne_room_two_handed_passive_1 lantern throne_room_one_handed_passive_1 }
 				}
 				triggered_animation = {
 					trigger = {
@@ -1529,7 +1529,7 @@
 							can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
 						}
 					}
-					animation = { hunting_knife_start hunting_shortbow_rest_arrow_default lantern marshal }
+					animation = { hunting_knife_start hunting_shortbow_rest_arrow_default lantern }
 				}
 				triggered_animation = {
 					trigger = {
@@ -1715,9 +1715,9 @@
 					}
 				}
 			}
-			scripted_animation = {
-				animation = marshal
-			}
+			#scripted_animation = {
+			#	animation = marshal
+			#}
 		}
 
 		animal_slayer = {
@@ -1736,7 +1736,7 @@
 					trigger = { scope:activity.var:animal_type ?= flag:hare }
 					animation = hunting_carcass_start
 				}
-				animation = marshal
+				#animation = marshal
 			}
 		}
 

@@ -66,14 +66,14 @@ dragons_animal_kill_effect = {
 				any_equipped_character_artifact = {
 					has_artifact_flag = dragon_artifact
 				}
-				factor = 2
+				factor = 5
 			}
 			# Amount of companions - Few
 			modifier = {
 				scope:activity = {
 					has_activity_option = { category = adventure_option_companions option = adventure_companions_few }
 				}
-				factor = -2
+				factor = -1.5
 			}
 			# Amount of companions - Normal
 			modifier = {

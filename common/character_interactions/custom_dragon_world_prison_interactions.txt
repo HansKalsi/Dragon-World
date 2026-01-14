@@ -6,28 +6,35 @@
 	icon = icon_dead
 
 	desc = execute_prisoner_interaction_desc
-	
+
 	ai_targets = {
 		ai_recipients = prisoners
 	}
-	
-	ai_frequency = 12
-	
+
+	ai_frequency_by_tier = {
+		barony = 72
+		county = 12
+		duchy = 12
+		kingdom = 12
+		empire = 12
+		hegemony = 12
+	}
+
 	ai_potential = {
 		is_at_war = no
 	}
-	
+
 	ai_will_do = {
 		base = 0
-		
+
 		opinion_modifier = {
 			trigger = {
-				NOT = { scope:actor = scope:recipient }
+				scope:actor != scope:recipient
 			}
 			opinion_target = scope:recipient
 			multiplier = -1
 		}
-		
+
 		ai_value_modifier = {
 			ai_compassion = -1
 		}
@@ -66,12 +73,7 @@
 				has_execute_reason = scope:recipient
 				ai_greed > 0
 				any_heir_title = { # Execute rulers you can inherit land from
-					exists = holder
-					holder = scope:recipient
-					place_in_line_of_succession = {
-						target = scope:actor
-						value > 2
-					}
+					holder ?= scope:recipient
 				}
 			}
 		}
@@ -95,12 +97,7 @@
 			scope:actor = {
 				ai_greed >= very_high_positive_ai_value
 				any_heir_title = { # Execute rulers you can inherit land from
-					exists = holder
-					holder = scope:recipient
-					place_in_line_of_succession = {
-						target = scope:actor
-						value > 2
-					}
+					holder ?= scope:recipient
 				}
 			}
 		}
@@ -132,12 +129,7 @@
 						exposed_cheating_on_spouse_trigger = { SPOUSE = scope:actor }
 					}
 					any_heir_title = { # Execute rulers you can inherit land from
-						exists = holder
-						holder = scope:recipient
-						place_in_line_of_succession = {
-							target = scope:actor
-							value > 2
-						}
+						holder ?= scope:recipient
 					}
 					has_trait = lunatic # Self explanatory
 				}
@@ -211,6 +203,67 @@
 			}
 		}
 
+		#Nomads get the special beheading stuff
+		modifier = {
+			scope:actor = {
+				mpo_keep_prisoners_heads_trigger = yes
+				scope:recipient = {
+					is_ruler = yes
+					highest_held_title_tier >= tier_county
+					is_adult = yes
+				}
+				NOT = {
+					scope:recipient.top_liege ?= {
+						current_military_strength > scope:actor.current_military_strength
+						tier_difference = {
+							target = scope:actor
+							value >= -1
+						}
+					}
+				}
+			}
+			NOT = {
+				scope:actor.faith = { has_doctrine_parameter = human_sacrifice_active }
+			}
+			add = 10
+		}
+		#Boost further if actor if want to keep head
+		modifier = {
+			#want to keep head
+			scope:actor = {
+				mpo_keep_prisoners_heads_trigger = yes
+			}
+			scope:recipient = {
+				highest_held_title_tier >= tier_kingdom
+				is_adult = yes
+			}
+			NOT = {
+				scope:actor.faith = { has_doctrine_parameter = human_sacrifice_active }
+			}
+			add = 20
+		}
+		#Boost further if actor wants to be scary
+		modifier = {
+			#want to keep head
+			scope:actor = {
+				mpo_keep_prisoners_heads_trigger = yes
+				scope:recipient = {
+					is_ruler = yes
+					highest_held_title_tier >= tier_county
+					is_adult = yes
+				}
+				OR = {
+					has_trait = conqueror
+					has_trait = greatest_of_khans
+					is_gurkhan = yes
+				}
+			}
+			NOT = {
+				scope:actor.faith = { has_doctrine_parameter = human_sacrifice_active }
+			}
+			add = 30
+		}
+
 		modifier = {
 			scope:recipient = {
 				any_character_struggle = {
@@ -243,8 +296,27 @@
 				}
 			}
 		}
+		modifier = {
+			add = 200
+			scope:actor.faith = {
+				has_doctrine = tenet_extinction_of_dharma
+			}
+			scope:recipient.faith = {
+				religion = root.faith.religion
+				NOT = {
+					has_doctrine = tenet_extinction_of_dharma
+				}
+			}
+		}
+		#don't kill prisoners that are tied with a prison break contract, we don't want it invalidating all the time
+		modifier = {
+			factor = 0
+			scope:recipient = {
+				has_character_flag = being_prisonbroken_by_laamp
+			}
+		}
 	}
-	
+
 	is_shown = {
 		scope:recipient = {
 			is_imprisoned_by = scope:actor
@@ -252,7 +324,6 @@
 	}
 
 	is_valid_showing_failures_only = {
-		scope:recipient = { is_busy_in_events_localised = yes } #Prisoner
 		scope:recipient = { NOT = { has_strong_hook = scope:actor } }
 		scope:recipient = {
 			custom_description = {
@@ -276,6 +347,18 @@
 				}
 			}
 		}
+
+		custom_tooltip = {
+			text = is_currently_being_purged_tt
+			scope:recipient = {
+				NOT = {
+					has_character_flag = is_currently_being_purged
+				}
+			}
+		}
+
+		# For use with co-ruler diarchs.
+		scope:recipient = { is_imprisoned_by = scope:actor }
 	}
 
 	cost = {
@@ -284,6 +367,103 @@
 	}
 
 	on_accept = {
+		# If this is a co-ruler we're executing, tell us if we have alternatives.
+		scope:actor = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							has_diarchy_active_parameter = diarchy_is_co_rulership
+							diarch ?= scope:recipient
+						}
+						AND = {
+							scope:recipient = { has_diarchy_active_parameter = diarchy_is_co_rulership }
+							is_diarch_of_target = scope:recipient
+						}
+					}
+				}
+				# If the player doesn't have to execute their partner, point that out.
+				if = {
+					limit = { liege_can_maim_co_ruler_without_killing_them_trigger = yes }
+					custom_tooltip = execute_prisoner_interaction.tt.can_maim_diarch
+				}
+				# Otherwise, if they're out diarch, we end it.
+				if = {
+					limit = { scope:actor.diarch = scope:recipient }
+					end_diarchy = yes
+					every_player = {
+						limit = {
+							NOR = {
+								this = scope:actor
+								this = scope:recipient
+							}
+							top_liege = scope:actor.top_liege
+						}
+						trigger_event = diarchy.8022
+					}
+				}
+				# Else, usurp.
+				else = {
+					custom_description_no_bullet = {
+						text = execute_prisoner_interaction_tt_co_emperor_usurpation
+						object = scope:recipient
+					}
+					create_title_and_vassal_change = {
+						type = usurped
+						save_scope_as = change
+					}
+					scope:recipient = {
+						every_held_title = {
+							limit = {
+								OR = {
+									this = scope:recipient.capital_county
+									this = scope:recipient.capital_county.duchy
+									AND = {
+										tier = tier_county
+										this.duchy = scope:recipient.capital_county.duchy
+									}
+									tier >= scope:recipient.highest_held_title_tier
+								}
+							}
+							change_title_holder = {
+								holder = scope:actor
+								change = scope:change
+							}
+						}
+						every_vassal = {
+							custom = custom.recipient_every_vassal
+							change_liege = {
+								LIEGE = scope:actor
+								CHANGE = scope:change
+							}
+						}
+						hidden_effect = {
+							change_liege = {
+								LIEGE = scope:actor
+								CHANGE = scope:change
+							}
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+					every_player = {
+						limit = {
+							NOR = {
+								this = scope:actor
+								this = scope:recipient
+							}
+							top_liege = scope:actor.top_liege
+						}
+						trigger_event = diarchy.8023
+					}
+				}
+			}
+			# Regardless, this is legit politics, so we don't deduct legitimacy for it.
+			save_scope_value_as = {
+				name = suppress_legitimacy_from_crime
+				value = yes
+			}
+		}
+		# Now, the rest of it.
 		if = {
 			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
 			# Are you HumSac'ing the HoF of a faith that doesn't practice HumSac?
@@ -329,9 +509,7 @@
 						custom_tooltip = public_execution_control_effect
 						hidden_effect = {
 							every_held_title = {
-								limit = {
-									tier = tier_county
-								}
+								title_tier = county
 								change_county_control = executioner_control_value
 							}
 						}
@@ -351,6 +529,7 @@
 						has_relation_rival = scope:recipient
 						has_personality_malicious_trigger = yes
 						has_royal_court = yes
+						has_dlc_feature = court_artifacts
 					}
 					scope:recipient = {
 						is_adult = yes
@@ -409,6 +588,57 @@
 					}
 				}
 				scope:actor = { trigger_event = bp1_yearly.9044 }
+			}
+			# Gallowsbait.
+			scope:actor = {
+				if = {
+					limit = {
+						has_government = landless_adventurer_government
+						scope:recipient = {
+							is_landless_adventurer = no
+							is_ruler = yes
+						}
+					}
+					if = {
+						limit = { scope:recipient.highest_held_title_tier >= tier_empire }
+						laamp_rewards_apply_criminal_xp_effect = {
+							TRACK = marauder
+							XP_MAX = gallowsbait_xp_massive_gain
+							XP_MIN = gallowsbait_xp_massive_gain
+						}
+					}
+					else_if = {
+						limit = { scope:recipient.highest_held_title_tier >= tier_kingdom }
+						laamp_rewards_apply_criminal_xp_effect = {
+							TRACK = marauder
+							XP_MAX = gallowsbait_xp_major_gain
+							XP_MIN = gallowsbait_xp_major_gain
+						}
+					}
+					else_if = {
+						limit = { scope:recipient.highest_held_title_tier >= tier_duchy }
+						laamp_rewards_apply_criminal_xp_effect = {
+							TRACK = marauder
+							XP_MAX = gallowsbait_xp_medium_gain
+							XP_MIN = gallowsbait_xp_medium_gain
+						}
+					}
+					else_if = {
+						limit = { scope:recipient.highest_held_title_tier >= tier_barony }
+						laamp_rewards_apply_criminal_xp_effect = {
+							TRACK = marauder
+							XP_MAX = gallowsbait_xp_minor_gain
+							XP_MIN = gallowsbait_xp_minor_gain
+						}
+					}
+					else = {
+						laamp_rewards_apply_criminal_xp_effect = {
+							TRACK = marauder
+							XP_MAX = 2
+							XP_MIN = 2
+						}
+					}
+				}
 			}
 
 			# FP3
@@ -545,6 +775,92 @@
 				}
 			}
 
+			if = {
+				limit = {
+					scope:actor.faith = {
+						has_doctrine = tenet_extinction_of_dharma
+					}
+					scope:recipient.faith = {
+						religion = scope:actor.faith.religion
+						NOT = {
+							has_doctrine = tenet_extinction_of_dharma
+						}
+					}
+				}
+				if = {
+					limit = {
+						scope:recipient = {
+							is_ruler = yes
+							highest_held_title_tier = tier_county
+						}
+					}
+					scope:actor = {
+						add_piety = minor_piety_value
+					}
+				}
+				else_if = {
+					limit = {
+						scope:recipient = {
+							highest_held_title_tier = tier_duchy
+						}
+					}
+					scope:actor = {
+						add_piety = medium_piety_value
+					}
+				}
+				else_if = {
+					limit = {
+						scope:recipient = {
+							highest_held_title_tier = tier_kingdom
+						}
+					}
+					scope:actor = {
+						add_piety = major_piety_value
+					}
+				}
+				else_if = {
+					limit = {
+						scope:recipient = {
+							highest_held_title_tier = tier_empire
+						}
+					}
+					scope:actor = {
+						add_piety = massive_piety_value
+					}
+				}
+				else_if = {
+					limit = {
+						scope:recipient = {
+							highest_held_title_tier = tier_hegemony
+						}
+					}
+					scope:actor = {
+						add_piety = monumental_piety_value
+					}
+				}
+				else = {
+					scope:actor = {
+						add_piety = miniscule_piety_value
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						faith = {
+							has_doctrine = tenet_cranial_trophies
+						}
+					}
+					scope:recipient = {
+						is_adult = yes
+						is_faith_dominant_gender = yes
+					}
+				}
+				tgp_cranial_trophies_beheading_effect = {
+					KILLER = scope:actor
+					DEAD = scope:recipient
+				}
+			}
 			# Kill the target
 			if = {
 				limit = {
@@ -597,10 +913,22 @@
 			}
 
 			if = {
+				limit = { always = scope:execution_provisions }
+				scope:actor = {
+					domicile ?= {
+						change_provisions = human_provision_value
+					}
+				}
+			}
+
+			if = {
 				limit = {
 					always = scope:execution_burned
 					scope:actor.faith = {
 						has_doctrine = doctrine_pluralism_fundamentalist
+						NOT = {
+							has_doctrine = tenet_extinction_of_dharma
+						}
 					}
 				}
 				scope:actor = {
@@ -611,7 +939,7 @@
 			scope:actor = {
 				hidden_effect = {
 					send_interface_message = {
-						type = event_generic_neutral
+						type = event_prison_neutral
 						title = msg_execute_prisoner
 						right_icon = scope:recipient
 						custom_tooltip = msg_execute_prisoner_desc
@@ -625,9 +953,18 @@
 
 	send_option = {
 		is_shown = {
-			scope:actor.faith = scope:recipient.faith
-			NOT = {
-				scope:actor.faith = { has_doctrine_parameter = human_sacrifice_active }
+			scope:actor = {
+				OR = {
+					mpo_keep_prisoners_heads_trigger = yes
+					faith = scope:recipient.faith
+					faith = {
+						has_doctrine = tenet_cranial_trophies
+					}
+					culture_has_asian_heritage_pillar_trigger = yes
+				}
+				NOT = {
+					faith = { has_doctrine_parameter = human_sacrifice_active }
+				}
 			}
 		}
 		flag = execution_beheaded
@@ -641,7 +978,7 @@
 				OR = {
 					scope:actor.faith = { has_doctrine_parameter = cannibalism_legal }
 					has_trait = cannibal
-					any_secret = { secret_type = secret_cannibal }
+					any_secret = { type = secret_cannibal }
 				}
 			}
 		}
@@ -649,15 +986,18 @@
 		localization = "EXECUTION_DEVOUR"
 	}
 
+	# TODO: Should be a bit more unique
 	# Execution by Dragon - Latin
 	send_option = {
 		is_shown = {
-			scope:actor = {
-				any_equipped_character_artifact = {
-					has_artifact_flag = dragon_artifact
+			AND = {
+				scope:actor = {
+					any_equipped_character_artifact = {
+						has_artifact_flag = dragon_artifact
+					}
 				}
+				has_game_rule = latin_commands
 			}
-			has_game_rule = latin_commands
 		}
 		flag = execution_dragon_latin
 		localization = "EXECUTION_DRAGON_LATIN"
@@ -666,12 +1006,14 @@
 	# Execution by Dragon - High Valyrian
 	send_option = {
 		is_shown = {
-			scope:actor = {
-				any_equipped_character_artifact = {
-					has_artifact_flag = dragon_artifact
+			AND = {
+				scope:actor = {
+					any_equipped_character_artifact = {
+						has_artifact_flag = dragon_artifact
+					}
 				}
+				has_game_rule = high_valyrian_commands
 			}
-			has_game_rule = high_valyrian_commands
 		}
 		flag = execution_dragon_high_valyrian
 		localization = "EXECUTION_DRAGON_HIGH_VALYRIAN"
@@ -679,9 +1021,15 @@
 
 	send_option = {
 		is_shown = {
-			NOT = {
-				scope:actor.faith = scope:recipient.faith
-				scope:actor.faith = { has_doctrine_parameter = human_sacrifice_active }
+			scope:actor = {
+				NOR = {
+					AND = {
+						faith = scope:recipient.faith
+						faith = { has_doctrine_parameter = human_sacrifice_active }
+					}
+					mpo_keep_prisoners_heads_trigger = yes
+					culture_has_asian_heritage_pillar_trigger = yes
+				}
 			}
 		}
 		flag = execution_burned
@@ -719,7 +1067,32 @@
 		flag = execution_public
 		localization = "EXECUTION_PUBLIC"
 	}
-	
+
+	send_option = {
+		is_shown = {
+			scope:actor = {
+				employs_court_position = kennelperson_camp_officer
+				any_court_position_holder = {
+			        type = kennelperson_camp_officer
+			        is_physically_able = yes
+			    }
+			}
+		}
+		flag = execution_kennel
+		localization = "EXECUTION_KENNEL"
+	}
+
+	send_option = {
+		is_shown = {
+			scope:actor = {
+				has_government = landless_adventurer_government
+				has_perk = fear_tax_perk
+			}
+		}
+		flag = execution_provisions
+		localization = "EXECUTION_PROVISIONS"
+	}
+
 	send_options_exclusive = yes
 	auto_accept = yes
 }

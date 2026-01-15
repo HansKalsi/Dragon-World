@@ -151,3 +151,275 @@ InventoryCourtArtifact = {
 		localization_key = game_concept_court_artifact
 	}
 }
+
+# ANIMAL
+# Used in the title of the artifact
+ArtifactAnimalType = {
+	type = artifact
+
+	text = {
+		trigger = { has_artifact_feature = animal_hide_type_cat }
+		localization_key = animal_type_cat
+	}
+
+	text = {
+		trigger = { has_artifact_feature = animal_hide_type_dog }
+		localization_key = animal_type_dog
+	}
+
+	text = {
+		trigger = { has_artifact_feature = animal_hide_type_fox }
+		localization_key = animal_type_fox
+	}
+
+	text = {
+		trigger = { has_artifact_feature = animal_hide_type_hare }
+		localization_key = animal_type_hare
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_wolf
+				has_artifact_feature = animal_hide_type_wolf
+			}
+		}
+		localization_key = animal_type_wolf
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_hyena
+				has_artifact_feature = animal_hide_type_hyena
+			}
+		}
+		localization_key = animal_type_hyena
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_lynx
+				has_artifact_feature = animal_hide_type_lynx
+			}
+		}
+		localization_key = animal_type_lynx
+	}
+
+	text = { # Stag - Fallow
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_stag
+				has_artifact_feature = animal_hide_type_stag
+			}
+			var:animal_type ?= flag:stag
+		}
+		localization_key = animal_type_stag
+	}
+
+	text = { # Reindeer
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_stag
+				has_artifact_feature = animal_hide_type_stag
+			}
+			var:animal_type ?= flag:reindeer
+		}
+		localization_key = animal_type_reindeer
+	}
+
+	text = { # Hart - Red
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_hart
+				has_artifact_feature = animal_hide_type_hart
+			}
+		}
+		localization_key = animal_type_hart
+	}
+
+	text = { # Elk - Moose
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_elk
+				has_artifact_feature = animal_hide_type_elk
+			}
+		}
+		localization_key = animal_type_elk
+	}
+
+	text = { # Antelope
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_antelope
+				has_artifact_feature = animal_hide_type_antelope
+			}
+			var:animal_type ?= flag:antelope
+		}
+		localization_key = animal_type_antelope
+	}
+
+	text = { # Saiga
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_antelope
+				has_artifact_feature = animal_hide_type_antelope
+			}
+			var:animal_type ?= flag:saiga
+		}
+		localization_key = animal_type_saiga
+	}
+
+	text = { # Gazelle
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_gazelle
+				has_artifact_feature = animal_hide_type_gazelle
+			}
+		}
+		localization_key = animal_type_gazelle
+	}
+
+	text = { # Roe
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_roe
+				has_artifact_feature = animal_hide_type_roe
+			}
+		}
+		localization_key = animal_type_roe
+	}
+
+	text = {
+		trigger = { has_artifact_feature = animal_skull_type_horse }
+		localization_key = animal_type_horse
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_rabbit
+				has_artifact_feature = animal_hide_type_rabbit
+			}
+		}
+		localization_key = animal_type_rabbit
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_boar
+				has_artifact_feature = animal_hide_type_boar
+			}
+		}
+		localization_key = animal_type_boar
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_lion
+				has_artifact_feature = animal_hide_type_lion
+			}
+		}
+		localization_key = animal_type_lion
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_tiger
+				has_artifact_feature = animal_hide_type_tiger
+			}
+		}
+		localization_key = animal_type_tiger
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_leopard
+				has_artifact_feature = animal_hide_type_leopard
+			}
+		}
+		localization_key = animal_type_leopard
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_bear
+				has_artifact_feature = animal_hide_type_bear
+			}
+		}
+		localization_key = animal_type_bear
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_aurochs
+				has_artifact_feature = animal_hide_type_aurochs
+			}
+		}
+		localization_key = animal_type_aurochs
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_bison
+				has_artifact_feature = animal_hide_type_bison
+			}
+		}
+		localization_key = animal_type_bison
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_skull_type_unicorn
+				has_artifact_feature = animal_hide_type_unicorn
+			}
+		}
+		localization_key = animal_type_unicorn
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_hide_type_dragon_fire
+				has_artifact_feature = dragon_element_fire
+			}
+		}
+		localization_key = animal_type_dragon_fire
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_hide_type_dragon_water
+				has_artifact_feature = dragon_element_water
+			}
+		}
+		localization_key = animal_type_dragon_water
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_artifact_feature = animal_hide_type_dragon_stone
+				has_artifact_feature = dragon_element_stone
+			}
+		}
+		localization_key = animal_type_dragon_stone
+	}
+
+	text = {
+		trigger = {
+			has_artifact_feature = animal_hide_type_dragon
+		}
+		localization_key = animal_type_dragon
+	}
+}

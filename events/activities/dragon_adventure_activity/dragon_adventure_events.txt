@@ -306,25 +306,29 @@ dragon_adventure.1011 = {
 
 	immediate = {
 		hunt_outcome_scope_effect = yes # TODO: Refactor to not need this base game effect
-		# hidden_effect = {
-		# 	random_list = {
-		# 		30 = {
-		# 			set_variable = { name = dragon_type value = flag:fire }
-		# 		}
-		# 		30 = {
-		# 			set_variable = { name = dragon_type value = flag:water }
-		# 		}
-		# 		30 = {
-		# 			set_variable = { name = dragon_type value = flag:stone }
-		# 		}
-		# 	}
-		# 	create_artifact_adult_dragon_effect = {
-		# 		OWNER = root
-		# 	}
-		# 	scope:newly_created_artifact = {
-		# 		add_artifact_modifier = spawned_dragon_modifier
-		# 	}
-		# }
+		hidden_effect = {
+			random_list = {
+				30 = {
+					set_variable = { name = dragon_type value = flag:fire }
+				}
+				30 = {
+					set_variable = { name = dragon_type value = flag:water }
+				}
+				30 = {
+					set_variable = { name = dragon_type value = flag:stone }
+				}
+			}
+			create_artifact_adult_dragon_effect = {
+				OWNER = root
+			}
+			scope:newly_created_artifact = {
+				add_artifact_modifier = spawned_dragon_modifier
+			}
+			set_variable = {
+				name = last_spawned_dragon
+				value = scope:newly_created_artifact
+			}
+		}
 	}
 
 	option = { # Lead the charge to attempt to kill the Dragon!

@@ -5,7 +5,7 @@ create_artifact_dragon_hide_effect = {
 	$HUNTER$ = { save_scope_as = hunter }
 	save_scope_value_as = { name = legendary value = yes }
 	scope:owner = {
-		set_variable = { name = animal_type value = dragon days = 5 }
+		set_variable = { name = animal_type value = flag:dragon days = 5 }
 	}
 	if = {
 		limit = { exists = scope:adventurer }
@@ -25,7 +25,7 @@ create_artifact_dragon_hide_effect = {
 			}
 			save_scope_value_as = { name = animal_hide_size value = flag:big }
 		}				
-		create_artifact = {	
+		create_artifact = {
 			name = artifact_dragon_hide_name_legendary
 			creator = scope:creator
 			description = placeholder
@@ -63,7 +63,7 @@ create_artifact_dragon_hide_effect = {
 			remove_artifact_modifier = artifact_placeholder_modifier
 			set_variable = {
 				name = animal_type
-				value = dragon
+				value = flag:dragon
 			}
 			set_variable = {
 				name = quality
@@ -88,6 +88,12 @@ create_artifact_dragon_hide_effect = {
 		scope:owner = {
 			remove_variable = adventure_artifact_location
 			remove_variable = adventure_artifact_hunter
+			# Destroy the spawned dragon reference artifact now that we've used its data
+			if = {
+				limit = { exists = var:last_spawned_dragon }
+				destroy_artifact = var:last_spawned_dragon
+				remove_variable = last_spawned_dragon
+			}
 		}
 	}
 }

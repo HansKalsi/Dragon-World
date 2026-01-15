@@ -26,3 +26,37 @@
 		}
 		weight = 1
 	}
+
+# Animal Hide Types for Dragon
+	animal_hide_type_dragon = {
+		group = animal_hide_type
+		trigger = {
+			exists = scope:owner.var:last_spawned_dragon
+		}
+		weight = 1
+	}
+
+	animal_hide_type_dragon_fire = {
+		group = animal_hide_type
+		trigger = {
+			scope:owner.var:last_spawned_dragon.var:dragon_type ?= flag:fire
+		}
+		weight = 2
+	}
+
+	animal_hide_type_dragon_water = {
+		group = animal_hide_type
+		trigger = {
+			scope:owner.var:last_spawned_dragon.var:dragon_type ?= flag:water
+		}
+		weight = 2
+	}
+
+	animal_hide_type_dragon_stone = {
+		group = animal_hide_type
+		trigger = {
+			scope:owner.var:last_spawned_dragon.var:dragon_type ?= flag:stone
+		}
+		weight = 2
+	}
+

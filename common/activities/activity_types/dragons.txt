@@ -2424,6 +2424,8 @@
 									name = dragons_success
 									value = flag:yes
 								}
+								# FIXME: this should only happen when completing the dragon adventure by killing a dragon
+								# TODO: Make this into an actual dragon hide artifact
 								# Create trophy artifact
 								add_activity_log_entry = {
 									key = hunt_completed_success_log
@@ -2435,11 +2437,9 @@
 
 									# EFFECT
 									scope:host = {
-										create_artifact_animal_hide_effect = {
+										create_artifact_dragon_hide_effect = {
 											OWNER = root
 											HUNTER = root
-											LEGENDARY = yes
-											ANIMAL = scope:activity.var:animal_type
 										}
 										disburse_hunt_activity_rewards = yes
 									}
@@ -2557,6 +2557,7 @@
 	}
 
 	on_start = {
+		# FIXME: this look like it's made to prevent AI spamming?
 		#if = {
 		#	limit = {
 		#		NOT = {
